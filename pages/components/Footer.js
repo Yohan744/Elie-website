@@ -10,28 +10,21 @@ function Footer() {
 
     useEffect(() => {
 
-        gsap.to("footer .vector-left", {
+        const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: "footer",
-                start: "center bottom",
-                end: "bottom bottom"
-            },
-            duration: 1.5,
-            delay: 0.75,
-            strokeDashoffset: "840px",
-            ease: "power4.out"
+                start: "top 80%",
+                end: "bottom bottom",
+            }
         })
 
-        gsap.to("footer .vector-right", {
-            scrollTrigger: {
-                trigger: "footer",
-                start: "center bottom",
-                end: "bottom bottom"
-            },
-            duration: 1.5,
-            strokeDashoffset: "0px",
-            ease: "power4.out"
-        })
+        tl.to("footer .vector-right", {duration: 1.5, strokeDashoffset: "0px", ease: "power4.out"})
+            .to("footer .vector-left", {duration: 1.5, strokeDashoffset: "840px", delay: -0.65, ease: "power4.out"})
+
+        ScrollTrigger.create({
+            trigger:'footer',
+            onLeaveBack: () => tl.pause(0)
+        });
 
     }, [])
 

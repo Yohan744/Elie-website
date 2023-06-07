@@ -1,4 +1,40 @@
+import {useEffect} from "react";
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
+import {Observer} from "gsap/dist/Observer";
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(Observer);
+
 function Header() {
+
+    useEffect(() => {
+
+        const header = document.querySelector("header");
+
+        Observer.create({
+            target: window,
+            type: "wheel",
+            onChange(observer) {
+
+                if (observer.deltaY > 15) {
+                    if (!header.classList.contains("hide")) {
+                        console.log("showwwwwww")
+                        header.classList.add("hide");
+                    }
+                }
+
+                console.log(observer.deltaY)
+
+                if (observer.deltaY < -5) {
+                    console.log("hideeeeee")
+                    header.classList.remove("hide");
+                }
+
+            }
+        });
+
+    }, [])
 
     return (
         <header>

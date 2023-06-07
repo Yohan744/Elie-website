@@ -41,6 +41,11 @@ $light-green: rgba(237, 248, 238, 1);
 $green: rgba(195, 224, 199, 1);
 $radius: 15px;
 
+$ease-expo-inOut: cubic-bezier(0.87, 0, 0.13, 1);
+$ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+$ease-power4-out: cubic-bezier(0.22, 1, 0.36, 1);
+
 @import "header";
 @import "masthead";
 @import "demo";

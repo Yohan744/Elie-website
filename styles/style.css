@@ -42,6 +42,11 @@ header {
   border-radius: 15px;
   z-index: 10;
   background-color: #1d2737;
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+header.hide {
+  transform: translate(-50%, -150px);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 header .logo {
   position: relative;
@@ -200,9 +205,9 @@ header .right-part .reserve p {
   height: 26px;
   width: 26px;
   background-color: #384864;
-  mask-image: url("../public/plus-icon-blue.svg");
+  mask-image: url("../asset/svg/plus-icon-blue.svg");
   mask-position: center;
-  -webkit-mask-image: url("../public/plus-icon-blue.svg");
+  -webkit-mask-image: url("../asset/svg/plus-icon-blue.svg");
   -webkit-mask-position: center;
   transform: rotate(0);
   transition: transform 0.35s ease-in-out, background-color 0.35s ease-in-out;
