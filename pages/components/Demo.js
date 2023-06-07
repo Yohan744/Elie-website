@@ -26,8 +26,7 @@ function Demo() {
                 trigger: "#demo",
                 start: "top-=300px center+=50px",
                 end: "center bottom",
-                scrub: true,
-                markers: true
+                scrub: true
             },
             strokeDashoffset: "0px",
             ease: "linear"
