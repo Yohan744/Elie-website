@@ -1,0 +1,84 @@
+header {
+  position: fixed;
+  padding: 19px 21px 19px 43px;
+  top: 42px;
+  left: 50%;
+  width: 86.1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(-50%);
+  border-radius: $radius;
+  z-index: 10;
+  background-color: rgba(29, 39, 55, 1);
+
+  .logo {
+    position: relative;
+    height: 45px;
+    width: 51px;
+    object-fit: cover;
+  }
+
+  .right-part {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      position: relative;
+      margin-right: 52px;
+      font-family: "PP Pangram Sans Rounded medium", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: center;
+      text-decoration: none;
+      color: $wheat;
+    }
+
+    .user {
+      position: relative;
+      margin-right: 26px;
+      padding: 19px 22px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: $blue;
+
+      img {
+        position: relative;
+        height: 27px;
+        width: 21px;
+      }
+
+    }
+
+    .reserve {
+      position: relative;
+      padding: 21px 44px 17px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: $green;
+
+      p {
+        position: relative;
+        font-family: "PP Pangram Sans Rounded medium", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0;
+        text-align: center;
+        color: $blue;
+      }
+
+    }
+
+  }
+
+}

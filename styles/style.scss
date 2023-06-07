@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "PP Pangram Sans Rounded";
+  src: url("../public/font/Pangram/PPPangramSansRounded-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PP Pangram Sans Rounded medium";
+  src: url("../public/font/Pangram/PPPangramSansRounded-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PP Pangram Sans Rounded semi-bold";
+  src: url("../public/font/Pangram/PPPangramSansRounded-Semibold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "PP Pangram Sans Rounded bold";
+  src: url("../public/font/Pangram/PPPangramSansRounded-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Patsy Sans";
+  src: url("../public/font/Patsy/PatsySans.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+$pink: rgba(215, 102, 119, 1);
+$wheat: rgba(254, 255, 246, 1);
+$light-blue: rgba(131, 159, 220, 1);
+$blue: rgba(56, 72, 100, 1);
+$light-green: rgba(237, 248, 238, 1);
+$green: rgba(195, 224, 199, 1);
+$radius: 15px;
+
+@import "header";
+@import "masthead";
+@import "demo";
+@import "information";
+@import "gallery";
+@import "reservation";
+@import "advice";
+@import "footer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $wheat;
+}

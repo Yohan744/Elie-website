@@ -1,0 +1,103 @@
+footer {
+  position: relative;
+  padding: 50px 50px 0;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  background-color: $blue;
+
+  .global-wrapper {
+    position: relative;
+    padding: 45px 0 48px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    background-color: $pink;
+    overflow: clip;
+
+    .logo-white {
+      position: relative;
+      height: 102px;
+      width: 102px;
+    }
+
+    .link-wrapper {
+      position: relative;
+      margin: 42px 0 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .link {
+        position: relative;
+        text-decoration: none;
+        margin-right: 50px;
+        font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $wheat;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+
+    }
+
+    .sub-link-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .sub-link {
+        position: relative;
+        text-decoration: none;
+        font-family: "PP Pangram Sans Rounded", sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $wheat;
+
+        &.margin {
+          margin: 0 5px;
+        }
+
+      }
+
+    }
+
+    .vector-left {
+      position: absolute;
+      top: 168px;
+      left: -100px;
+      height: 450px;
+      width: auto;
+      stroke-dasharray: 450;
+      stroke-dashoffset: 490;
+    }
+
+    .vector-right {
+      position: absolute;
+      top: -150px;
+      right: -100px;
+      height: 450px;
+      width: auto;
+      stroke-dasharray: 540;
+      stroke-dashoffset: 470;
+    }
+
+  }
+
+}

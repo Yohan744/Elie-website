@@ -1,0 +1,112 @@
+#information {
+  position: relative;
+  width: 100%;
+  padding: 172px 135px 0;
+  background-color: $blue;
+  border-radius: 10px 10px 0 0;
+
+  .global-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      position: relative;
+      font-family: "PP Pangram Sans Rounded bold", sans-serif;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 55px;
+      letter-spacing: 0;
+      text-align: left;
+      color: $wheat;
+    }
+
+    .info-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+
+      .info {
+        position: relative;
+        max-width: 390px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+          position: relative;
+          height: 90px;
+          width: auto;
+        }
+
+        .title {
+          position: relative;
+          margin: 24px 0 12px;
+          font-family: "PP Pangram Sans Rounded bold", sans-serif;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $wheat;
+        }
+
+        p {
+          position: relative;
+          font-family: "PP Pangram Sans Rounded medium", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $wheat;
+        }
+
+        &:nth-child(2) {
+          margin: 0 30px;
+        }
+
+      }
+
+    }
+
+  }
+
+  a {
+    position: relative;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+    width: fit-content;
+    text-decoration: none;
+    border: 1px solid $wheat;
+    border-radius: 10px;
+
+    .contact-us {
+      position: relative;
+      width: fit-content;
+      padding: 23px 33px;
+      background-color: rgba(116, 126, 145, 1);
+      border-radius: 10px;
+
+      p {
+        position: relative;
+        font-family: "PP Pangram Sans Rounded bold", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $wheat;
+      }
+
+    }
+
+  }
+
+}
