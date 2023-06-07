@@ -15,13 +15,13 @@ function Masthead() {
 
                         <div className={"button-wrapper"}>
 
-                            <a href={"#"}>
+                            <a href={"#reservation"} draggable="false">
                                 <div className={"button"}>
                                     <p>Réserver</p>
                                 </div>
                             </a>
 
-                            <a href={"#"}>
+                            <a href={"#reservation"} draggable="false">
                                 <div className={"button"}>
                                     <p>Créer mon groupe</p>
                                     <div className={"plus"}></div>
@@ -52,7 +52,7 @@ function Masthead() {
 
                             <p>Nous sommes ravis de vous proposer ce nouveau lieu d’exposition et espérons vous voir nombreux !</p>
 
-                            <a href={"#demo"} className={"know-more"}>En savoir plus</a>
+                            <a href={"#demo"} className={"know-more"} draggable="false">En savoir plus</a>
 
                         </div>
 

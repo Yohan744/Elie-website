@@ -18,8 +18,8 @@ function Footer() {
             }
         })
 
-        tl.to("footer .vector-right", {duration: 1.5, strokeDashoffset: "0px", ease: "power4.out"})
-            .to("footer .vector-left", {duration: 1.5, strokeDashoffset: "840px", delay: -0.65, ease: "power4.out"})
+        tl.to("footer .vector-right", {duration: 1.2, strokeDashoffset: "0px", ease: "power4.out"})
+            .to("footer .vector-left", {duration: 1.2, strokeDashoffset: "840px", delay: -0.45, ease: "power4.out"})
 
         ScrollTrigger.create({
             trigger:'footer',
@@ -37,13 +37,13 @@ function Footer() {
 
                 <div className="link-wrapper">
 
-                    <a className="link" href="#demo">L’exposition</a>
+                    <a className="link" href={"#demo"} draggable="false">L’exposition</a>
 
-                    <a className="link" href="#reservation">Réservation</a>
+                    <a className="link" href={"#reservation"} draggable="false">Réservation</a>
 
-                    <a className="link" href="#">Fiches pédagogiques</a>
+                    <a className="link" href={"#preparation"} draggable="false">Fiches pédagogiques</a>
 
-                    <a className="link" href="#advice">Avis</a>
+                    <a className="link" href={"#advice"} draggable="false">Avis</a>
 
                 </div>
 

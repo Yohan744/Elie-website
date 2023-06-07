@@ -17,17 +17,13 @@ function Header() {
             type: "wheel",
             onChange(observer) {
 
-                if (observer.deltaY > 15) {
+                if (observer.deltaY > 40) {
                     if (!header.classList.contains("hide")) {
-                        console.log("showwwwwww")
                         header.classList.add("hide");
                     }
                 }
 
-                console.log(observer.deltaY)
-
-                if (observer.deltaY < -5) {
-                    console.log("hideeeeee")
+                if (observer.deltaY < -20) {
                     header.classList.remove("hide");
                 }
 
@@ -36,6 +32,11 @@ function Header() {
 
     }, [])
 
+    function handleClickOnHeader() {
+        const header = document.querySelector("header");
+        header.classList.add("hide");
+    }
+
     return (
         <header>
 
@@ -43,18 +44,20 @@ function Header() {
 
             <div className={"right-part"}>
 
-                <a href={"#demo"}>L’exposition</a>
-                <a href={"#information"}>Informations pratiques</a>
-                <a href={"#"}>Ressources pédagogiques</a>
-                <a href={"#advice"}>Avis</a>
+                <a href={"#demo"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>L’exposition</a>
+                <a href={"#information"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Informations pratiques</a>
+                <a href={"#preparation"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Ressources pédagogiques</a>
+                <a href={"#advice"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Avis</a>
 
                 <div className={"user"}>
                     <img src={"user.svg"} alt={"User icon"}/>
                 </div>
 
-                <div className={"reserve"}>
-                    <p>Réserver</p>
-                </div>
+                <a href={"#reservation"}>
+                    <div className={"reserve"} draggable="false" onClick={() => handleClickOnHeader()}>
+                        <p>Réserver</p>
+                    </div>
+                </a>
 
             </div>
 

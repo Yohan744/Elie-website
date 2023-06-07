@@ -11,7 +11,7 @@ function Advice() {
 
                     <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                    <a href="#" className="give-advice">
+                    <a href="#" className="give-advice" draggable="false">
                         <p>Donner un avis</p>
                     </a>
 

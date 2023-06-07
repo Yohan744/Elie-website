@@ -51,6 +51,7 @@ $ease-power4-out: cubic-bezier(0.22, 1, 0.36, 1);
 @import "demo";
 @import "information";
 @import "gallery";
+@import "preparation";
 @import "reservation";
 @import "advice";
 @import "footer";
@@ -62,12 +63,24 @@ $ease-power4-out: cubic-bezier(0.22, 1, 0.36, 1);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+
+  &::selection {
+    background-color: $pink;
+    color: $wheat;
+  }
+
 }
 
 html, body {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
 body {
   background-color: $wheat;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
 }

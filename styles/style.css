@@ -61,7 +61,7 @@ header .right-part {
   justify-content: center;
   align-items: center;
 }
-header .right-part a {
+header .right-part .link {
   position: relative;
   margin-right: 52px;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
@@ -71,6 +71,7 @@ header .right-part a {
   letter-spacing: 0em;
   text-align: center;
   text-decoration: none;
+  user-select: none;
   color: #fefff6;
 }
 header .right-part .user {
@@ -82,6 +83,8 @@ header .right-part .user {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
   background-color: #384864;
 }
 header .right-part .user img {
@@ -89,14 +92,19 @@ header .right-part .user img {
   height: 27px;
   width: 21px;
 }
-header .right-part .reserve {
+header .right-part a {
+  position: relative;
+  text-decoration: none;
+}
+header .right-part a .reserve {
   position: relative;
   padding: 21px 44px 17px;
   border-radius: 10px;
   cursor: pointer;
+  user-select: none;
   background-color: #c3e0c7;
 }
-header .right-part .reserve p {
+header .right-part a .reserve p {
   position: relative;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 24px;
@@ -125,6 +133,8 @@ header .right-part .reserve p {
   width: 100%;
   object-fit: cover;
   z-index: -1;
+  user-select: none;
+  -webkit-user-drag: none;
   border-radius: 0 0 15px 15px;
 }
 #masthead .global-wrapper {
@@ -186,6 +196,8 @@ header .right-part .reserve p {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+  user-select: none;
+  -webkit-user-drag: none;
   transition: background-color 0.35s ease-in-out;
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button p {
@@ -322,6 +334,8 @@ header .right-part .reserve p {
   text-align: left;
   color: #fefff6;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
   text-decoration: underline;
   text-underline-offset: 6px;
   text-underline-color: #fefff6;
@@ -340,6 +354,8 @@ header .right-part .reserve p {
   text-decoration: none;
   transform: translate(-50%, 50%);
   z-index: 1;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 #masthead .phone .wrapper {
   position: relative;
@@ -434,6 +450,7 @@ header .right-part .reserve p {
   position: relative;
   margin-top: 16px;
   text-decoration: none;
+  user-select: none;
 }
 #demo .global-wrapper .right-part a .button {
   position: relative;
@@ -546,6 +563,7 @@ header .right-part .reserve p {
   text-decoration: none;
   border: 1px solid #fefff6;
   border-radius: 10px;
+  user-select: none;
 }
 #information a .contact-us {
   position: relative;
@@ -612,11 +630,135 @@ header .right-part .reserve p {
   border-radius: 10px;
 }
 
+#preparation {
+  position: relative;
+  padding: 72px 0 30px;
+  width: 100%;
+}
+#preparation .global-wrapper {
+  position: relative;
+  width: 27%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#preparation .global-wrapper .title {
+  position: relative;
+  margin-bottom: 30px;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+}
+#preparation .global-wrapper .lineToDot {
+  position: relative;
+  height: 50px;
+  width: auto;
+}
+#preparation .global-wrapper .lineToDot.margin-top {
+  margin-top: 30px;
+}
+#preparation .global-wrapper .sub-title {
+  position: relative;
+  margin-top: 30px;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+}
+#preparation .global-wrapper .sub-title span {
+  color: #d76677;
+}
+#preparation .global-wrapper .download-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 41px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#preparation .global-wrapper .download-wrapper a {
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 13px;
+}
+#preparation .global-wrapper .download-wrapper a .download {
+  position: relative;
+  width: 100%;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #c3e0c7;
+  background-color: #edf8ee;
+  border-radius: 10px;
+}
+#preparation .global-wrapper .download-wrapper a .download .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+#preparation .global-wrapper .download-wrapper a .download .info h6 {
+  position: relative;
+  margin-bottom: 3px;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #384864;
+}
+#preparation .global-wrapper .download-wrapper a .download .info p {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #384864;
+}
+#preparation .global-wrapper .download-wrapper a .download .icon {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  user-focus: none;
+  user-select: none;
+}
+#preparation .global-wrapper .download-wrapper a:last-child {
+  margin-bottom: 0;
+}
+#preparation .global-wrapper .lineToArrow {
+  position: relative;
+  margin-top: 30px;
+  height: 116px;
+  width: auto;
+}
+
 #reservation {
   position: relative;
-  height: 50vh;
   width: 100%;
-  background-color: #fefff6;
+}
+#reservation .global-wrapper {
+  position: relative;
+  margin: 0 auto;
+  height: 1090px;
+  width: 86%;
+  border-radius: 15px;
+  background-color: #edf8ee;
 }
 
 #advice {
@@ -676,6 +818,7 @@ header .right-part .reserve p {
   border: 1px solid #384864;
   border-radius: 10px;
   background-color: transparent;
+  user-select: none;
 }
 #advice .global-wrapper .info .give-advice p {
   position: relative;
@@ -739,6 +882,7 @@ header .right-part .reserve p {
 }
 #advice .global-wrapper .advice-wrapper .advice-left .advice .type, #advice .global-wrapper .advice-wrapper .advice-right .advice .type {
   position: relative;
+  user-select: none;
   width: fit-content;
   margin: 0 auto;
   padding: 10px 18px;
@@ -865,13 +1009,23 @@ footer .global-wrapper .vector-right {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
+*::selection {
+  background-color: #d76677;
+  color: #fefff6;
+}
 
 html, body {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
 body {
   background-color: #fefff6;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /*# sourceMappingURL=style.css.map */

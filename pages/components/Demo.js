@@ -53,7 +53,7 @@ function Demo() {
                         et découvrez leurs interactions. Faites du jeu un outils immersif pour stimuler la curiosité des
                         enfants sur le monde du vivant !</p>
 
-                    <a href="#">
+                    <a href={"#preparation"} draggable="false">
                         <p className="button">Préparer votre séjour</p>
                     </a>
 

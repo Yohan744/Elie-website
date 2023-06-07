@@ -4,6 +4,7 @@ import Information from "./components/Information";
 import Gallery from "./components/Gallery";
 import Reservation from "./components/Reservation";
 import Advice from "./components/Advice";
+import Preparation from "./components/Preparation";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <Demo/>
             <Information/>
             <Gallery/>
+            <Preparation/>
             <Reservation/>
             <Advice/>
         </main>

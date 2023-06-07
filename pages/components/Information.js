@@ -43,7 +43,7 @@ function Information() {
 
             </div>
 
-            <a href="#">
+            <a href="#" draggable="false">
 
                 <div className="contact-us">
 

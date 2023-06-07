@@ -16,6 +16,8 @@
     width: 100%;
     object-fit: cover;
     z-index: -1;
+    user-select: none;
+    -webkit-user-drag: none;
     border-radius: 0 0 15px 15px;
   }
 
@@ -65,12 +67,12 @@
           flex-direction: row;
           justify-content: flex-start;
 
-
           a {
             position: relative;
             height: fit-content;
             width: fit-content;
             text-decoration: none;
+
 
             .button {
               position: relative;
@@ -80,6 +82,8 @@
               border-radius: 10px;
               display: flex;
               flex-direction: row;
+              user-select: none;
+              -webkit-user-drag: none;
               transition: background-color 0.35s ease-in-out;
 
               p {
@@ -246,6 +250,8 @@
             text-align: left;
             color: $wheat;
             cursor: pointer;
+            user-select: none;
+            -webkit-user-drag: none;
             text-decoration: underline;
             text-underline-offset: 6px;
             text-underline-color: $wheat;
@@ -276,6 +282,8 @@
     text-decoration: none;
     transform: translate(-50%, 50%);
     z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
 
     .wrapper {
       position: relative;

@@ -1,6 +1,14 @@
 #reservation {
   position: relative;
-  height: 50vh;
   width: 100%;
-  background-color: $wheat;
+
+  .global-wrapper {
+    position: relative;
+    margin: 0 auto;
+    height: 1090px;
+    width: 86%;
+    border-radius: $radius;
+    background-color: $light-green;
+  }
+
 }
