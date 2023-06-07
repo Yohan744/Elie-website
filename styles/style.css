@@ -754,11 +754,93 @@ header .right-part a .reserve p {
 }
 #reservation .global-wrapper {
   position: relative;
+  padding: 88px 26px 116px;
   margin: 0 auto;
-  height: 1090px;
   width: 86%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 15px;
   background-color: #edf8ee;
+}
+#reservation .global-wrapper .title {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+}
+#reservation .global-wrapper .title span {
+  color: #d76677;
+}
+#reservation .global-wrapper .state-wrapper {
+  position: relative;
+  margin: 83px auto 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#reservation .global-wrapper .state-wrapper .state {
+  position: relative;
+  max-width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+#reservation .global-wrapper .state-wrapper .state .state-number {
+  position: relative;
+  margin: 0 auto 16px;
+  width: fit-content;
+  padding: 7px 18px;
+  border-radius: 100px;
+  border: 2px solid #afb4bf;
+  background-color: transparent;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #afb4bf;
+  transition: border 0.35s ease-in-out, background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+}
+#reservation .global-wrapper .state-wrapper .state p {
+  position: relative;
+  font-family: " PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #afb4bf;
+  transition: color 0.35s ease-in-out;
+}
+#reservation .global-wrapper .state-wrapper .state.is-active .state-number {
+  background-color: #d76677;
+  border: 2px solid #d76677;
+  color: #fefff6;
+}
+#reservation .global-wrapper .state-wrapper .state.is-active p {
+  color: #384864;
+}
+#reservation .global-wrapper .state-wrapper .line {
+  position: relative;
+  margin: 25px -20px 0;
+  height: 1.5px;
+  width: 170px;
+  background-color: #cdd5e0;
+  border-radius: 10px;
+}
+#reservation .global-wrapper .container {
+  position: relative;
+  padding: 82px 0 71px;
+  border-radius: 15px;
+  border: 1px solid #c3e0c7;
+  background-color: #fefff6;
 }
 
 #advice {
@@ -1015,7 +1097,7 @@ footer .global-wrapper .vector-right {
 }
 
 html, body {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   overscroll-behavior: none;
 }
 
@@ -1026,6 +1108,22 @@ body {
 img {
   -webkit-user-drag: none;
   user-select: none;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,112 @@
 
   .global-wrapper {
     position: relative;
+    padding: 88px 26px 116px;
     margin: 0 auto;
-    height: 1090px;
     width: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: $radius;
     background-color: $light-green;
+
+    .title {
+      position: relative;
+      font-family: "PP Pangram Sans Rounded bold", sans-serif;
+      font-size: 46px;
+      font-weight: 400;
+      line-height: 57px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      color: $blue;
+
+      span {
+        color: $pink;
+      }
+
+    }
+
+    .state-wrapper {
+      position: relative;
+      margin: 83px auto 96px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .state {
+        position: relative;
+        max-width: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+
+        .state-number {
+          position: relative;
+          margin: 0 auto 16px;
+          width: fit-content;
+          padding: 7px 18px;
+          border-radius: 100px;
+          border: 2px solid rgba(175, 180, 191, 1);
+          background-color: transparent;
+          font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 33px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: rgba(175, 180, 191, 1);
+          transition: border 0.35s ease-in-out, background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+        }
+
+        p {
+          position: relative;
+          font-family:" PP Pangram Sans Rounded medium", sans-serif;
+          font-size: 19px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: rgba(175, 180, 191, 1);
+          transition: color 0.35s ease-in-out;
+        }
+
+        &.is-active {
+
+          .state-number {
+            background-color: $pink;
+            border: 2px solid $pink;
+            color: $wheat;
+          }
+
+          p {
+            color: $blue;
+          }
+
+        }
+
+      }
+
+      .line {
+        position: relative;
+        margin: 25px -20px 0;
+        height: 1.5px;
+        width: 170px;
+        background-color: rgba(205, 213, 224, 1);
+        border-radius: 10px;
+      }
+
+    }
+
+    .container {
+      position: relative;
+      padding: 82px 0 71px;
+      border-radius: $radius;
+      border: 1px solid $green;
+      background-color: $wheat;
+    }
+
   }
 
 }
