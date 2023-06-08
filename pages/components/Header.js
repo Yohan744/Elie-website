@@ -17,7 +17,7 @@ function Header() {
             type: "wheel",
             onChange(observer) {
 
-                if (observer.deltaY > 40) {
+                if (observer.deltaY > 25) {
                     if (!header.classList.contains("hide")) {
                         header.classList.add("hide");
                     }

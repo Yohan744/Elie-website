@@ -1,3 +1,5 @@
+import PlusIconBlue from "../../asset/svg/plus-icon-blue.svg";
+
 function Masthead() {
 
     return (
@@ -24,7 +26,7 @@ function Masthead() {
                             <a href={"#reservation"} draggable="false">
                                 <div className={"button"}>
                                     <p>Créer mon groupe</p>
-                                    <div className={"plus"}></div>
+                                    <PlusIconBlue className="plus-icon"/>
                                 </div>
                             </a>
 

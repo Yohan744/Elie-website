@@ -58,6 +58,7 @@
         border-radius: 10px;
         background-color: transparent;
         user-select: none;
+        transition: background-color 0.8s $ease-power4-out;
 
         p {
           position: relative;
@@ -68,6 +69,10 @@
           letter-spacing: 0em;
           text-align: center;
           color: $blue;
+        }
+
+        &:hover {
+          background-color: #e2f8e4;
         }
 
       }

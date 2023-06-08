@@ -63,7 +63,8 @@ header .right-part {
 }
 header .right-part .link {
   position: relative;
-  margin-right: 52px;
+  padding: 10px 16px;
+  margin-right: 20px;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -72,7 +73,13 @@ header .right-part .link {
   text-align: center;
   text-decoration: none;
   user-select: none;
+  border-radius: 100px;
+  background-color: transparent;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   color: #fefff6;
+}
+header .right-part .link:hover {
+  background-color: #384864;
 }
 header .right-part .user {
   position: relative;
@@ -103,6 +110,7 @@ header .right-part a .reserve {
   cursor: pointer;
   user-select: none;
   background-color: #c3e0c7;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 header .right-part a .reserve p {
   position: relative;
@@ -113,6 +121,9 @@ header .right-part a .reserve p {
   letter-spacing: 0;
   text-align: center;
   color: #384864;
+}
+header .right-part a:hover .reserve {
+  background-color: #b3d4b4;
 }
 
 #masthead {
@@ -211,18 +222,11 @@ header .right-part a .reserve p {
   color: #fefff6;
   transition: color 0.35s ease-in-out;
 }
-#masthead .global-wrapper .top-wrapper .info .button-wrapper a .button .plus {
+#masthead .global-wrapper .top-wrapper .info .button-wrapper a .button .plus-icon {
   position: relative;
   margin-left: 20px;
   height: 26px;
   width: 26px;
-  background-color: #384864;
-  mask-image: url("../asset/svg/plus-icon-blue.svg");
-  mask-position: center;
-  -webkit-mask-image: url("../asset/svg/plus-icon-blue.svg");
-  -webkit-mask-position: center;
-  transform: rotate(0);
-  transition: transform 0.35s ease-in-out, background-color 0.35s ease-in-out;
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button:hover {
   background-color: transparent;
@@ -240,14 +244,7 @@ header .right-part a .reserve p {
   color: #384864;
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a:nth-child(2) .button:hover {
-  background-color: #384864;
-}
-#masthead .global-wrapper .top-wrapper .info .button-wrapper a:nth-child(2) .button:hover p {
-  color: #fefff6;
-}
-#masthead .global-wrapper .top-wrapper .info .button-wrapper a:nth-child(2) .button:hover .plus {
-  background-color: #fefff6;
-  transform: rotate(180deg);
+  background-color: #b3d4b4;
 }
 #masthead .global-wrapper .top-wrapper .video {
   position: relative;
@@ -339,6 +336,10 @@ header .right-part a .reserve p {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-underline-color: #fefff6;
+  transition: text-underline-offset 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#masthead .global-wrapper .bottom-wrapper .news .right-part .know-more:hover {
+  text-underline-offset: 3px;
 }
 #masthead .global-wrapper .bottom-wrapper .preview {
   position: relative;
@@ -367,6 +368,7 @@ header .right-part a .reserve p {
   border-radius: 50px;
   background-color: #c3e0c7;
   z-index: 1;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #masthead .phone .wrapper img {
   position: relative;
@@ -384,6 +386,9 @@ header .right-part a .reserve p {
   letter-spacing: 0;
   text-align: center;
   color: #384864;
+}
+#masthead .phone:hover .wrapper {
+  background-color: #b3d4b4;
 }
 
 #demo {
@@ -464,6 +469,10 @@ header .right-part a .reserve p {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-underline-color: #d76677;
+  transition: text-underline-offset 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#demo .global-wrapper .right-part a:hover .button {
+  text-underline-offset: 3px;
 }
 #demo .vector-left {
   position: absolute;
@@ -571,6 +580,7 @@ header .right-part a .reserve p {
   padding: 23px 33px;
   background-color: #747e91;
   border-radius: 10px;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #information a .contact-us p {
   position: relative;
@@ -581,6 +591,9 @@ header .right-part a .reserve p {
   letter-spacing: 0em;
   text-align: center;
   color: #fefff6;
+}
+#information a:hover .contact-us {
+  background-color: #5f6979;
 }
 
 #gallery {
@@ -703,6 +716,7 @@ header .right-part a .reserve p {
   border: 1px solid #c3e0c7;
   background-color: #edf8ee;
   border-radius: 10px;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #preparation .global-wrapper .download-wrapper a .download .info {
   position: relative;
@@ -740,6 +754,9 @@ header .right-part a .reserve p {
 }
 #preparation .global-wrapper .download-wrapper a:last-child {
   margin-bottom: 0;
+}
+#preparation .global-wrapper .download-wrapper a:hover .download {
+  background-color: #e2f8e4;
 }
 #preparation .global-wrapper .lineToArrow {
   position: relative;
@@ -901,6 +918,7 @@ header .right-part a .reserve p {
   border-radius: 10px;
   background-color: transparent;
   user-select: none;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #advice .global-wrapper .info .give-advice p {
   position: relative;
@@ -911,6 +929,9 @@ header .right-part a .reserve p {
   letter-spacing: 0em;
   text-align: center;
   color: #384864;
+}
+#advice .global-wrapper .info .give-advice:hover {
+  background-color: #e2f8e4;
 }
 #advice .global-wrapper .advice-wrapper {
   position: relative;
@@ -1030,8 +1051,9 @@ footer .global-wrapper .link-wrapper {
 }
 footer .global-wrapper .link-wrapper .link {
   position: relative;
+  padding: 6px 12px;
   text-decoration: none;
-  margin-right: 50px;
+  margin-right: 30px;
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -1039,6 +1061,12 @@ footer .global-wrapper .link-wrapper .link {
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
+  border-radius: 100px;
+  background-color: transparent;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+footer .global-wrapper .link-wrapper .link:hover {
+  background-color: rgba(56, 72, 100, 0.1);
 }
 footer .global-wrapper .link-wrapper .link:last-child {
   margin-right: 0;

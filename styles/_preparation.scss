@@ -78,6 +78,7 @@
           border: 1px solid $green;
           background-color: $light-green;
           border-radius: 10px;
+          transition: background-color 0.8s $ease-power4-out;
 
           .info {
             position: relative;
@@ -122,6 +123,14 @@
 
         &:last-child {
           margin-bottom: 0;
+        }
+
+        &:hover {
+
+          .download {
+            background-color: #e2f8e4;
+          }
+
         }
 
       }

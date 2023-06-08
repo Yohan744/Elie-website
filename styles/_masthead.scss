@@ -73,7 +73,6 @@
             width: fit-content;
             text-decoration: none;
 
-
             .button {
               position: relative;
               padding: 21px 44px;
@@ -98,25 +97,18 @@
                 transition: color 0.35s ease-in-out;
               }
 
-              .plus {
+              .plus-icon {
                 position: relative;
                 margin-left: 20px;
                 height: 26px;
                 width: 26px;
-                background-color: $blue;
-                mask-image: url("../asset/svg/plus-icon-blue.svg");
-                mask-position: center;
-                -webkit-mask-image: url("../asset/svg/plus-icon-blue.svg");
-                -webkit-mask-position: center;
-                transform: rotate(0);
-                transition: transform 0.35s ease-in-out, background-color 0.35s ease-in-out;
               }
 
               &:hover {
                 background-color: transparent;
 
                 p {
-                    color: $blue;
+                  color: $blue;
                 }
 
               }
@@ -134,17 +126,7 @@
                 }
 
                 &:hover {
-                  background-color: $blue;
-
-                  p {
-                    color: $wheat;
-                  }
-
-                  .plus {
-                    background-color: $wheat;
-                    transform: rotate(180deg);
-                  }
-
+                  background-color: $dark-green;
                 }
 
               }
@@ -255,6 +237,12 @@
             text-decoration: underline;
             text-underline-offset: 6px;
             text-underline-color: $wheat;
+            transition: text-underline-offset 0.4s $ease-power4-out;
+
+            &:hover {
+              text-underline-offset: 3px;
+            }
+
           }
 
 
@@ -295,6 +283,7 @@
       border-radius: 50px;
       background-color: $green;
       z-index: 1;
+      transition: background-color 0.8s $ease-power4-out;
 
       img {
         position: relative;
@@ -313,6 +302,14 @@
         letter-spacing: 0;
         text-align: center;
         color: $blue;
+      }
+
+    }
+
+    &:hover {
+
+      .wrapper {
+        background-color: $dark-green;
       }
 
     }

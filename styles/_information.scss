@@ -94,6 +94,7 @@
       padding: 23px 33px;
       background-color: rgba(116, 126, 145, 1);
       border-radius: 10px;
+      transition: background-color 0.8s $ease-power4-out;
 
       p {
         position: relative;
@@ -104,6 +105,14 @@
         letter-spacing: 0em;
         text-align: center;
         color: $wheat;
+      }
+
+    }
+
+    &:hover {
+
+      .contact-us {
+        background-color: rgb(95, 105, 121);
       }
 
     }

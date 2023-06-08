@@ -81,6 +81,13 @@
           text-decoration: underline;
           text-underline-offset: 6px;
           text-underline-color: $pink;
+          transition: text-underline-offset 0.4s $ease-power4-out;
+        }
+
+        &:hover {
+            .button {
+              text-underline-offset: 3px;
+            }
         }
 
       }

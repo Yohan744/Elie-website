@@ -35,7 +35,8 @@ header {
 
     .link {
       position: relative;
-      margin-right: 52px;
+      padding: 10px 16px;
+      margin-right: 20px;
       font-family: "PP Pangram Sans Rounded medium", sans-serif;
       font-size: 18px;
       font-weight: 600;
@@ -44,7 +45,15 @@ header {
       text-align: center;
       text-decoration: none;
       user-select: none;
+      border-radius: 100px;
+      background-color: transparent;
+      transition: background-color 0.8s $ease-power4-out;
       color: $wheat;
+
+      &:hover {
+        background-color: rgba(56, 72, 100, 1);
+      }
+
     }
 
     .user {
@@ -79,6 +88,7 @@ header {
         cursor: pointer;
         user-select: none;
         background-color: $green;
+        transition: background-color 0.8s $ease-power4-out;
 
         p {
           position: relative;
@@ -89,6 +99,14 @@ header {
           letter-spacing: 0;
           text-align: center;
           color: $blue;
+        }
+
+      }
+
+      &:hover {
+
+        .reserve {
+          background-color: $dark-green;
         }
 
       }
