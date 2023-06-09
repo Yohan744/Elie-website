@@ -9,6 +9,9 @@ function Reservation() {
     const [monthSelected, setMonthSelected] = useState(months[new Date().getMonth()])
     const [dayReserved, setDayReserved] = useState("Mardi 27/06")
     const [timeReserved, setTimeReserved] = useState("09h00")
+    const [numberOfStudent, setNumberOfStudent] = useState("")
+    const [studentClass, setStudentClass] = useState("")
+    const [alreadyVisit, setAlreadyVisit] = useState("")
 
     useEffect(() => {
 
@@ -18,6 +21,9 @@ function Reservation() {
         const monthText = document.querySelector('.book-online-planning .month')
         monthText.innerHTML = currentMonth
         setMonthSelected(currentMonth)
+
+        const showingSectionId = document.querySelector('.sub-wrapper.is-active').getAttribute("data-id")
+        updateStateOfReservation(showingSectionId)
 
     }, [])
 
@@ -122,6 +128,45 @@ function Reservation() {
         popUpBackground.classList.remove('is-active')
     }
 
+    function handleClickOnGroupProfile(e, wrapper) {
+        const allWrapper = document.querySelectorAll('.group-profile .' + wrapper)
+        const wrapperSelected = e.target.closest('.' + wrapper)
+
+        if (wrapperSelected.classList.contains("is-active")) {
+            wrapperSelected.classList.remove('is-active')
+            if (wrapper === "level") {
+                setStudentClass("")
+            } else {
+                setAlreadyVisit("")
+            }
+        } else {
+            allWrapper.forEach(wrapper => {
+                wrapper.classList.remove('is-active')
+            })
+            wrapperSelected.classList.add('is-active')
+            if (wrapper === "level") {
+                setStudentClass(wrapperSelected.innerHTML)
+            } else {
+                setAlreadyVisit(wrapperSelected.innerHTML)
+            }
+        }
+
+    }
+
+    useEffect(() => {
+        verifyInfoGroupProfile()
+    }, [numberOfStudent, studentClass, alreadyVisit])
+
+    function verifyInfoGroupProfile() {
+        console.log(numberOfStudent, studentClass, alreadyVisit)
+        const buttonNext = document.querySelector('.group-profile .button.next')
+        if (numberOfStudent !== "" && studentClass !== "" && alreadyVisit !== "") {
+            buttonNext.classList.remove('disabled')
+        } else {
+            buttonNext.classList.add('disabled')
+        }
+    }
+
     return (
         <section id="reservation">
 
@@ -161,7 +206,7 @@ function Reservation() {
 
                 <div className="container">
 
-                    <div className="book-online-place sub-wrapper ">
+                    <div className="book-online-place sub-wrapper" data-id="0">
 
                         <h5 className="title">Réserver en ligne</h5>
 
@@ -193,7 +238,7 @@ function Reservation() {
 
                     </div>
 
-                    <div className="book-online-planning sub-wrapper">
+                    <div className="book-online-planning sub-wrapper" data-id="0">
 
                         <div className="top-part">
 
@@ -283,7 +328,8 @@ function Reservation() {
 
                         <div className="pop-up">
 
-                            <img src={"cross-icon.svg"} alt="Cross icon to cancel popup" className="cross-icon" onClick={() => closePopUp()}/>
+                            <img src={"cross-icon.svg"} alt="Cross icon to cancel popup" className="cross-icon"
+                                 onClick={() => closePopUp()}/>
 
                             <p className="normal-text">Créneau selectionné</p>
                             <p className="bold-text">{dayReserved} à {timeReserved}.</p>
@@ -300,30 +346,43 @@ function Reservation() {
 
                         </div>
 
-                        <div className="pop-up-background"></div>
+                        <div className="pop-up-background" onClick={() => closePopUp()}></div>
 
                         <div className="button-wrapper">
-                        <div className="button prev"
-                             onClick={(e) => changeProgress(e, "book-online-planning", "book-online-place")}>
-                            <p>Précédent</p>
+                            <div className="button prev"
+                                 onClick={(e) => changeProgress(e, "book-online-planning", "book-online-place")}>
+                                <p>Précédent</p>
+                            </div>
+                            <div className="button next disabled"
+                                 onClick={(e) => changeProgress(e, "book-online-planning", "group-profile")}>
+                                <p>Suivant</p>
+                            </div>
                         </div>
-                        <div className="button next disabled"  onClick={(e) => changeProgress(e, "book-online-planning", "group-profile")}>
-                            <p>Suivant</p>
-                        </div>
-                    </div>
 
                     </div>
 
-                    <div className="group-profile sub-wrapper is-active">
+                    <div className="group-profile sub-wrapper is-active" data-id="1">
 
                         <h5 className="sub-title">Combien d'élèves avez-vous ?</h5>
+                        <input type="number" step="1" min="0" max="40" placeholder="Nombre d'élèves"
+                               onInput={(e) => setNumberOfStudent(e.target.value)}/>
 
                         <h5 className="sub-title">Quel est le niveau du groupe ?</h5>
+                        <div className="level-wrapper">
+                            <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>CM1</div>
+                            <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>CM2</div>
+                            <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>Autre</div>
+                        </div>
 
                         <h5 className="sub-title">Êtes-vous déjà venu à {placeName} ?</h5>
+                        <div className="visit-wrapper">
+                            <div className="visit" onClick={(e) => handleClickOnGroupProfile(e, "visit")}>oui</div>
+                            <div className="visit" onClick={(e) => handleClickOnGroupProfile(e, "visit")}>non</div>
+                        </div>
 
                         <div className="button-wrapper">
-                            <div className="button prev" onClick={(e) => changeProgress(e, "group-profile", "book-online-planning")}>
+                            <div className="button prev"
+                                 onClick={(e) => changeProgress(e, "group-profile", "book-online-planning")}>
                                 <p>Précédent</p>
                             </div>
                             <div className="button next disabled"

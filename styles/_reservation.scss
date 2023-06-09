@@ -4,7 +4,7 @@
 
   .global-wrapper {
     position: relative;
-    padding: 88px 26px 116px;
+    padding: 88px 26px 26px;
     margin: 0 auto;
     width: 86%;
     display: flex;
@@ -445,13 +445,105 @@
           .sub-title {
             position: relative;
             margin-bottom: 24px;
-            font-family: "PP Pangram Sans Rounded medium", sans-serif;
+            font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
             font-size: 28px;
             font-weight: 400;
             line-height: 32px;
             letter-spacing: 0em;
             text-align: center;
             color: $blue;
+          }
+
+          input[type=number] {
+            position: relative;
+            margin: 0 auto 72px;
+            padding: 23px 0;
+            width: 270px;
+            border: 1px solid $blue;
+            border-radius: 10px;
+            background-color: transparent;
+
+            font-family: " PP Pangram Sans Rounded medium", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $blue;
+
+            &::placeholder {
+              position: relative;
+              font-family: " PP Pangram Sans Rounded medium", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 27px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(56, 72, 100, 0.3);
+            }
+
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+
+          }
+
+          .level-wrapper, .visit-wrapper {
+            position: relative;
+            margin-bottom: 72px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+
+            .level, .visit {
+              position: relative;
+              padding: 23px 40px;
+              border: 1px solid $blue;
+              border-radius: 10px;
+              font-family: "PP Pangram Sans Rounded bold", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 27px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: $blue;
+              cursor: pointer;
+              background-color: transparent;
+              transition: background-color 0.8s $ease-power4-out, color 0.8s $ease-power4-out;
+
+              &:hover {
+                background-color: rgba(227, 229, 234, 1);
+              }
+
+              &.is-active {
+                background-color: $blue;
+                color: $wheat;
+              }
+
+              &:nth-child(2) {
+                margin: 0 24px;
+              }
+
+            }
+
+          }
+
+          .visit-wrapper {
+            margin-bottom: 102px;
+
+            .visit {
+              text-transform: uppercase;
+
+              &:nth-child(2) {
+                margin: 0 0 0 24px;
+              }
+
+            }
+
           }
 
         }
