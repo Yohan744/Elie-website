@@ -65,7 +65,7 @@
 
         p {
           position: relative;
-          font-family:" PP Pangram Sans Rounded medium", sans-serif;
+          font-family: " PP Pangram Sans Rounded medium", sans-serif;
           font-size: 19px;
           font-weight: 400;
           line-height: 22px;
@@ -104,10 +104,426 @@
 
     .container {
       position: relative;
-      padding: 82px 0 71px;
+      height: 500px;
+      overflow: hidden;
       border-radius: $radius;
       border: 1px solid $green;
       background-color: $wheat;
+      transition: height 0.8s $ease-power4-out;
+
+      .sub-wrapper {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        padding: 82px 111px 71px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        z-index: -1;
+        transition: opacity 0.8s $ease-power4-out;
+
+        &.book-online-place {
+
+          .title {
+            position: relative;
+            margin-bottom: 73px;
+            font-family: "PP Pangram Sans Rounded bold", sans-serif;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 41px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $blue;
+          }
+
+          .sub-title {
+            position: relative;
+            font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $dark-blue;
+          }
+
+          .place-wrapper {
+            position: relative;
+            margin: 26px 0 89px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .place {
+              position: relative;
+              padding: 12px 25px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color: rgba(227, 229, 234, 1);
+              transition: background-color 0.8s $ease-power4-out;
+
+              p {
+                position: relative;
+                font-family: "PP Pangram Sans Rounded medium", sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $blue;
+                user-select: none;
+                transition: color 0.8s $ease-power4-out;
+              }
+
+              &:nth-child(2) {
+                margin: 0 15px;
+              }
+
+              &.is-active, &:hover {
+                background-color: $dark-blue;
+
+                p {
+                  color: $wheat;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+        &.book-online-planning {
+
+          .top-part {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .localisation {
+              position: relative;
+              font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 27px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $pink;
+            }
+
+            .title {
+              position: relative;
+              font-family: "PP Pangram Sans Rounded bold", sans-serif;
+              font-size: 36px;
+              font-weight: 400;
+              line-height: 41px;
+              letter-spacing: 0;
+              text-align: center;
+              color: $blue;
+            }
+
+            .month-wrapper {
+              position: relative;
+              width: 225px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+
+              img {
+                position: relative;
+                height: 18px;
+                width: 10px;
+                cursor: pointer;
+
+                &.next {
+                  top: -1px;
+                  transform: rotate(180deg);
+                }
+
+              }
+
+              .month {
+                position: relative;
+                font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0em;
+                text-align: center;
+                user-select: none;
+                color: $blue;
+              }
+
+            }
+
+          }
+
+          .calendar-wrapper {
+            position: relative;
+            margin: 68px 0 98px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .date {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              .day {
+                position: relative;
+                margin-bottom: 20px;
+                font-family: "PP Pangram Sans Rounded bold", sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $blue;
+              }
+
+              .time {
+                position: relative;
+                padding: 20px 0;
+                width: 250px;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: rgba(227, 229, 234, 1);
+                transition: opacity 0.8s $ease-power4-out, background-color 0.8s $ease-power4-out;
+
+                p {
+                  position: relative;
+                  top: 1px;
+                  font-family: "PP Pangram Sans Rounded", sans-serif;
+                  font-size: 20px;
+                  font-weight: 400;
+                  line-height: 1;
+                  letter-spacing: 0em;
+                  text-align: center;
+                  color: $blue;
+                  user-select: none;
+                  transition: color 0.8s $ease-power4-out;
+                }
+
+                &.margin {
+                  margin-bottom: 10px;
+                }
+
+                &.disabled {
+                  opacity: 0.3;
+                  cursor: default;
+                }
+
+                &:hover:not(.disabled), &.is-active {
+                  background-color: $blue;
+
+                  p {
+                    color: $wheat;
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+          .pop-up {
+            position: absolute;
+            padding: 55px;
+            max-width: 32%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            z-index: 0;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            border-radius: $radius;
+            background-color: $dark-blue;
+            transition: opacity 0.8s $ease-power4-out;
+
+            &.is-active {
+              opacity: 1;
+              z-index: 5;
+              pointer-events: all;
+            }
+
+            .cross-icon {
+              position: absolute;
+              top: 29px;
+              right: 29px;
+              height: 24px;
+              width: 24px;
+              -webkit-user-drag: none;
+              user-select: none;
+              cursor: pointer;
+            }
+
+            .normal-text {
+              position: relative;
+              font-family: "PP Pangram Sans Rounded medium", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 27px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $wheat;
+            }
+
+            .bold-text {
+              position: relative;
+              margin-bottom: 20px;
+              font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 27px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $wheat;
+            }
+
+            .conditions {
+              position: relative;
+              padding-top: 5px;
+              font-family: "PP Pangram Sans Rounded medium", sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 21px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $wheat;
+            }
+
+            .conditions-text {
+              position: relative;
+              font-family: "PP Pangram Sans Rounded", sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 21px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $wheat;
+            }
+
+
+          }
+
+          .pop-up-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-color: transparent;
+            transition: background-color 0.8s $ease-power4-out;
+
+            &.is-active {
+              background-color: rgba(227, 229, 234, 0.5);
+              z-index: 1;
+            }
+
+          }
+
+        }
+
+        &.group-profile {
+
+          .sub-title {
+            position: relative;
+            margin-bottom: 24px;
+            font-family: "PP Pangram Sans Rounded medium", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $blue;
+          }
+
+        }
+
+        &.is-active {
+          opacity: 1;
+          pointer-events: all;
+          z-index: 1;
+        }
+
+        .button-wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          .button {
+            position: relative;
+            padding: 15px 0;
+            width: 237px;
+            border: 1px solid $blue;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $blue;
+            user-select: none;
+            transition: background-color 0.8s $ease-power4-out, filter 0.8s $ease-power4-out;
+
+            p {
+              position: relative;
+              font-family: "PP Pangram Sans Rounded bold", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 27px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: $wheat;
+              transition: color 0.8s $ease-power4-out;
+            }
+
+            &:hover {
+              background-color: $dark-blue;
+            }
+
+            &.prev {
+              background-color: transparent;
+              margin-right: 30px;
+
+              p {
+                color: $blue;
+              }
+
+              &:hover {
+                background-color: $light-green;
+              }
+
+            }
+
+            &.disabled {
+              cursor: default;
+              filter: opacity(0.5);
+            }
+
+          }
+
+        }
+
+      }
+
     }
 
   }

@@ -1,6 +1,34 @@
 import PlusIconBlue from "../../asset/svg/plus-icon-blue.svg";
+import {useEffect} from "react";
 
 function Masthead() {
+
+    let actualPreviewIndex = 0
+
+    useEffect(() => {
+
+        const interval = setInterval(() => {
+            if (actualPreviewIndex === 2) {
+                actualPreviewIndex = 0
+            } else {
+                actualPreviewIndex++
+            }
+
+            const actualPreview = document.querySelector(`.preview-wrapper .preview[id="${actualPreviewIndex}"]`)
+            const previews = document.querySelectorAll(`.preview-wrapper .preview`)
+
+            previews.forEach(preview => {
+                preview.classList.remove("show")
+            })
+            actualPreview.classList.add("show")
+
+            const dots = document.querySelector(`.preview-wrapper .dots`)
+            dots.setAttribute("data-active", actualPreviewIndex)
+
+        }, 3500)
+
+
+    }, [])
 
     return (
         <section id={"masthead"}>
@@ -60,7 +88,34 @@ function Masthead() {
 
                     </div>
 
-                    <div className={"preview"}>
+                    <div className={"preview-wrapper"}>
+
+                        <div className="preview show" id="0">
+                            <img src={"preview-0.png"} alt="Preview of the game"/>
+                            <div className="text">
+                                <p>L'interface du jeu - Forêt</p>
+                            </div>
+                        </div>
+
+                        <div className="preview" id="1">
+                            <img src={"preview-1.png"} alt="Preview of the game"/>
+                            <div className="text">
+                                <p>L'interface du jeu - Plaine</p>
+                            </div>
+                        </div>
+
+                        <div className="preview" id="2">
+                            <img src={"masthead-background.png"} alt="Preview of the game"/>
+                            <div className="text">
+                                <p>L'interface du jeu - Ocean</p>
+                            </div>
+                        </div>
+
+                        <div className="dots">
+                            <div className="dot" id="0"></div>
+                            <div className="dot" id="1"></div>
+                            <div className="dot" id="2"></div>
+                        </div>
 
                     </div>
 

@@ -229,10 +229,10 @@ header .right-part a:hover .reserve {
   width: 26px;
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button:hover {
-  background-color: transparent;
+  background-color: #32405a;
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button:hover p {
-  color: #384864;
+  color: #fefff6;
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a:nth-child(2) {
   margin-left: 16px;
@@ -341,12 +341,97 @@ header .right-part a:hover .reserve {
 #masthead .global-wrapper .bottom-wrapper .news .right-part .know-more:hover {
   text-underline-offset: 3px;
 }
-#masthead .global-wrapper .bottom-wrapper .preview {
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper {
   position: relative;
   width: 100%;
-  height: 283px;
+  height: auto;
   border-radius: 15px;
-  background-color: #384864;
+  overflow: clip;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview {
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -webkit-user-drag: none;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview .text {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  padding: 10px 18px;
+  border-radius: 50px;
+  transform: translateX(-50%);
+  z-index: 1;
+  user-select: none;
+  background-color: #c3e0c7;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview .text p {
+  position: relative;
+  top: 2px;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview.show {
+  pointer-events: all;
+  opacity: 1;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots {
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots .dot {
+  position: relative;
+  height: 17px;
+  width: 17px;
+  border-radius: 30px;
+  background-color: #afb4bf;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots .dot:nth-child(2) {
+  margin: 0 8px;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 17px;
+  width: 17px;
+  border-radius: 30px;
+  background-color: #fefff6;
+  z-index: 3;
+  transition: left 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots[data-active="0"]:before {
+  left: 0;
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots[data-active="1"]:before {
+  left: calc(50% - 8px);
+}
+#masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots[data-active="2"]:before {
+  left: calc(100% - 17px);
 }
 #masthead .phone {
   position: absolute;
@@ -854,10 +939,352 @@ header .right-part a:hover .reserve {
 }
 #reservation .global-wrapper .container {
   position: relative;
-  padding: 82px 0 71px;
+  height: 500px;
+  overflow: hidden;
   border-radius: 15px;
   border: 1px solid #c3e0c7;
   background-color: #fefff6;
+  transition: height 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  padding: 82px 111px 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
+  position: relative;
+  margin-bottom: 73px;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-place .sub-title {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #32405a;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper {
+  position: relative;
+  margin: 26px 0 89px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place {
+  position: relative;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #e3e5ea;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+  user-select: none;
+  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:nth-child(2) {
+  margin: 0 15px;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place.is-active, #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:hover {
+  background-color: #32405a;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place.is-active p, #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:hover p {
+  color: #fefff6;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .localisation {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #d76677;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .title {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #384864;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper {
+  position: relative;
+  width: 225px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper img {
+  position: relative;
+  height: 18px;
+  width: 10px;
+  cursor: pointer;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper img.next {
+  top: -1px;
+  transform: rotate(180deg);
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper .month {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  user-select: none;
+  color: #384864;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper {
+  position: relative;
+  margin: 68px 0 98px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .day {
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time {
+  position: relative;
+  padding: 20px 0;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #e3e5ea;
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time p {
+  position: relative;
+  top: 1px;
+  font-family: "PP Pangram Sans Rounded", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+  user-select: none;
+  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.margin {
+  margin-bottom: 10px;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time:hover:not(.disabled), #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.is-active {
+  background-color: #384864;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time:hover:not(.disabled) p, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.is-active p {
+  color: #fefff6;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up {
+  position: absolute;
+  padding: 55px;
+  max-width: 32%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  background-color: #32405a;
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up.is-active {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: all;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .cross-icon {
+  position: absolute;
+  top: 29px;
+  right: 29px;
+  height: 24px;
+  width: 24px;
+  -webkit-user-drag: none;
+  user-select: none;
+  cursor: pointer;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .normal-text {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fefff6;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fefff6;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions {
+  position: relative;
+  padding-top: 5px;
+  font-family: "PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fefff6;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions-text {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fefff6;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: transparent;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up-background.is-active {
+  background-color: rgba(227, 229, 234, 0.5);
+  z-index: 1;
+}
+#reservation .global-wrapper .container .sub-wrapper.group-profile .sub-title {
+  position: relative;
+  margin-bottom: 24px;
+  font-family: "PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384864;
+}
+#reservation .global-wrapper .container .sub-wrapper.is-active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 1;
+}
+#reservation .global-wrapper .container .sub-wrapper .button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#reservation .global-wrapper .container .sub-wrapper .button-wrapper .button {
+  position: relative;
+  padding: 15px 0;
+  width: 237px;
+  border: 1px solid #384864;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #384864;
+  user-select: none;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper .button-wrapper .button p {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fefff6;
+  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper .button-wrapper .button:hover {
+  background-color: #32405a;
+}
+#reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev {
+  background-color: transparent;
+  margin-right: 30px;
+}
+#reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev p {
+  color: #384864;
+}
+#reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev:hover {
+  background-color: #edf8ee;
+}
+#reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.disabled {
+  cursor: default;
+  filter: opacity(0.5);
 }
 
 #advice {
