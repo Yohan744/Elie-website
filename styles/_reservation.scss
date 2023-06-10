@@ -462,7 +462,6 @@
             border: 1px solid $blue;
             border-radius: 10px;
             background-color: transparent;
-
             font-family: " PP Pangram Sans Rounded medium", sans-serif;
             font-size: 24px;
             font-weight: 400;
@@ -470,6 +469,12 @@
             letter-spacing: 0em;
             text-align: center;
             color: $blue;
+            caret-color: $blue;
+            transition: color 0.8s $ease-power4-out;
+
+            &.error {
+              color: $pink;
+            }
 
             &::placeholder {
               position: relative;
@@ -542,6 +547,288 @@
                 margin: 0 0 0 24px;
               }
 
+            }
+
+          }
+
+        }
+
+        &.student-group {
+
+          .team-wrapper {
+            position: relative;
+            margin-bottom: 82px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 25px;
+
+            .team {
+              position: relative;
+              width: 100%;
+              padding: 15px 12px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: center;
+              border-radius: 10px;
+              background-color: rgba(195, 224, 199, 1);
+
+              .logo {
+                position: relative;
+                margin: 0 auto 14px;
+                height: 42px;
+                width: auto;
+                object-fit: cover;
+              }
+
+              .team-name {
+                position: relative;
+                padding: 7px 0;
+                width: 100%;
+                background-color: rgba(171, 195, 172, 1);
+                border-radius: 10px;
+
+                p {
+                  position: relative;
+                  font-family: "Patsy Sans", sans-serif;
+                  font-size: 18px;
+                  font-weight: 400;
+                  line-height: 33px;
+                  letter-spacing: 0.1em;
+                  text-align: center;
+                  color: $blue;
+                }
+
+              }
+
+              .member-wrapper {
+                position: relative;
+                margin-top: 14px;
+                width: 100%;
+
+                .team-member {
+                  position: relative;
+                  width: 100%;
+                  padding: 11px;
+                  border-radius: 10px;
+                  outline: none;
+                  border: none;
+                  background-color: $wheat;
+                  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+                  font-size: 23px;
+                  font-weight: 400;
+                  line-height: 1;
+                  letter-spacing: 0;
+                  text-align: center;
+                  color: $blue;
+
+                  &::placeholder {
+                    color: $blue;
+                  }
+
+                }
+
+                .cross {
+                  position: absolute;
+                  height: 22px;
+                  width: 22px;
+                  top: 50%;
+                  right: 18px;
+                  cursor: pointer;
+                  opacity: 0;
+                  pointer-events: none;
+                  transform: translateY(-50%);
+                  transition: opacity 0.8s $ease-power4-out;
+
+                  &.is-active {
+                    opacity: 1;
+                    pointer-events: all;
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+        &.recap {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .left-part {
+            position: relative;
+            max-width: 38.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .wrapper {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+
+              .title {
+                position: relative;
+                margin-bottom: 24px;
+                font-family: "PP Pangram Sans Rounded bold", sans-serif;
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 41px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $blue;
+              }
+
+              .sub-title {
+                position: relative;
+                margin-bottom: 3px;
+                font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $blue;
+              }
+
+              .text {
+                position: relative;
+                margin-bottom: 15px;
+                font-family: "PP Pangram Sans Rounded medium", sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 1;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $blue;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+              }
+
+              .download-wrapper {
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                  position: relative;
+                  width: 100%;
+                  text-decoration: none;
+                  margin-bottom: 13px;
+
+                  .download {
+                    position: relative;
+                    width: 100%;
+                    padding: 15px 25px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 1px solid $green;
+                    background-color: $light-green;
+                    border-radius: 10px;
+                    transition: background-color 0.8s $ease-power4-out;
+
+                    .info {
+                      position: relative;
+                      display: flex;
+                      flex-direction: column;
+                      user-select: none;
+
+                      h6 {
+                        position: relative;
+                        margin-bottom: 3px;
+                        font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+                        font-size: 22px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: $blue;
+                      }
+
+                      p {
+                        position: relative;
+                        font-family: "PP Pangram Sans Rounded", sans-serif;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: $blue;
+                      }
+
+                    }
+
+                    .icon {
+                      position: relative;
+                      height: 24px;
+                      width: 24px;
+                      user-focus: none;
+                      user-select: none;
+                    }
+
+                  }
+
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+
+                  &:hover {
+
+                    .download {
+                      background-color: #e2f8e4;
+                    }
+
+                  }
+
+                }
+
+              }
+
+              &.padding {
+                padding: 72px 0;
+              }
+
+            }
+
+          }
+
+          .right-part {
+            position: relative;
+            padding: 10px 10px 30px 10px;
+            height: 100%;
+            max-width: 38.5%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: $radius;
+            border: 1px solid $green;
+
+            .payWall {
+              position: relative;
+              margin-bottom: 30px;
+              height: 400px;
+              width: 100%;
+              border-radius: $radius;
+              background-color: $light-green;
             }
 
           }

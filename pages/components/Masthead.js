@@ -128,7 +128,7 @@ function Masthead() {
 
                     <img src={"phone-blue.svg"} alt={"Phone icon"}/>
 
-                    <p>07 56 80 96 88</p>
+                    <p>06 44 62 94 41</p>
 
                 </div>
             </a>

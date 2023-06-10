@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import TeamMaker from "./TeamMaker";
 
 function Reservation() {
 
@@ -9,9 +10,12 @@ function Reservation() {
     const [monthSelected, setMonthSelected] = useState(months[new Date().getMonth()])
     const [dayReserved, setDayReserved] = useState("Mardi 27/06")
     const [timeReserved, setTimeReserved] = useState("09h00")
+    const [endTimeReserved, setEndTimeReserved] = useState("12h00")
     const [numberOfStudent, setNumberOfStudent] = useState("")
     const [studentClass, setStudentClass] = useState("")
     const [alreadyVisit, setAlreadyVisit] = useState("")
+    const [numberOfGroup, setNumberOfGroup] = useState(0)
+    const [groupPattern, setGroupPattern] = useState([])
 
     useEffect(() => {
 
@@ -26,6 +30,10 @@ function Reservation() {
         updateStateOfReservation(showingSectionId)
 
     }, [])
+
+    useEffect(() => {
+        verifyInfoGroupProfile()
+    }, [numberOfStudent, studentClass, alreadyVisit])
 
     function updateStateOfReservation(stateId) {
         const allState = document.querySelectorAll('.state-wrapper .state')
@@ -46,21 +54,7 @@ function Reservation() {
             document.querySelector("." + hideSection).classList.remove('is-active')
             document.querySelector("." + showSection).classList.add('is-active')
             updateSizeOfContainer(showSection)
-
-            switch (showSection) {
-                case "book-online-place":
-                    updateStateOfReservation(0)
-                    break
-                case "book-online-planning":
-                    updateStateOfReservation(0)
-                    break
-                case "group-profile":
-                    updateStateOfReservation(1)
-                    break
-                default:
-                    updateStateOfReservation(0)
-            }
-
+            updateStateOfReservation(document.querySelector("." + showSection).getAttribute("data-id"))
         }
     }
 
@@ -102,6 +96,7 @@ function Reservation() {
         if (timeSelected.classList.contains("is-active")) {
             timeSelected.classList.remove('is-active')
             setTimeReserved("")
+            setEndTimeReserved("")
             buttonNext.classList.add('disabled')
         } else {
             allTime.forEach(time => {
@@ -113,6 +108,7 @@ function Reservation() {
 
         setDayReserved(e.target.closest(".time").parentElement.childNodes[0].getAttribute("data-day"))
         setTimeReserved(e.target.closest('.time').querySelector("p").textContent)
+        setEndTimeReserved(e.target.closest(".time").getAttribute("data-timeEnd"))
 
         const popUp = document.querySelector('.pop-up')
         popUp.classList.add('is-active')
@@ -126,6 +122,16 @@ function Reservation() {
         popUp.classList.remove('is-active')
         const popUpBackground = document.querySelector('.pop-up-background')
         popUpBackground.classList.remove('is-active')
+    }
+
+    function handleInputNumberOfStudent(e) {
+        if (e.target.value > 30 || e.target.value < 6) {
+            setNumberOfStudent("")
+            e.target.classList.add('error')
+        } else {
+            setNumberOfStudent(e.target.value)
+            e.target.classList.remove('error')
+        }
     }
 
     function handleClickOnGroupProfile(e, wrapper) {
@@ -153,18 +159,43 @@ function Reservation() {
 
     }
 
-    useEffect(() => {
-        verifyInfoGroupProfile()
-    }, [numberOfStudent, studentClass, alreadyVisit])
-
     function verifyInfoGroupProfile() {
-        console.log(numberOfStudent, studentClass, alreadyVisit)
         const buttonNext = document.querySelector('.group-profile .button.next')
-        if (numberOfStudent !== "" && studentClass !== "" && alreadyVisit !== "") {
+        if (numberOfStudent > 5 && numberOfGroup < 31 && studentClass !== "" && alreadyVisit !== "") {
+            calculateNumberOfGroup()
             buttonNext.classList.remove('disabled')
         } else {
             buttonNext.classList.add('disabled')
         }
+    }
+
+    function calculateNumberOfGroup() {
+        let numberOfStudentsRemaining = numberOfStudent
+        let numberOfGroup = 0
+        let groupPattern = []
+
+        while (numberOfStudentsRemaining >= 3) {
+            numberOfStudentsRemaining -= 3
+            groupPattern.push(3)
+            numberOfGroup++
+        }
+
+        if (numberOfStudentsRemaining === 2) {
+            numberOfStudentsRemaining -= 2
+            numberOfGroup++
+            groupPattern.push(2)
+        }
+
+        if (numberOfStudentsRemaining === 1) {
+            numberOfStudentsRemaining--
+            groupPattern[numberOfGroup - 1] = 2
+            numberOfGroup++
+            groupPattern.push(2)
+        }
+
+        setNumberOfGroup(numberOfGroup)
+        setGroupPattern(groupPattern)
+
     }
 
     return (
@@ -276,11 +307,11 @@ function Reservation() {
 
                                 <div className="day" data-day={"Mardi 27/06"}>Mar. 27</div>
 
-                                <div className="time margin" onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time margin" data-timeEnd={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>09h00</p>
                                 </div>
 
-                                <div className="time" onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time" data-timeEnd={"16h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>13h00</p>
                                 </div>
 
@@ -290,7 +321,7 @@ function Reservation() {
 
                                 <div className="day" data-day={"Mercredi 28/06"}>Mer. 28</div>
 
-                                <div className="time" onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time" data-timeEnd={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>09h00</p>
                                 </div>
 
@@ -300,7 +331,7 @@ function Reservation() {
 
                                 <div className="day" data-day={"Jeudi 29/06"}>Jeu. 29</div>
 
-                                <div className="time margin" onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time margin" data-timeEnd={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>09h00</p>
                                 </div>
 
@@ -318,7 +349,7 @@ function Reservation() {
                                     <p>09h00</p>
                                 </div>
 
-                                <div className="time" onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time" data-timeEnd={"16h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>13h00</p>
                                 </div>
 
@@ -361,11 +392,11 @@ function Reservation() {
 
                     </div>
 
-                    <div className="group-profile sub-wrapper is-active" data-id="1">
+                    <div className="group-profile sub-wrapper" data-id="1">
 
                         <h5 className="sub-title">Combien d'élèves avez-vous ?</h5>
-                        <input type="number" step="1" min="0" max="40" placeholder="Nombre d'élèves"
-                               onInput={(e) => setNumberOfStudent(e.target.value)}/>
+                        <input type="number" step="1" min="0" max="30" placeholder="Nombre d'élèves" maxLength="2"
+                               onInput={(e) => handleInputNumberOfStudent(e)}/>
 
                         <h5 className="sub-title">Quel est le niveau du groupe ?</h5>
                         <div className="level-wrapper">
@@ -386,9 +417,137 @@ function Reservation() {
                                 <p>Précédent</p>
                             </div>
                             <div className="button next disabled"
-                                 onClick={(e) => changeProgress(e, "book-online-place", "book-online-planning")}>
+                                 onClick={(e) => changeProgress(e, "group-profile", "student-group")}>
                                 <p>Suivant</p>
                             </div>
+                        </div>
+
+                    </div>
+
+                    <div className="student-group sub-wrapper" data-id="2">
+
+                        <TeamMaker numberOfStudent={numberOfStudent} numberOfGroup={numberOfGroup} groupPattern={groupPattern}/>
+
+                        <div className="button-wrapper">
+                            <div className="button prev"
+                                 onClick={(e) => changeProgress(e, "student-group", "group-profile")}>
+                                <p>Précédent</p>
+                            </div>
+                            <div className="button next disabled"
+                                 onClick={(e) => changeProgress(e, "student-group", "recap")}>
+                                <p>Suivant</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="recap sub-wrapper is-active" data-id="3">
+
+                        <div className="left-part">
+
+                            <div className="wrapper">
+
+                                <h3 className="title">Récapitulatif de votre réservation</h3>
+
+                                <h6 className="sub-title">Créneau</h6>
+                                <p className="text">{dayReserved} de {timeReserved} à {endTimeReserved}</p>
+
+                                <h6 className="sub-title">Lieu</h6>
+                                <p className="text">{place}</p>
+
+                                <h6 className="sub-title">Groupe</h6>
+                                <p className="text">1 classe, {numberOfStudent} élèves, {studentClass}</p>
+
+                            </div>
+
+                            <div className="wrapper padding">
+
+                                <h3 className="title">Ressources</h3>
+
+                                <div className="download-wrapper">
+
+                                    <a href={"masthead-background.png"} download="plan_2023.pdf" rel="noopener noreferrer" target="_blank" draggable="false">
+                                        <div className="download">
+
+                                            <div className="info">
+
+                                                <h6>Plan du lieu</h6>
+
+                                                <p>plan_2023.pdf</p>
+
+                                            </div>
+
+                                            <img src={"download-icon.svg"} alt="Download icon" className="icon"/>
+
+                                        </div>
+                                    </a>
+
+                                    <a href={"masthead-background.png"} download="fiche_officielle_2023.pdf" rel="noopener noreferrer" target="_blank" draggable="false">
+                                        <div className="download">
+
+                                            <div className="info">
+
+                                                <h6>Fiche pédagogique</h6>
+
+                                                <p>fiche_officielle_2023.pdf</p>
+
+                                            </div>
+
+                                            <img src={"download-icon.svg"} alt="Download icon" className="icon"/>
+
+                                        </div>
+                                    </a>
+
+                                    <a href={"masthead-background.png"} download="reglement_elie_2023.pdf" rel="noopener noreferrer" target="_blank" draggable="false">
+                                        <div className="download">
+
+                                            <div className="info">
+
+                                                <h6>Règlement intérieur</h6>
+
+                                                <p>reglement_elie_2023.pdf</p>
+
+                                            </div>
+
+                                            <img src={"download-icon.svg"} alt="Download icon" className="icon"/>
+
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div className="wrapper">
+
+                                <h3 className="title">Des questions ?</h3>
+                                <h6 className="sub-title">Téléphone</h6>
+                                <p className="text">06 44 62 94 41</p>
+
+                                <h6 className="sub-title">Mail</h6>
+                                <p className="text">Contact@elie.fr</p>
+
+                            </div>
+
+                        </div>
+
+                        <div className="right-part">
+
+                            <div className="payWall">
+
+                            </div>
+
+                            <div className="button-wrapper">
+                                <div className="button prev"
+                                     onClick={(e) => changeProgress(e, "recap", "student-group")}>
+                                    <p>Précédent</p>
+                                </div>
+                                <div className="button next disabled"
+                                     onClick={(e) => changeProgress(e, "recap", "book-online-place")}>
+                                    <p>Suivant</p>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
