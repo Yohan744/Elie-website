@@ -59,8 +59,8 @@ function TeamMaker(props) {
                     </div>
 
                     {Array.from({length: groupPattern[index]}, (_, indexPattern) => (
-                        <div className="member-wrapper">
-                            <input type="text" placeholder="..." className="team-member" maxLength="20" key={indexPattern} onInput={(e) => handleNameChange(e)}/>
+                        <div className="member-wrapper" key={indexPattern}>
+                            <input type="text" placeholder="..." className="team-member" maxLength="20" onInput={(e) => handleNameChange(e)}/>
                             <img src={"cross-icon-blue.svg"} alt="Cross icon to reset name" className="cross" onClick={(e) => resetName(e)}/>
                         </div>
                     ))}

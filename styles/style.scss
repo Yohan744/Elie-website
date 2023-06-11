@@ -54,9 +54,11 @@ $ease-power4-out: cubic-bezier(0.22, 1, 0.36, 1);
 @import "information";
 @import "gallery";
 @import "preparation";
+@import "ressources";
 @import "reservation";
 @import "advice";
 @import "footer";
+@import "profil";
 
 * {
   padding: 0;

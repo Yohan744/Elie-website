@@ -2,6 +2,7 @@ import {useEffect} from "react";
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 import {Observer} from "gsap/dist/Observer";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(Observer);
@@ -40,7 +41,9 @@ function Header() {
     return (
         <header>
 
-            <img src={"logo-green.svg"} alt={"Green logo of Elie"} className={"logo"}/>
+            <Link href="/">
+                <img src={"logo-green.svg"} alt={"Green logo of Elie"} className={"logo"}/>
+            </Link>
 
             <div className={"right-part"}>
 
@@ -49,9 +52,11 @@ function Header() {
                 <a href={"#preparation"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Ressources pédagogiques</a>
                 <a href={"#advice"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Avis</a>
 
-                <div className={"user"}>
-                    <img src={"user.svg"} alt={"User icon"}/>
-                </div>
+                <Link href={"/profil"}>
+                    <div className={"user"}>
+                        <img src={"user.svg"} alt={"User icon"}/>
+                    </div>
+                </Link>
 
                 <a href={"#reservation"}>
                     <div className={"reserve"} draggable="false" onClick={() => handleClickOnHeader()}>

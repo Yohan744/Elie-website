@@ -1,0 +1,414 @@
+#profil {
+  position: relative;
+  margin: 0 auto;
+  max-width: 71%;
+  padding: 277px 0 136px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: $wheat;
+
+  .left-part, .right-part {
+    position: relative;
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .wrapper {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+  }
+
+  .left-part {
+
+    .title {
+      position: relative;
+      margin-bottom: 56px;
+      font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 73px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $blue;
+    }
+
+    .modify {
+
+      h6 {
+        position: relative;
+        margin-bottom: 16px;
+        font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blue;
+      }
+
+      .wrapper {
+        position: relative;
+        margin-bottom: 34px;
+
+        input {
+          position: relative;
+          padding: 20px 25px;
+          width: 100%;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          background-color: $light-green;
+          font-family: "PP Pangram Sans Rounded medium", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 23px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $blue;
+          caret-color: $blue;
+
+          &::placeholder {
+            color: rgba(146, 160, 169, 1);
+            caret-color: rgba(146, 160, 169, 1);
+          }
+
+        }
+
+        img {
+          position: absolute;
+          top: 50%;
+          right: 25px;
+          height: 24px;
+          width: 24px;
+          -webkit-user-drag: none;
+          transform: translateY(-50%);
+        }
+
+      }
+
+    }
+
+    .dot-line {
+      position: relative;
+      margin: 96px 0;
+      height: 1px;
+      width: 100%;
+      border-bottom: 2px dashed $green;
+    }
+
+    .give-advice {
+
+      h6 {
+        position: relative;
+        margin-bottom: 16px;
+        font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blue;
+      }
+
+      .type-wrapper {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .type {
+          position: relative;
+          width: 50%;
+          padding: 15px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-grow: 1;
+          border-radius: 10px;
+          border: 1px solid $blue;
+          font-family: "PP Pangram Sans Rounded bold", sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: center;
+          cursor: pointer;
+          color: $blue;
+          background-color: transparent;
+          transition: background-color 0.8s $ease-power4-out, color 0.8s $ease-power4-out;
+
+          &.is-active {
+            background-color: $blue;
+            color: $wheat;
+          }
+
+          &:last-child {
+            margin-left: 16px;
+          }
+
+        }
+
+      }
+
+      .info {
+        position: relative;
+        margin: 16px 0 34px;
+        font-family: "PP Pangram Sans Rounded medium", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blue;
+      }
+
+      .wrapper {
+        position: relative;
+        margin-bottom: 34px;
+
+        input, textarea {
+          position: relative;
+          padding: 20px 25px;
+          width: 100%;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          background-color: $light-green;
+          font-family: "PP Pangram Sans Rounded medium", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 23px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $blue;
+          caret-color: $blue;
+
+          &::placeholder {
+            color: rgba(146, 160, 169, 1);
+            caret-color: rgba(146, 160, 169, 1);
+          }
+
+        }
+
+        textarea {
+          height: 175px;
+          resize: none;
+        }
+
+        img {
+          position: absolute;
+          top: 50%;
+          right: 25px;
+          height: 24px;
+          width: 24px;
+          -webkit-user-drag: none;
+          transform: translateY(-50%);
+        }
+
+        &.textarea {
+
+          img {
+            top: auto;
+            bottom: 20px;
+            transform: none;
+          }
+
+        }
+
+      }
+
+    }
+
+    .validate-button {
+      position: relative;
+      width: fit-content;
+      padding: 18px 26px;
+      border-radius: 10px;
+      background-color: rgba(103, 120, 127, 1);
+      font-family: "PP Pangram Sans Rounded bold", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $wheat;
+      transition: background-color 0.8s $ease-power4-out;
+
+      &.is-active {
+        cursor: pointer;
+        background-color: $blue;
+      }
+
+    }
+
+  }
+
+  .right-part {
+
+    .reservation {
+
+      .reservation-wrapper {
+        position: relative;
+        margin-bottom: 24px;
+        padding: 19px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        background-color: $light-green;
+        border: 1px solid $green;
+
+        h5 {
+          position: relative;
+          margin-bottom: 3px;
+          font-family: "PP Pangram Sans Rounded semi-bold";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 1;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $blue;
+        }
+
+        h6 {
+          position: relative;
+          margin-bottom: 28px;
+          font-family: "PP Pangram Sans Rounded medium";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $blue;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+        }
+
+      }
+
+      .info-wrapper {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          position: relative;
+          width: fit-content;
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            position: relative;
+            margin-right: 12px;
+            font-family: "PP Pangram Sans Rounded bold", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $wheat;
+          }
+
+          img {
+            position: relative;
+            height: 24px;
+            width: 24px;
+          }
+
+          &.download {
+            padding: 18px 26px;
+            border-radius: 10px;
+            background-color: rgba(103, 120, 127, 1);
+          }
+
+          &.modify {
+
+            p {
+              color: rgba(103, 120, 127, 1);
+            }
+
+            img {
+              height: 16px;
+              width: 16px;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .questions {
+
+      .text-medium {
+        position: relative;
+        margin-bottom: 3px;
+        font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blue;
+      }
+
+      .text {
+        position: relative;
+        margin-bottom: 15px;
+        font-family: "PP Pangram Sans Rounded medium", sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blue;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  .sub-title {
+    position: relative;
+    margin-bottom: 25px;
+    font-family: "PP Pangram Sans Rounded bold", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $blue;
+
+    &.margin {
+      margin: 96px 0 25px;
+    }
+
+  }
+
+}

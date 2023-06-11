@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import TeamMaker from "./TeamMaker";
+import Ressources from "./Ressources";
 
 function Reservation() {
 
@@ -108,7 +109,7 @@ function Reservation() {
 
         setDayReserved(e.target.closest(".time").parentElement.childNodes[0].getAttribute("data-day"))
         setTimeReserved(e.target.closest('.time').querySelector("p").textContent)
-        setEndTimeReserved(e.target.closest(".time").getAttribute("data-timeEnd"))
+        setEndTimeReserved(e.target.closest(".time").getAttribute("data-end"))
 
         const popUp = document.querySelector('.pop-up')
         popUp.classList.add('is-active')
@@ -307,11 +308,11 @@ function Reservation() {
 
                                 <div className="day" data-day={"Mardi 27/06"}>Mar. 27</div>
 
-                                <div className="time margin" data-timeEnd={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time margin" data-end={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>09h00</p>
                                 </div>
 
-                                <div className="time" data-timeEnd={"16h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time" data-end={"16h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>13h00</p>
                                 </div>
 
@@ -321,7 +322,7 @@ function Reservation() {
 
                                 <div className="day" data-day={"Mercredi 28/06"}>Mer. 28</div>
 
-                                <div className="time" data-timeEnd={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time" data-end={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>09h00</p>
                                 </div>
 
@@ -331,7 +332,7 @@ function Reservation() {
 
                                 <div className="day" data-day={"Jeudi 29/06"}>Jeu. 29</div>
 
-                                <div className="time margin" data-timeEnd={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time margin" data-end={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>09h00</p>
                                 </div>
 
@@ -349,7 +350,7 @@ function Reservation() {
                                     <p>09h00</p>
                                 </div>
 
-                                <div className="time" data-timeEnd={"16h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time" data-end={"16h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>13h00</p>
                                 </div>
 
@@ -464,57 +465,7 @@ function Reservation() {
 
                                 <h3 className="title">Ressources</h3>
 
-                                <div className="download-wrapper">
-
-                                    <a href={"masthead-background.png"} download="plan_2023.pdf" rel="noopener noreferrer" target="_blank" draggable="false">
-                                        <div className="download">
-
-                                            <div className="info">
-
-                                                <h6>Plan du lieu</h6>
-
-                                                <p>plan_2023.pdf</p>
-
-                                            </div>
-
-                                            <img src={"download-icon.svg"} alt="Download icon" className="icon"/>
-
-                                        </div>
-                                    </a>
-
-                                    <a href={"masthead-background.png"} download="fiche_officielle_2023.pdf" rel="noopener noreferrer" target="_blank" draggable="false">
-                                        <div className="download">
-
-                                            <div className="info">
-
-                                                <h6>Fiche pédagogique</h6>
-
-                                                <p>fiche_officielle_2023.pdf</p>
-
-                                            </div>
-
-                                            <img src={"download-icon.svg"} alt="Download icon" className="icon"/>
-
-                                        </div>
-                                    </a>
-
-                                    <a href={"masthead-background.png"} download="reglement_elie_2023.pdf" rel="noopener noreferrer" target="_blank" draggable="false">
-                                        <div className="download">
-
-                                            <div className="info">
-
-                                                <h6>Règlement intérieur</h6>
-
-                                                <p>reglement_elie_2023.pdf</p>
-
-                                            </div>
-
-                                            <img src={"download-icon.svg"} alt="Download icon" className="icon"/>
-
-                                        </div>
-                                    </a>
-
-                                </div>
+                                <Ressources margin={false}/>
 
                             </div>
 
@@ -542,7 +493,7 @@ function Reservation() {
                                      onClick={(e) => changeProgress(e, "recap", "student-group")}>
                                     <p>Précédent</p>
                                 </div>
-                                <div className="button next disabled"
+                                <div className="button next"
                                      onClick={(e) => changeProgress(e, "recap", "book-online-place")}>
                                     <p>Suivant</p>
                                 </div>

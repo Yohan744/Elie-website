@@ -20,10 +20,14 @@ function Masthead() {
             previews.forEach(preview => {
                 preview.classList.remove("show")
             })
-            actualPreview.classList.add("show")
+            if (actualPreview) {
+                actualPreview.classList.add("show")
+            }
 
             const dots = document.querySelector(`.preview-wrapper .dots`)
-            dots.setAttribute("data-active", actualPreviewIndex)
+            if (dots) {
+                dots.setAttribute("data-active", actualPreviewIndex)
+            }
 
         }, 3500)
 
