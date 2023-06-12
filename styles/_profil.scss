@@ -254,6 +254,7 @@
       text-align: left;
       color: $wheat;
       cursor: pointer;
+      user-select: none;
       transition: background-color 0.8s $ease-power4-out;
 
       &.is-active {

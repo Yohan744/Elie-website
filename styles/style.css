@@ -1772,7 +1772,7 @@ footer .global-wrapper .vector-left {
   height: 450px;
   width: auto;
   stroke-dasharray: 450;
-  stroke-dashoffset: 490;
+  stroke-dashoffset: 450;
 }
 footer .global-wrapper .vector-right {
   position: absolute;
@@ -1997,6 +1997,7 @@ footer .global-wrapper .vector-right {
   text-align: left;
   color: #fefff6;
   cursor: pointer;
+  user-select: none;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #profil .left-part .validate-button.is-active {

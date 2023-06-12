@@ -30,30 +30,28 @@ export default function profil() {
 
     }, [])
 
-    function handleTypeClick(e) {
-        const allTypes = document.querySelectorAll('.type-wrapper .type');
-        if (e.target.classList.contains('is-active')) {
-            e.target.classList.remove('is-active');
-            setType("")
-        } else {
-            allTypes.forEach(type => {
-                type.classList.remove('is-active');
-            })
-            e.target.classList.add('is-active');
-            setType(e.target.innerHTML)
-        }
+    useEffect(() => {
+        verifyForm()
+    }, [nameTmp, lastNameTmp, mail, password])
+
+    useEffect(() => {
         verifyAdvice()
-    }
+    }, [type, advice, nameAdvice])
 
-    function verifyAdvice() {
-        console.log(type, name, advice)
-        const validateButton = document.querySelector('.give-advice .validate-button');
-        if (type !== "" && name !== "" && advice !== "") {
-            validateButton.classList.add('is-active');
-        } else {
-            validateButton.classList.remove('is-active');
+    function handleCLickOnValidateProfil() {
+        const validateButton = document.querySelector('.modify .validate-button');
+        const inputModify = document.querySelectorAll('.modify input');
+        if (validateButton.classList.contains('is-active')) {
+            setName(nameTmp)
+            setLastName(lastNameTmp)
+            setNameTmp("")
+            setLastNameTmp("")
+            setMail("")
+            setPassword("")
+            inputModify.forEach(input => {
+                input.value = "";
+            })
         }
-
     }
 
     function verifyForm() {
@@ -65,15 +63,45 @@ export default function profil() {
         }
     }
 
-    function handleCLickOnValidateProfil() {
-        const validateButton = document.querySelector('.modify .validate-button');
-        const inputModify = document.querySelectorAll('.modify input');
+    function handleTypeClick(e) {
+        const allTypes = document.querySelectorAll('.type-wrapper .type');
+        if (e.target.classList.contains('is-active')) {
+            setType("")
+            e.target.classList.remove('is-active');
+        } else {
+            setType(e.target.innerHTML)
+            allTypes.forEach(type => {
+                type.classList.remove('is-active');
+            })
+            e.target.classList.add('is-active');
+        }
+    }
+
+    function verifyAdvice() {
+        console.log(type," : ",nameAdvice," : ",advice)
+        const validateButton = document.querySelector('.give-advice .validate-button');
+        if (type !== "" && nameAdvice !== "" && advice !== "") {
+            validateButton.classList.add('is-active');
+        } else {
+            validateButton.classList.remove('is-active');
+        }
+
+    }
+
+    function handleCLickOnAdviceButton() {
+        const validateButton = document.querySelector('.give-advice .validate-button');
+        const inputName = document.querySelectorAll('.give-advice .wrapper .name, .give-advice textarea');
+        const allTypes = document.querySelectorAll('.type-wrapper .type');
         if (validateButton.classList.contains('is-active')) {
-            setName(nameTmp)
-            setLastName(lastNameTmp)
-            inputModify.forEach(input => {
+            inputName.forEach(input => {
                 input.value = "";
             })
+            allTypes.forEach(type => {
+                type.classList.remove('is-active');
+            })
+            setType("")
+            setNameAdvice("")
+            setAdvice("")
         }
     }
 
@@ -92,25 +120,25 @@ export default function profil() {
 
                     <h6>Prénom</h6>
                     <div className="wrapper">
-                        <input type="text" placeholder="Renseigner le prénom" maxLength="30" autoComplete="false" onInput={(e) => {setNameTmp(e.target.value); verifyForm()}}/>
+                        <input type="text" placeholder="Renseigner le prénom" maxLength="30" autoComplete="false" onInput={(e) => setNameTmp(e.target.value)}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
                     <h6>Nom</h6>
                     <div className="wrapper">
-                        <input type="text" placeholder="Renseigner le nom" maxLength="30" autoComplete="false" onInput={(e) => {setLastNameTmp(e.target.value); verifyForm()}}/>
+                        <input type="text" placeholder="Renseigner le nom" maxLength="30" autoComplete="false" onInput={(e) => setLastNameTmp(e.target.value)}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
                     <h6>Mail</h6>
                     <div className="wrapper">
-                        <input type="email" placeholder="Renseigner l'email" maxLength="30" autoComplete="false"  onInput={(e) => {setMail(e.target.value); verifyForm()}}/>
+                        <input type="email" placeholder="Renseigner l'email" maxLength="30" autoComplete="false"  onInput={(e) => setMail(e.target.value)}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
                     <h6>Mot de passe</h6>
                     <div className="wrapper">
-                        <input type="password" placeholder="Renseigner le mot de passe" autoComplete="false" maxLength="30" onInput={(e) => {setPassword(e.target.value); verifyForm()}}/>
+                        <input type="password" placeholder="Renseigner le mot de passe" autoComplete="false" maxLength="30" onInput={(e) => setPassword(e.target.value)}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
@@ -137,24 +165,18 @@ export default function profil() {
                     <h6>Prénom</h6>
                     <div className="wrapper">
                         <input type="text" placeholder="Renseigner le prénom" maxLength="30" className="name"
-                               onInput={(e) => {
-                                   verifyAdvice();
-                                   setNameAdvice(e.target.value)
-                               }}/>
+                               onInput={(e) => setNameAdvice(e.target.value)}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
                     <h6>Avis</h6>
                     <div className="wrapper textarea">
                         <textarea placeholder="Renseigner l'avis (150 caractères max)..." maxLength="150"
-                                  className="name" onInput={(e) => {
-                            verifyAdvice();
-                            setAdvice(e.target.value)
-                        }}/>
+                                  className="name" onInput={(e) => setAdvice(e.target.value)}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
-                    <div className="validate-button">Valider</div>
+                    <div className="validate-button" onClick={() => handleCLickOnAdviceButton()}>Valider</div>
 
                 </div>
 

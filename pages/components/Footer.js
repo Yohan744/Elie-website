@@ -19,7 +19,7 @@ function Footer() {
         })
 
         tl.to("footer .vector-right", {duration: 1.2, strokeDashoffset: "0px", ease: "power4.out"})
-            .to("footer .vector-left", {duration: 1.2, strokeDashoffset: "840px", delay: -0.45, ease: "power4.out"})
+            .to("footer .vector-left", {duration: 1.2, strokeDashoffset: "860px", delay: -0.45, ease: "power4.out"})
 
         ScrollTrigger.create({
             trigger:'footer',
