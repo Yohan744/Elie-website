@@ -1795,6 +1795,16 @@ footer .global-wrapper .vector-right {
   align-items: flex-start;
   background-color: #fefff6;
 }
+#profil .vector {
+  position: absolute;
+  top: -350px;
+  left: -500px;
+  height: 800px;
+  width: auto;
+  z-index: 0;
+  stroke-dasharray: 770;
+  stroke-dashoffset: 750;
+}
 #profil .left-part, #profil .right-part {
   position: relative;
   width: 39%;
@@ -1986,6 +1996,7 @@ footer .global-wrapper .vector-right {
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
+  cursor: pointer;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #profil .left-part .validate-button.is-active {
@@ -2044,6 +2055,7 @@ footer .global-wrapper .vector-right {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #profil .right-part .reservation .info-wrapper a p {
   position: relative;
@@ -2055,6 +2067,7 @@ footer .global-wrapper .vector-right {
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
+  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #profil .right-part .reservation .info-wrapper a img {
   position: relative;
@@ -2066,12 +2079,18 @@ footer .global-wrapper .vector-right {
   border-radius: 10px;
   background-color: #67787f;
 }
+#profil .right-part .reservation .info-wrapper a.download:hover {
+  background-color: #384864;
+}
 #profil .right-part .reservation .info-wrapper a.modify p {
   color: #67787f;
 }
 #profil .right-part .reservation .info-wrapper a.modify img {
   height: 16px;
   width: 16px;
+}
+#profil .right-part .reservation .info-wrapper a.modify:hover p {
+  color: #384864;
 }
 #profil .right-part .questions .text-medium {
   position: relative;

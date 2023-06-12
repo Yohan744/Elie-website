@@ -238,7 +238,7 @@ function Reservation() {
 
                 <div className="container">
 
-                    <div className="book-online-place sub-wrapper" data-id="0">
+                    <div className="book-online-place sub-wrapper is-active" data-id="0">
 
                         <h5 className="title">Réserver en ligne</h5>
 
@@ -442,7 +442,7 @@ function Reservation() {
 
                     </div>
 
-                    <div className="recap sub-wrapper is-active" data-id="3">
+                    <div className="recap sub-wrapper" data-id="3">
 
                         <div className="left-part">
 

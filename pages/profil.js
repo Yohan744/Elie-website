@@ -1,15 +1,33 @@
 import Ressources from "./components/Ressources";
 import {useEffect, useState} from "react";
 import Link from "next/link";
+import Vector from "../asset/svg/profil-vector-pink.svg"
+import {gsap} from 'gsap';
 
 export default function profil() {
 
+    const [nameTmp, setNameTmp] = useState('');
+    const [lastNameTmp, setLastNameTmp] = useState('');
+
+    const [name, setName] = useState('Sarah');
+    const [lastName, setLastName] = useState('Dubreuil');
+    const [mail, setMail] = useState('');
+    const [password, setPassword] = useState('');
+
     const [type, setType] = useState('');
-    const [name, setName] = useState('');
+    const [nameAdvice, setNameAdvice] = useState('');
     const [advice, setAdvice] = useState('');
 
     useEffect(() => {
         window.scrollTo(0, 0)
+
+        gsap.to("#profil .vector", {
+            duration: 0.8,
+            delay: 0.2,
+            strokeDashoffset: "1380px",
+            ease: "ease.power4.out"
+        })
+
     }, [])
 
     function handleTypeClick(e) {
@@ -38,12 +56,35 @@ export default function profil() {
 
     }
 
+    function verifyForm() {
+        const validateButton = document.querySelector('.modify .validate-button');
+        if (nameTmp !== "" && lastNameTmp !== "" && mail !== "" && password !== "") {
+            validateButton.classList.add('is-active');
+        } else {
+            validateButton.classList.remove('is-active');
+        }
+    }
+
+    function handleCLickOnValidateProfil() {
+        const validateButton = document.querySelector('.modify .validate-button');
+        const inputModify = document.querySelectorAll('.modify input');
+        if (validateButton.classList.contains('is-active')) {
+            setName(nameTmp)
+            setLastName(lastNameTmp)
+            inputModify.forEach(input => {
+                input.value = "";
+            })
+        }
+    }
+
     return (
         <main id="profil">
 
+            <Vector className="vector"/>
+
             <div className="left-part">
 
-                <h3 className="title">Sarah Dubreuil</h3>
+                <h3 className="title">{name} {lastName}</h3>
 
                 <div className="modify wrapper">
 
@@ -51,29 +92,29 @@ export default function profil() {
 
                     <h6>Prénom</h6>
                     <div className="wrapper">
-                        <input type="text" placeholder="Renseigner le prénom" maxLength="30"/>
+                        <input type="text" placeholder="Renseigner le prénom" maxLength="30" autoComplete="false" onInput={(e) => {setNameTmp(e.target.value); verifyForm()}}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
                     <h6>Nom</h6>
                     <div className="wrapper">
-                        <input type="text" placeholder="Renseigner le nom" maxLength="30"/>
+                        <input type="text" placeholder="Renseigner le nom" maxLength="30" autoComplete="false" onInput={(e) => {setLastNameTmp(e.target.value); verifyForm()}}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
                     <h6>Mail</h6>
                     <div className="wrapper">
-                        <input type="email" placeholder="Renseigner l'email" maxLength="30"/>
+                        <input type="email" placeholder="Renseigner l'email" maxLength="30" autoComplete="false"  onInput={(e) => {setMail(e.target.value); verifyForm()}}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
                     <h6>Mot de passe</h6>
                     <div className="wrapper">
-                        <input type="password" placeholder="Renseigner le nom" maxLength="30"/>
+                        <input type="password" placeholder="Renseigner le mot de passe" autoComplete="false" maxLength="30" onInput={(e) => {setPassword(e.target.value); verifyForm()}}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>
 
-                    <div className="validate-button">Valider</div>
+                    <div className="validate-button" onClick={() => handleCLickOnValidateProfil()}>Valider</div>
 
                 </div>
 
@@ -98,7 +139,7 @@ export default function profil() {
                         <input type="text" placeholder="Renseigner le prénom" maxLength="30" className="name"
                                onInput={(e) => {
                                    verifyAdvice();
-                                   setName(e.target.value)
+                                   setNameAdvice(e.target.value)
                                }}/>
                         <img src={"pen.svg"} alt="Pen icon"/>
                     </div>

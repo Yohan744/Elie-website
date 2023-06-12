@@ -9,6 +9,17 @@
   align-items: flex-start;
   background-color: $wheat;
 
+  .vector {
+    position: absolute;
+    top: -350px;
+    left: -500px;
+    height: 800px;
+    width: auto;
+    z-index: 0;
+    stroke-dasharray: 770;
+    stroke-dashoffset: 750;
+  }
+
   .left-part, .right-part {
     position: relative;
     width: 39%;
@@ -242,6 +253,7 @@
       letter-spacing: 0em;
       text-align: left;
       color: $wheat;
+      cursor: pointer;
       transition: background-color 0.8s $ease-power4-out;
 
       &.is-active {
@@ -315,6 +327,7 @@
           flex-direction: row;
           justify-content: center;
           align-items: center;
+          transition: background-color 0.8s $ease-power4-out;
 
           p {
             position: relative;
@@ -326,6 +339,7 @@
             letter-spacing: 0em;
             text-align: left;
             color: $wheat;
+            transition: color 0.8s $ease-power4-out;
           }
 
           img {
@@ -338,6 +352,11 @@
             padding: 18px 26px;
             border-radius: 10px;
             background-color: rgba(103, 120, 127, 1);
+
+            &:hover {
+              background-color: $blue;
+            }
+
           }
 
           &.modify {
@@ -349,6 +368,14 @@
             img {
               height: 16px;
               width: 16px;
+            }
+
+            &:hover {
+
+               p {
+                 color: $blue;
+               }
+
             }
 
           }
