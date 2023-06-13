@@ -24,7 +24,7 @@ export default function profil() {
         gsap.to("#profil .vector", {
             duration: 0.8,
             delay: 0.2,
-            strokeDashoffset: "1380px",
+            strokeDashoffset: "1500px",
             ease: "ease.power4.out"
         })
 
@@ -78,7 +78,6 @@ export default function profil() {
     }
 
     function verifyAdvice() {
-        console.log(type," : ",nameAdvice," : ",advice)
         const validateButton = document.querySelector('.give-advice .validate-button');
         if (type !== "" && nameAdvice !== "" && advice !== "") {
             validateButton.classList.add('is-active');

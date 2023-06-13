@@ -19,11 +19,39 @@ header {
     transition: transform 0.85s $ease-expo-out;
   }
 
+  @media screen and (max-width: 1550px) {
+    padding: 18px 20px 18px 40px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    width: 90.1%;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 98%;
+    top: 7px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 10px 20px;
+  }
+
   .logo {
     position: relative;
     height: 45px;
     width: 51px;
     object-fit: cover;
+
+    @media screen and (max-width: 1550px) {
+      height: 42px;
+      width: 48px;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 32px;
+      width: auto;
+    }
+
   }
 
   .right-part {
@@ -40,7 +68,7 @@ header {
       font-family: "PP Pangram Sans Rounded medium", sans-serif;
       font-size: 18px;
       font-weight: 600;
-      line-height: 21px;
+      line-height: 1;
       letter-spacing: 0em;
       text-align: center;
       text-decoration: none;
@@ -52,6 +80,26 @@ header {
 
       &:hover {
         background-color: rgba(56, 72, 100, 1);
+      }
+
+      @media screen and (max-width: 1800px) {
+        font-size: 17px;
+      }
+
+      @media screen and (max-width: 1550px) {
+        padding: 9px 14px;
+        font-size: 16px;
+        margin-right: 15px;
+      }
+
+      @media screen and (max-width: 1250px) {
+        padding: 9px 13px;
+        font-size: 15px;
+        margin-right: 13px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        display: none;
       }
 
     }
@@ -69,10 +117,39 @@ header {
       -webkit-user-drag: none;
       background-color: $blue;
 
+      @media screen and (max-width: 1800px) {
+        padding: 18px 21px;
+      }
+
+      @media screen and (max-width: 1250px) {
+        padding: 15px 18px;
+      }
+
+      @media screen and (max-width: 650px) {
+        padding: 10px 13px;
+        margin-right: 10px;
+      }
+
       img {
         position: relative;
         height: 27px;
         width: 21px;
+
+        @media screen and (max-width: 1800px) {
+          height: 26px;
+          width: 20px;
+        }
+
+        @media screen and (max-width: 1250px) {
+          height: 20px;
+          width: 15px;
+        }
+
+        @media screen and (max-width: 650px) {
+          height: 17px;
+          width: auto;
+        }
+
       }
 
     }
@@ -90,15 +167,32 @@ header {
         background-color: $green;
         transition: background-color 0.8s $ease-power4-out;
 
+        @media screen and (max-width: 1250px) {
+          padding: 14px 34px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          display: none;
+        }
+
         p {
           position: relative;
           font-family: "PP Pangram Sans Rounded medium", sans-serif;
           font-size: 24px;
           font-weight: 600;
-          line-height: 27px;
+          line-height: 1;
           letter-spacing: 0;
           text-align: center;
           color: $blue;
+
+          @media screen and (max-width: 1800px) {
+            font-size: 22px;
+          }
+
+          @media screen and (max-width: 1250px) {
+            font-size: 20px;
+          }
+
         }
 
       }
@@ -109,6 +203,26 @@ header {
           background-color: $dark-green;
         }
 
+      }
+
+    }
+
+    .mobile-menu-wrapper {
+      position: relative;
+      height: 50px;
+      width: 50px;
+      display: none;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: $pink;
+
+      @media screen and (max-width: 1150px) {
+        display: flex;
+      }
+
+      @media screen and (max-width: 576px) {
+        height: 37px;
+        width: 37px;
       }
 
     }

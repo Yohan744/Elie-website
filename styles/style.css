@@ -48,11 +48,44 @@ header.hide {
   transform: translate(-50%, -150px);
   transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
 }
+@media screen and (max-width: 1550px) {
+  header {
+    padding: 18px 20px 18px 40px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  header {
+    width: 90.1%;
+  }
+}
+@media screen and (max-width: 650px) {
+  header {
+    width: 98%;
+    top: 7px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    padding: 10px 20px;
+  }
+}
 header .logo {
   position: relative;
   height: 45px;
   width: 51px;
   object-fit: cover;
+}
+@media screen and (max-width: 1550px) {
+  header .logo {
+    height: 42px;
+    width: 48px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .logo {
+    height: 32px;
+    width: auto;
+  }
 }
 header .right-part {
   position: relative;
@@ -68,7 +101,7 @@ header .right-part .link {
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   text-decoration: none;
@@ -80,6 +113,30 @@ header .right-part .link {
 }
 header .right-part .link:hover {
   background-color: #384864;
+}
+@media screen and (max-width: 1800px) {
+  header .right-part .link {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  header .right-part .link {
+    padding: 9px 14px;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  header .right-part .link {
+    padding: 9px 13px;
+    font-size: 15px;
+    margin-right: 13px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  header .right-part .link {
+    display: none;
+  }
 }
 header .right-part .user {
   position: relative;
@@ -94,10 +151,44 @@ header .right-part .user {
   -webkit-user-drag: none;
   background-color: #384864;
 }
+@media screen and (max-width: 1800px) {
+  header .right-part .user {
+    padding: 18px 21px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  header .right-part .user {
+    padding: 15px 18px;
+  }
+}
+@media screen and (max-width: 650px) {
+  header .right-part .user {
+    padding: 10px 13px;
+    margin-right: 10px;
+  }
+}
 header .right-part .user img {
   position: relative;
   height: 27px;
   width: 21px;
+}
+@media screen and (max-width: 1800px) {
+  header .right-part .user img {
+    height: 26px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  header .right-part .user img {
+    height: 20px;
+    width: 15px;
+  }
+}
+@media screen and (max-width: 650px) {
+  header .right-part .user img {
+    height: 17px;
+    width: auto;
+  }
 }
 header .right-part a {
   position: relative;
@@ -112,18 +203,58 @@ header .right-part a .reserve {
   background-color: #c3e0c7;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1250px) {
+  header .right-part a .reserve {
+    padding: 14px 34px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  header .right-part a .reserve {
+    display: none;
+  }
+}
 header .right-part a .reserve p {
   position: relative;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 24px;
   font-weight: 600;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0;
   text-align: center;
   color: #384864;
 }
+@media screen and (max-width: 1800px) {
+  header .right-part a .reserve p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  header .right-part a .reserve p {
+    font-size: 20px;
+  }
+}
 header .right-part a:hover .reserve {
   background-color: #b3d4b4;
+}
+header .right-part .mobile-menu-wrapper {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  display: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #d76677;
+}
+@media screen and (max-width: 1150px) {
+  header .right-part .mobile-menu-wrapper {
+    display: flex;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .right-part .mobile-menu-wrapper {
+    height: 37px;
+    width: 37px;
+  }
 }
 
 #masthead {
@@ -797,6 +928,11 @@ header .right-part a:hover .reserve {
   text-decoration: none;
   margin-bottom: 13px;
 }
+@media screen and (max-width: 576px) {
+  .download-wrapper a {
+    margin-bottom: 10px;
+  }
+}
 .download-wrapper a .download {
   position: relative;
   width: 100%;
@@ -809,6 +945,16 @@ header .right-part a:hover .reserve {
   background-color: #edf8ee;
   border-radius: 10px;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media screen and (max-width: 992px) {
+  .download-wrapper a .download {
+    padding: 11px 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .download-wrapper a .download {
+    padding: 9px 14px;
+  }
 }
 .download-wrapper a .download .info {
   position: relative;
@@ -827,6 +973,22 @@ header .right-part a:hover .reserve {
   text-align: left;
   color: #384864;
 }
+@media screen and (max-width: 1550px) {
+  .download-wrapper a .download .info h6 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .download-wrapper a .download .info h6 {
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .download-wrapper a .download .info h6 {
+    font-size: 16px;
+  }
+}
 .download-wrapper a .download .info p {
   position: relative;
   font-family: "PP Pangram Sans Rounded", sans-serif;
@@ -837,12 +999,40 @@ header .right-part a:hover .reserve {
   text-align: left;
   color: #384864;
 }
+@media screen and (max-width: 1550px) {
+  .download-wrapper a .download .info p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .download-wrapper a .download .info p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .download-wrapper a .download .info p {
+    font-size: 13px;
+    line-height: 1;
+  }
+}
 .download-wrapper a .download .icon {
   position: relative;
   height: 24px;
   width: 24px;
   user-focus: none;
   user-select: none;
+}
+@media screen and (max-width: 992px) {
+  .download-wrapper a .download .icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .download-wrapper a .download .icon {
+    height: 17px;
+    width: 17px;
+  }
 }
 .download-wrapper a:last-child {
   margin-bottom: 0;
@@ -1795,6 +1985,51 @@ footer .global-wrapper .vector-right {
   align-items: flex-start;
   background-color: #fefff6;
 }
+@media screen and (max-width: 1800px) {
+  #profil {
+    max-width: 78%;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #profil {
+    max-width: 86%;
+    padding: 245px 0 90px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #profil {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #profil {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 225px 0 70px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #profil {
+    max-width: 75%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #profil {
+    padding: 135px 0 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil {
+    padding: 115px 0 50px;
+    max-width: 90%;
+  }
+}
 #profil .vector {
   position: absolute;
   top: -350px;
@@ -1805,12 +2040,53 @@ footer .global-wrapper .vector-right {
   stroke-dasharray: 770;
   stroke-dashoffset: 750;
 }
+@media screen and (max-width: 1550px) {
+  #profil .vector {
+    top: -390px;
+    left: -490px;
+    height: 680px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .vector {
+    top: -380px;
+    left: -580px;
+    height: 670px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #profil .vector {
+    top: -490px;
+    left: -460px;
+    height: 620px;
+  }
+}
 #profil .left-part, #profil .right-part {
   position: relative;
   width: 39%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+@media screen and (max-width: 1550px) {
+  #profil .left-part, #profil .right-part {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  #profil .left-part, #profil .right-part {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #profil .left-part, #profil .right-part {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part, #profil .right-part {
+    width: 100%;
+  }
 }
 #profil .left-part .wrapper, #profil .right-part .wrapper {
   position: relative;
@@ -1819,16 +2095,48 @@ footer .global-wrapper .vector-right {
   flex-direction: column;
   justify-content: flex-start;
 }
+@media screen and (max-width: 1150px) {
+  #profil .left-part {
+    margin-bottom: 85px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #profil .left-part {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part {
+    margin-bottom: 50px;
+  }
+}
 #profil .left-part .title {
   position: relative;
   margin-bottom: 56px;
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 64px;
   font-weight: 400;
-  line-height: 73px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #profil .left-part .title {
+    font-size: 59px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .title {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
 }
 #profil .left-part .modify h6 {
   position: relative;
@@ -1836,14 +2144,40 @@ footer .global-wrapper .vector-right {
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
 }
+@media screen and (max-width: 1550px) {
+  #profil .left-part .modify h6 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .modify h6 {
+    margin-bottom: 10px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .modify h6 {
+    font-size: 15px;
+  }
+}
 #profil .left-part .modify .wrapper {
   position: relative;
   margin-bottom: 34px;
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .modify .wrapper {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .modify .wrapper {
+    margin-bottom: 15px;
+  }
 }
 #profil .left-part .modify .wrapper input {
   position: relative;
@@ -1866,6 +2200,24 @@ footer .global-wrapper .vector-right {
   color: #92a0a9;
   caret-color: #92a0a9;
 }
+@media screen and (max-width: 1550px) {
+  #profil .left-part .modify .wrapper input {
+    padding: 18px 23px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .modify .wrapper input {
+    padding: 16px 20px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .modify .wrapper input {
+    padding: 13px;
+    font-size: 14px;
+  }
+}
 #profil .left-part .modify .wrapper img {
   position: absolute;
   top: 50%;
@@ -1875,6 +2227,20 @@ footer .global-wrapper .vector-right {
   -webkit-user-drag: none;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 1550px) {
+  #profil .left-part .modify .wrapper img {
+    right: 23px;
+    height: 23px;
+    width: 23px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .modify .wrapper img {
+    right: 15px;
+    height: 17px;
+    width: 17px;
+  }
+}
 #profil .left-part .dot-line {
   position: relative;
   margin: 96px 0;
@@ -1882,16 +2248,47 @@ footer .global-wrapper .vector-right {
   width: 100%;
   border-bottom: 2px dashed #c3e0c7;
 }
+@media screen and (max-width: 1550px) {
+  #profil .left-part .dot-line {
+    margin: 85px 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  #profil .left-part .dot-line {
+    margin: 70px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .dot-line {
+    margin: 50px 0;
+  }
+}
 #profil .left-part .give-advice h6 {
   position: relative;
   margin-bottom: 16px;
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #profil .left-part .give-advice h6 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .give-advice h6 {
+    margin-bottom: 10px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .give-advice h6 {
+    font-size: 15px;
+  }
 }
 #profil .left-part .give-advice .type-wrapper {
   position: relative;
@@ -1929,20 +2326,70 @@ footer .global-wrapper .vector-right {
 #profil .left-part .give-advice .type-wrapper .type:last-child {
   margin-left: 16px;
 }
+@media screen and (max-width: 992px) {
+  #profil .left-part .give-advice .type-wrapper .type:last-child {
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .give-advice .type-wrapper .type:last-child {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #profil .left-part .give-advice .type-wrapper .type {
+    font-size: 22px;
+    padding: 14px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .give-advice .type-wrapper .type {
+    font-size: 19px;
+    padding: 12px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .give-advice .type-wrapper .type {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+}
 #profil .left-part .give-advice .info {
   position: relative;
   margin: 16px 0 34px;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
 }
+@media screen and (max-width: 992px) {
+  #profil .left-part .give-advice .info {
+    margin: 12px 0 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .give-advice .info {
+    margin: 10px 0 16px;
+    font-size: 12px;
+  }
+}
 #profil .left-part .give-advice .wrapper {
   position: relative;
   margin-bottom: 34px;
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .give-advice .wrapper {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .give-advice .wrapper {
+    margin-bottom: 15px;
+  }
 }
 #profil .left-part .give-advice .wrapper input, #profil .left-part .give-advice .wrapper textarea {
   position: relative;
@@ -1965,9 +2412,37 @@ footer .global-wrapper .vector-right {
   color: #92a0a9;
   caret-color: #92a0a9;
 }
+@media screen and (max-width: 1550px) {
+  #profil .left-part .give-advice .wrapper input, #profil .left-part .give-advice .wrapper textarea {
+    padding: 18px 23px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .give-advice .wrapper input, #profil .left-part .give-advice .wrapper textarea {
+    padding: 16px 20px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .give-advice .wrapper input, #profil .left-part .give-advice .wrapper textarea {
+    padding: 13px;
+    font-size: 14px;
+  }
+}
 #profil .left-part .give-advice .wrapper textarea {
   height: 175px;
   resize: none;
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .give-advice .wrapper textarea {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .give-advice .wrapper textarea {
+    height: 100px;
+  }
 }
 #profil .left-part .give-advice .wrapper img {
   position: absolute;
@@ -1977,6 +2452,20 @@ footer .global-wrapper .vector-right {
   width: 24px;
   -webkit-user-drag: none;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 1550px) {
+  #profil .left-part .give-advice .wrapper img {
+    right: 23px;
+    height: 23px;
+    width: 23px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .give-advice .wrapper img {
+    right: 15px;
+    height: 17px;
+    width: 17px;
+  }
 }
 #profil .left-part .give-advice .wrapper.textarea img {
   top: auto;
@@ -1992,7 +2481,7 @@ footer .global-wrapper .vector-right {
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
@@ -2003,6 +2492,24 @@ footer .global-wrapper .vector-right {
 #profil .left-part .validate-button.is-active {
   cursor: pointer;
   background-color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #profil .left-part .validate-button {
+    font-size: 22px;
+    padding: 16px 24px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .left-part .validate-button {
+    font-size: 19px;
+    padding: 13px 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .left-part .validate-button {
+    font-size: 15px;
+    padding: 11px 17px;
+  }
 }
 #profil .right-part .reservation .reservation-wrapper {
   position: relative;
@@ -2015,6 +2522,18 @@ footer .global-wrapper .vector-right {
   background-color: #edf8ee;
   border: 1px solid #c3e0c7;
 }
+@media screen and (max-width: 992px) {
+  #profil .right-part .reservation .reservation-wrapper {
+    padding: 16px 22px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .reservation .reservation-wrapper {
+    padding: 9px 14px;
+    margin-bottom: 10px;
+  }
+}
 #profil .right-part .reservation .reservation-wrapper h5 {
   position: relative;
   margin-bottom: 3px;
@@ -2025,6 +2544,16 @@ footer .global-wrapper .vector-right {
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
+}
+@media screen and (max-width: 992px) {
+  #profil .right-part .reservation .reservation-wrapper h5 {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .reservation .reservation-wrapper h5 {
+    font-size: 16px;
+  }
 }
 #profil .right-part .reservation .reservation-wrapper h6 {
   position: relative;
@@ -2037,6 +2566,18 @@ footer .global-wrapper .vector-right {
   text-align: left;
   color: #384864;
 }
+@media screen and (max-width: 992px) {
+  #profil .right-part .reservation .reservation-wrapper h6 {
+    margin-bottom: 25px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .reservation .reservation-wrapper h6 {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+}
 #profil .right-part .reservation .reservation-wrapper h6:last-child {
   margin-bottom: 0;
 }
@@ -2047,6 +2588,13 @@ footer .global-wrapper .vector-right {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .reservation .info-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 #profil .right-part .reservation .info-wrapper a {
   position: relative;
@@ -2070,15 +2618,59 @@ footer .global-wrapper .vector-right {
   color: #fefff6;
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1550px) {
+  #profil .right-part .reservation .info-wrapper a p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .right-part .reservation .info-wrapper a p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .reservation .info-wrapper a p {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+}
 #profil .right-part .reservation .info-wrapper a img {
   position: relative;
   height: 24px;
   width: 24px;
 }
+@media screen and (max-width: 992px) {
+  #profil .right-part .reservation .info-wrapper a img {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .reservation .info-wrapper a img {
+    height: 17px;
+    width: 17px;
+  }
+}
 #profil .right-part .reservation .info-wrapper a.download {
   padding: 18px 26px;
   border-radius: 10px;
   background-color: #67787f;
+}
+@media screen and (max-width: 1550px) {
+  #profil .right-part .reservation .info-wrapper a.download {
+    padding: 16px 24px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .right-part .reservation .info-wrapper a.download {
+    padding: 12px 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .reservation .info-wrapper a.download {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+  }
 }
 #profil .right-part .reservation .info-wrapper a.download:hover {
   background-color: #384864;
@@ -2089,6 +2681,12 @@ footer .global-wrapper .vector-right {
 #profil .right-part .reservation .info-wrapper a.modify img {
   height: 16px;
   width: 16px;
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .reservation .info-wrapper a.modify img {
+    height: 12px;
+    width: 12px;
+  }
 }
 #profil .right-part .reservation .info-wrapper a.modify:hover p {
   color: #384864;
@@ -2104,6 +2702,22 @@ footer .global-wrapper .vector-right {
   text-align: left;
   color: #384864;
 }
+@media screen and (max-width: 1550px) {
+  #profil .right-part .questions .text-medium {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .right-part .questions .text-medium {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .questions .text-medium {
+    font-size: 17px;
+    line-height: 1;
+  }
+}
 #profil .right-part .questions .text {
   position: relative;
   margin-bottom: 15px;
@@ -2115,6 +2729,22 @@ footer .global-wrapper .vector-right {
   text-align: left;
   color: #384864;
 }
+@media screen and (max-width: 1550px) {
+  #profil .right-part .questions .text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .right-part .questions .text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .right-part .questions .text {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+}
 #profil .right-part .questions .text:last-child {
   margin-bottom: 0;
 }
@@ -2124,13 +2754,56 @@ footer .global-wrapper .vector-right {
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 41px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
 }
+@media screen and (max-width: 1550px) {
+  #profil .sub-title {
+    margin-bottom: 23px;
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .sub-title {
+    margin-bottom: 21px;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #profil .sub-title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .sub-title {
+    margin-bottom: 15px;
+    font-size: 21px;
+  }
+}
 #profil .sub-title.margin {
   margin: 96px 0 25px;
+}
+@media screen and (max-width: 1550px) {
+  #profil .sub-title.margin {
+    margin: 85px 0 23px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #profil .sub-title.margin {
+    margin: 85px 0 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #profil .sub-title.margin {
+    margin: 70px 0 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #profil .sub-title.margin {
+    margin: 50px 0 15px;
+  }
 }
 
 * {
