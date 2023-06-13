@@ -5,6 +5,22 @@ footer {
   border-radius: 25px 25px 0 0;
   background-color: $blue;
 
+  @media screen and (max-width: 1550px) {
+    padding: 35px 35px 0;
+  }
+
+  @media screen and (max-width: 1150px) {
+    padding: 30px 30px 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 20px 20px 0;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 15px 15px 0;
+  }
+
   .global-wrapper {
     position: relative;
     padding: 45px 0 48px;
@@ -18,10 +34,34 @@ footer {
     background-color: $pink;
     overflow: clip;
 
+    @media screen and (max-width: 1550px) {
+      padding: 40px 0 45px;
+    }
+
+    @media screen and (max-width: 1550px) {
+      padding: 20px 0 30px;
+    }
+
     .logo-white {
       position: relative;
       height: 102px;
       width: 102px;
+
+      @media screen and (max-width: 1550px) {
+        height: 90px;
+        width: 90px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        height: 75px;
+        width: 75px;
+      }
+
+      @media screen and (max-width: 992px) {
+        height: 65px;
+        width: 65px;
+      }
+
     }
 
     .link-wrapper {
@@ -32,6 +72,15 @@ footer {
       justify-content: center;
       align-items: center;
 
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        margin: 30px 0 15px;
+      }
+
+      @media screen and (max-width: 576px) {
+        margin: 20px 0 10px;
+      }
+
       .link {
         position: relative;
         padding: 6px 12px;
@@ -40,7 +89,7 @@ footer {
         font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
         font-size: 24px;
         font-weight: 400;
-        line-height: 27px;
+        line-height: 1;
         letter-spacing: 0em;
         text-align: left;
         color: $wheat;
@@ -54,6 +103,31 @@ footer {
 
         &:last-child {
           margin-right: 0;
+
+          @media screen and (max-width: 992px) {
+           margin-bottom: 0;
+          }
+
+        }
+
+        @media screen and (max-width: 1550px) {
+          font-size: 22px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          padding: 5px 10px;
+          margin-right: 20px;
+          font-size: 19px;
+        }
+
+        @media screen and (max-width: 992px) {
+          margin-right: 0;
+          margin-bottom: 5px;
+          font-size: 17px;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 16px;
         }
 
       }
@@ -67,19 +141,44 @@ footer {
       justify-content: center;
       align-items: center;
 
+      @media screen and (max-width: 576px) {
+        flex-direction: column-reverse;
+      }
+
       .sub-link {
         position: relative;
         text-decoration: none;
         font-family: "PP Pangram Sans Rounded", sans-serif;
         font-size: 20px;
         font-weight: 200;
-        line-height: 23px;
+        line-height: 1;
         letter-spacing: 0em;
         text-align: left;
         color: $wheat;
 
         &.margin {
           margin: 0 5px;
+
+          @media screen and (max-width: 576px) {
+            margin: 5px 0;
+          }
+
+        }
+
+        @media screen and (max-width: 1550px) {
+          font-size: 19px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          font-size: 16px;
+        }
+
+        @media screen and (max-width: 992px) {
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 13px;
         }
 
       }
@@ -94,6 +193,33 @@ footer {
       width: auto;
       stroke-dasharray: 450;
       stroke-dashoffset: 450;
+
+      @media screen and (max-width: 1550px) {
+        top: 150px;
+        left: -90px;
+        height: 370px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        top: 120px;
+        left: -80px;
+        height: 300px;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 210px;
+        left: -50px;
+        height: 230px;
+      }
+
+      @media screen and (max-width: 576px) {
+        top: 240px;
+        left: -73px;
+        height: 180px;
+        stroke-dashoffset: 390;
+        transform: rotate(8deg);
+      }
+
     }
 
     .vector-right {
@@ -104,6 +230,34 @@ footer {
       width: auto;
       stroke-dasharray: 540;
       stroke-dashoffset: 470;
+
+      @media screen and (max-width: 1550px) {
+        top: -170px;
+        right: -120px;
+        height: 390px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        top: -140px;
+        right: -70px;
+        height: 300px;
+        stroke-dashoffset: 390;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: -70px;
+        right: -80px;
+        height: 230px;
+        stroke-dashoffset: 480;
+      }
+
+      @media screen and (max-width: 576px) {
+        top: -60px;
+        right: -45px;
+        height: 180px;
+        stroke-dashoffset: 470;
+      }
+
     }
 
   }
