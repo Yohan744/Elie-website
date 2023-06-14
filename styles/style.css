@@ -953,7 +953,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   .download-wrapper a .download {
-    padding: 9px 14px;
+    padding: 11px 16px;
   }
 }
 .download-wrapper a .download .info {
@@ -986,7 +986,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   .download-wrapper a .download .info h6 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .download-wrapper a .download .info p {
@@ -1011,7 +1011,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   .download-wrapper a .download .info p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1;
   }
 }
@@ -2313,7 +2313,7 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .left-part .title {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 30px;
   }
 }
@@ -2341,7 +2341,7 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .left-part .modify h6 {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 #profil .left-part .modify .wrapper {
@@ -2393,8 +2393,8 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .left-part .modify .wrapper input {
-    padding: 13px;
-    font-size: 14px;
+    padding: 14px;
+    font-size: 15px;
   }
 }
 #profil .left-part .modify .wrapper img {
@@ -2466,7 +2466,7 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .left-part .give-advice h6 {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 #profil .left-part .give-advice .type-wrapper {
@@ -2529,8 +2529,8 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .left-part .give-advice .type-wrapper .type {
-    font-size: 14px;
-    padding: 5px 0;
+    font-size: 16px;
+    padding: 7px 0;
   }
 }
 #profil .left-part .give-advice .info {
@@ -2553,7 +2553,7 @@ footer .global-wrapper .vector-right {
 @media screen and (max-width: 576px) {
   #profil .left-part .give-advice .info {
     margin: 10px 0 16px;
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 #profil .left-part .give-advice .wrapper {
@@ -2605,8 +2605,8 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .left-part .give-advice .wrapper input, #profil .left-part .give-advice .wrapper textarea {
-    padding: 13px;
-    font-size: 14px;
+    padding: 14px;
+    font-size: 15px;
   }
 }
 #profil .left-part .give-advice .wrapper textarea {
@@ -2686,8 +2686,8 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .left-part .validate-button {
-    font-size: 15px;
-    padding: 11px 17px;
+    font-size: 17px;
+    padding: 13px 21px;
   }
 }
 #profil .right-part .reservation .reservation-wrapper {
@@ -2709,7 +2709,7 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .right-part .reservation .reservation-wrapper {
-    padding: 9px 14px;
+    padding: 11px 16px;
     margin-bottom: 10px;
   }
 }
@@ -2809,8 +2809,8 @@ footer .global-wrapper .vector-right {
 }
 @media screen and (max-width: 576px) {
   #profil .right-part .reservation .info-wrapper a p {
-    margin-right: 8px;
-    font-size: 14px;
+    margin-right: 10px;
+    font-size: 16px;
   }
 }
 #profil .right-part .reservation .info-wrapper a img {
@@ -2958,7 +2958,7 @@ footer .global-wrapper .vector-right {
 @media screen and (max-width: 576px) {
   #profil .sub-title {
     margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 24px;
   }
 }
 #profil .sub-title.margin {
