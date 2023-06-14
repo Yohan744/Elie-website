@@ -29,11 +29,11 @@ header {
 
   @media screen and (max-width: 650px) {
     width: 98%;
-    top: 7px;
+    top: 6px;
   }
 
   @media screen and (max-width: 576px) {
-    padding: 15px 20px;
+    padding: 13px 20px;
   }
 
   .logo {
@@ -48,7 +48,7 @@ header {
     }
 
     @media screen and (max-width: 576px) {
-      height: 35px;
+      height: 38px;
       width: auto;
     }
 
@@ -130,6 +130,11 @@ header {
         margin-right: 10px;
       }
 
+      @media screen and (max-width: 576px) {
+        padding: 12px 15px;
+        margin-right: 18px;
+      }
+
       img {
         position: relative;
         height: 27px;
@@ -147,6 +152,11 @@ header {
 
         @media screen and (max-width: 650px) {
           height: 19px;
+          width: auto;
+        }
+
+        @media screen and (max-width: 576px) {
+          height: 20px;
           width: auto;
         }
 
@@ -221,8 +231,8 @@ header {
       }
 
       @media screen and (max-width: 576px) {
-        height: 37px;
-        width: 37px;
+        height: 44px;
+        width: 44px;
       }
 
     }

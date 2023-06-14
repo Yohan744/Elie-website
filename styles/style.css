@@ -61,12 +61,12 @@ header.hide {
 @media screen and (max-width: 650px) {
   header {
     width: 98%;
-    top: 7px;
+    top: 6px;
   }
 }
 @media screen and (max-width: 576px) {
   header {
-    padding: 15px 20px;
+    padding: 13px 20px;
   }
 }
 header .logo {
@@ -83,7 +83,7 @@ header .logo {
 }
 @media screen and (max-width: 576px) {
   header .logo {
-    height: 35px;
+    height: 38px;
     width: auto;
   }
 }
@@ -167,6 +167,12 @@ header .right-part .user {
     margin-right: 10px;
   }
 }
+@media screen and (max-width: 576px) {
+  header .right-part .user {
+    padding: 12px 15px;
+    margin-right: 18px;
+  }
+}
 header .right-part .user img {
   position: relative;
   height: 27px;
@@ -187,6 +193,12 @@ header .right-part .user img {
 @media screen and (max-width: 650px) {
   header .right-part .user img {
     height: 19px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .right-part .user img {
+    height: 20px;
     width: auto;
   }
 }
@@ -252,8 +264,8 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   header .right-part .mobile-menu-wrapper {
-    height: 37px;
-    width: 37px;
+    height: 44px;
+    width: 44px;
   }
 }
 
