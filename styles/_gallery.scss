@@ -15,15 +15,9 @@
     grid-row-gap: 30px;
 
     h3 {
-      position: relative;
+      @include semi-title;
       max-width: 315px;
       margin-bottom: 36px;
-      font-family: "PP Pangram Sans Rounded bold", sans-serif;
-      font-size: 48px;
-      font-weight: 400;
-      line-height: 55px;
-      letter-spacing: 0em;
-      text-align: left;
       color: $wheat;
     }
 

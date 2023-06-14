@@ -13,13 +13,7 @@
     justify-content: space-between;
 
     h3 {
-      position: relative;
-      font-family: "PP Pangram Sans Rounded bold", sans-serif;
-      font-size: 48px;
-      font-weight: 600;
-      line-height: 55px;
-      letter-spacing: 0;
-      text-align: left;
+     @include semi-title;
       color: $wheat;
     }
 

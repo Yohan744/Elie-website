@@ -3,6 +3,18 @@
   padding: 72px 0 30px;
   width: 100%;
 
+  @media screen and (max-width: 1550px) {
+    padding: 65px 0 25px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    padding: 55px 0 25px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 50px 0 20px;
+  }
+
   .global-wrapper {
     position: relative;
     width: 27%;
@@ -12,16 +24,46 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 1750px) {
+      width: 31%;
+    }
+
+    @media screen and (max-width: 1550px) {
+      width: 33%;
+    }
+
+    @media screen and (max-width: 1300px) {
+      width: 38%;
+    }
+
+    @media screen and (max-width: 1150px) {
+      width: 39%;
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 42%;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 45%;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 48%;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 55%;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 85%;
+    }
+
     .title {
-      position: relative;
-      margin-bottom: 30px;
-      font-family:"PP Pangram Sans Rounded bold", sans-serif;
-      font-size: 46px;
-      font-weight: 400;
-      line-height: 52px;
-      letter-spacing: 0em;
+      @include semi-title;
       text-align: center;
-      color: $blue;
+      margin-bottom: 30px;
     }
 
     .lineToDot {
@@ -29,8 +71,41 @@
       height: 50px;
       width: auto;
 
+      @media screen and (max-width: 1550px) {
+        height: 45px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        height: 40px;
+      }
+
+      @media screen and (max-width: 576px) {
+        height: 35px;
+      }
+
       &.margin-top {
         margin-top: 30px;
+
+        @media screen and (max-width: 1550px) {
+          margin-top: 25px;
+        }
+
+        @media screen and (max-width: 576px) {
+          margin-top: 20px;
+        }
+
+      }
+
+    }
+
+    .download-wrapper {
+
+      @media screen and (max-width: 1550px) {
+       margin: 35px 0 25px;
+      }
+
+      @media screen and (max-width: 576px) {
+        margin: 20px 0;
       }
 
     }
@@ -38,16 +113,30 @@
     .sub-title {
       position: relative;
       margin-top: 30px;
-      font-family:"PP Pangram Sans Rounded bold", sans-serif;
+      font-family: "PP Pangram Sans Rounded bold", sans-serif;
       font-size: 28px;
       font-weight: 400;
-      line-height: 32px;
+      line-height: 1.3;
       letter-spacing: 0em;
       text-align: center;
       color: $blue;
 
       span {
         color: $pink;
+      }
+
+      @media screen and (max-width: 1550px) {
+        margin-top: 25px;
+        font-size: 25px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 20px;
+        margin-top: 20px;
       }
 
     }
@@ -57,6 +146,20 @@
       margin-top: 30px;
       height: 116px;
       width: auto;
+
+      @media screen and (max-width: 1550px) {
+        height: 100px;
+        margin-top: 25px;
+      }
+
+      @media screen and (max-width: 1550px) {
+        height: 90px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        height: 75px;
+      }
+
     }
 
   }

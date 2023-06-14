@@ -48,18 +48,6 @@ $ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
 
 $ease-power4-out: cubic-bezier(0.22, 1, 0.36, 1);
 
-@import "header";
-@import "masthead";
-@import "demo";
-@import "information";
-@import "gallery";
-@import "preparation";
-@import "ressources";
-@import "reservation";
-@import "advice";
-@import "footer";
-@import "profil";
-
 * {
   padding: 0;
   margin: 0;
@@ -78,6 +66,7 @@ $ease-power4-out: cubic-bezier(0.22, 1, 0.36, 1);
 html, body {
   scroll-behavior: auto;
   overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -104,3 +93,40 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+@mixin semi-title {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $blue;
+
+  @media screen and (max-width: 1550px) {
+    font-size: 42px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    font-size: 38px;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@import "header";
+@import "masthead";
+@import "demo";
+@import "information";
+@import "gallery";
+@import "preparation";
+@import "ressources";
+@import "reservation";
+@import "advice";
+@import "footer";
+@import "profil";
