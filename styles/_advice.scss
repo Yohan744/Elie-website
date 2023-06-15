@@ -328,7 +328,10 @@
             }
 
             @media screen and (max-width: 576px) {
+              margin: 0 auto;
               height: 85px;
+              width: 95px;
+              image-rendering: optimizeQuality;
             }
 
           }

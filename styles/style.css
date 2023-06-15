@@ -2515,7 +2515,10 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #advice .global-wrapper .advice-wrapper .advice-left .advice img, #advice .global-wrapper .advice-wrapper .advice-right .advice img {
+    margin: 0 auto;
     height: 85px;
+    width: 95px;
+    image-rendering: optimizeQuality;
   }
 }
 #advice .global-wrapper .advice-wrapper .advice-left .advice .name, #advice .global-wrapper .advice-wrapper .advice-right .advice .name {
