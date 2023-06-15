@@ -5,7 +5,7 @@ function Information() {
 
             <div className="global-wrapper">
 
-                <h3>Informations<br/>pratiques</h3>
+                <h3>Informations <br/>pratiques</h3>
 
                 <div className="info-wrapper">
 

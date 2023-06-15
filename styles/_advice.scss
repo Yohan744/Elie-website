@@ -310,6 +310,7 @@
             position: relative;
             height: 138px;
             width: auto;
+            object-fit: contain;
 
             @media screen and (max-width: 1800px) {
               height: 130px;
