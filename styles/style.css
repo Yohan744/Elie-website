@@ -2484,7 +2484,8 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #advice .global-wrapper .advice-wrapper .advice-left .advice, #advice .global-wrapper .advice-wrapper .advice-right .advice {
-    margin-top: 30px;
+    margin-top: 35px;
+    max-width: 250px;
   }
 }
 #advice .global-wrapper .advice-wrapper .advice-left .advice img, #advice .global-wrapper .advice-wrapper .advice-right .advice img {
@@ -2510,6 +2511,11 @@ header .right-part .mobile-menu-wrapper {
 @media screen and (max-width: 1150px) {
   #advice .global-wrapper .advice-wrapper .advice-left .advice img, #advice .global-wrapper .advice-wrapper .advice-right .advice img {
     height: 65px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #advice .global-wrapper .advice-wrapper .advice-left .advice img, #advice .global-wrapper .advice-wrapper .advice-right .advice img {
+    height: 85px;
   }
 }
 #advice .global-wrapper .advice-wrapper .advice-left .advice .name, #advice .global-wrapper .advice-wrapper .advice-right .advice .name {
@@ -2546,6 +2552,12 @@ header .right-part .mobile-menu-wrapper {
     margin: 15px 0 6px;
   }
 }
+@media screen and (max-width: 576px) {
+  #advice .global-wrapper .advice-wrapper .advice-left .advice .name, #advice .global-wrapper .advice-wrapper .advice-right .advice .name {
+    font-size: 25px;
+    margin: 18px 0 9px;
+  }
+}
 #advice .global-wrapper .advice-wrapper .advice-left .advice .quote, #advice .global-wrapper .advice-wrapper .advice-right .advice .quote {
   position: relative;
   margin-bottom: 5px;
@@ -2578,6 +2590,12 @@ header .right-part .mobile-menu-wrapper {
   #advice .global-wrapper .advice-wrapper .advice-left .advice .quote, #advice .global-wrapper .advice-wrapper .advice-right .advice .quote {
     font-size: 14px;
     margin-bottom: -7px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #advice .global-wrapper .advice-wrapper .advice-left .advice .quote, #advice .global-wrapper .advice-wrapper .advice-right .advice .quote {
+    font-size: 15px;
+    margin-bottom: -3px;
   }
 }
 #advice .global-wrapper .advice-wrapper .advice-left .advice .type, #advice .global-wrapper .advice-wrapper .advice-right .advice .type {

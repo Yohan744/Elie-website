@@ -302,7 +302,8 @@
           }
 
           @media screen and (max-width: 576px) {
-           margin-top: 30px;
+            margin-top: 35px;
+            max-width: 250px;
           }
 
           img {
@@ -324,6 +325,10 @@
 
             @media screen and (max-width: 1150px) {
               height: 65px;
+            }
+
+            @media screen and (max-width: 576px) {
+              height: 85px;
             }
 
           }
@@ -358,6 +363,11 @@
               margin: 15px 0 6px;
             }
 
+            @media screen and (max-width: 576px) {
+              font-size: 25px;
+              margin: 18px 0 9px;
+            }
+
           }
 
           .quote {
@@ -388,6 +398,11 @@
             @media screen and (max-width: 1150px) {
               font-size: 14px;
               margin-bottom: -7px;
+            }
+
+            @media screen and (max-width: 576px) {
+              font-size: 15px;
+              margin-bottom: -3px;
             }
 
           }
