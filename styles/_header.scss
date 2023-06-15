@@ -17,10 +17,17 @@ header {
   &.hide {
     transform: translate(-50%, -150px);
     transition: transform 0.85s $ease-expo-out;
+
+    @media screen and (max-width: 1550px) {
+      transform: translate(-50%, -135px);
+    }
+
   }
 
   @media screen and (max-width: 1550px) {
     padding: 18px 20px 18px 40px;
+    width: 88.1%;
+    top: 32px;
   }
 
   @media screen and (max-width: 1300px) {
