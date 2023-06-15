@@ -780,6 +780,7 @@ header .right-part .mobile-menu-wrapper {
   padding: 172px 7% 0;
   background-color: #384864;
   border-radius: 20px 20px 0 0;
+  margin-bottom: -1px;
 }
 @media screen and (max-width: 1800px) {
   #information {
@@ -1173,6 +1174,8 @@ header .right-part .mobile-menu-wrapper {
   width: 100%;
   border-radius: 0 0 25px 25px;
   background-color: #384864;
+  margin-top: -1px;
+  z-index: -1;
 }
 @media screen and (max-width: 1550px) {
   #gallery {

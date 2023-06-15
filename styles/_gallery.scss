@@ -4,6 +4,8 @@
   width: 100%;
   border-radius: 0 0 25px 25px;
   background-color: $blue;
+  margin-top: -1px;
+  z-index: -1;
 
   @media screen and (max-width: 1550px) {
     padding: 115px 0 60px;
