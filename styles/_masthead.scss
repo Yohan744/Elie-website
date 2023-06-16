@@ -48,16 +48,9 @@
         flex-direction: column;
 
         h1 {
-          position: relative;
+          @include title;
           max-width: 600px;
           margin-bottom: 32px;
-          font-family: "PP Pangram Sans Rounded bold", sans-serif;
-          font-size: 64px;
-          font-weight: 600;
-          line-height: 73px;
-          letter-spacing: 0em;
-          text-align: left;
-          color: $blue;
         }
 
         .button-wrapper {

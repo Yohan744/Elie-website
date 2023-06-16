@@ -370,15 +370,45 @@ header .right-part .mobile-menu-wrapper {
 }
 #masthead .global-wrapper .top-wrapper .info h1 {
   position: relative;
-  max-width: 600px;
-  margin-bottom: 32px;
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 64px;
-  font-weight: 600;
-  line-height: 73px;
+  font-weight: 400;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 1800px) {
+  #masthead .global-wrapper .top-wrapper .info h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #masthead .global-wrapper .top-wrapper .info h1 {
+    font-size: 57px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #masthead .global-wrapper .top-wrapper .info h1 {
+    font-size: 53px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #masthead .global-wrapper .top-wrapper .info h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #masthead .global-wrapper .top-wrapper .info h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #masthead .global-wrapper .top-wrapper .info h1 {
+    font-size: 40px;
+  }
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper {
   position: relative;
@@ -678,6 +708,36 @@ header .right-part .mobile-menu-wrapper {
   overflow: clip;
   scroll-margin-top: 45px;
 }
+@media screen and (max-width: 1800px) {
+  #demo {
+    padding: 160px 0 180px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #demo {
+    padding: 140px 0 160px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo {
+    padding: 120px 0 140px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #demo {
+    padding: 100px 0 80px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #demo {
+    padding: 80px 0 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #demo {
+    padding: 60px 0 30px;
+  }
+}
 #demo .global-wrapper {
   position: relative;
   margin: 0 auto;
@@ -687,11 +747,68 @@ header .right-part .mobile-menu-wrapper {
   justify-content: space-between;
   align-items: flex-end;
 }
+@media screen and (max-width: 1550px) {
+  #demo .global-wrapper {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #demo .global-wrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #demo .global-wrapper {
+    flex-direction: column-reverse;
+  }
+}
 #demo .global-wrapper .left-part {
   position: relative;
-  height: 480px;
+  height: auto;
   width: 810px;
   z-index: 1;
+}
+@media screen and (max-width: 1800px) {
+  #demo .global-wrapper .left-part {
+    width: 790px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  #demo .global-wrapper .left-part {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #demo .global-wrapper .left-part {
+    width: 620px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #demo .global-wrapper .left-part {
+    width: 520px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo .global-wrapper .left-part {
+    width: 420px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #demo .global-wrapper .left-part {
+    width: 600px;
+    margin: 15px auto 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  #demo .global-wrapper .left-part {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #demo .global-wrapper .left-part {
+    width: 100%;
+  }
 }
 #demo .global-wrapper .left-part img {
   position: relative;
@@ -708,16 +825,77 @@ header .right-part .mobile-menu-wrapper {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1550px) {
+  #demo .global-wrapper .right-part {
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo .global-wrapper .right-part {
+    max-width: 48%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #demo .global-wrapper .right-part {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  #demo .global-wrapper .right-part {
+    max-width: 100%;
+  }
+}
 #demo .global-wrapper .right-part .title {
   position: relative;
-  margin-bottom: 16px;
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 64px;
-  font-weight: 600;
-  line-height: 73px;
+  font-weight: 400;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 1800px) {
+  #demo .global-wrapper .right-part .title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #demo .global-wrapper .right-part .title {
+    font-size: 57px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #demo .global-wrapper .right-part .title {
+    font-size: 53px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo .global-wrapper .right-part .title {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #demo .global-wrapper .right-part .title {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #demo .global-wrapper .right-part .title {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #demo .global-wrapper .right-part .title {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo .global-wrapper .right-part .title {
+    margin-bottom: 12px;
+  }
 }
 #demo .global-wrapper .right-part .sub-title {
   position: relative;
@@ -725,10 +903,35 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
+}
+@media screen and (max-width: 1800px) {
+  #demo .global-wrapper .right-part .sub-title {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  #demo .global-wrapper .right-part .sub-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #demo .global-wrapper .right-part .sub-title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo .global-wrapper .right-part .sub-title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #demo .global-wrapper .right-part .sub-title {
+    max-width: none;
+  }
 }
 #demo .global-wrapper .right-part a {
   position: relative;
@@ -736,12 +939,22 @@ header .right-part .mobile-menu-wrapper {
   text-decoration: none;
   user-select: none;
 }
+@media screen and (max-width: 1550px) {
+  #demo .global-wrapper .right-part a {
+    margin-top: 14px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo .global-wrapper .right-part a {
+    margin-top: 12px;
+  }
+}
 #demo .global-wrapper .right-part a .button {
   position: relative;
   font-family: "PP Pangram Sans Rounded", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #d76677;
@@ -749,6 +962,16 @@ header .right-part .mobile-menu-wrapper {
   text-underline-offset: 6px;
   text-underline-color: #d76677;
   transition: text-underline-offset 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media screen and (max-width: 992px) {
+  #demo .global-wrapper .right-part a .button {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #demo .global-wrapper .right-part a .button {
+    font-size: 16px;
+  }
 }
 #demo .global-wrapper .right-part a:hover .button {
   text-underline-offset: 3px;
@@ -762,6 +985,7 @@ header .right-part .mobile-menu-wrapper {
   z-index: 0;
   stroke-dasharray: 890;
   stroke-dashoffset: 770;
+  display: none;
 }
 #demo .vector-right {
   position: absolute;
@@ -772,6 +996,7 @@ header .right-part .mobile-menu-wrapper {
   z-index: 0;
   stroke-dasharray: 870;
   stroke-dashoffset: 650;
+  display: none;
 }
 
 #information {
@@ -1333,6 +1558,9 @@ header .right-part .mobile-menu-wrapper {
 @media screen and (max-width: 576px) {
   #gallery .global-wrapper .picture {
     height: 180px;
+  }
+  #gallery .global-wrapper .picture:nth-child(n+6) {
+    display: none;
   }
 }
 

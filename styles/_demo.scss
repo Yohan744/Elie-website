@@ -6,6 +6,30 @@
   overflow: clip;
   scroll-margin-top: 45px;
 
+  @media screen and (max-width: 1800px) {
+    padding: 160px 0 180px;
+  }
+
+  @media screen and (max-width: 1550px) {
+    padding: 140px 0 160px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    padding: 120px 0 140px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 100px 0 80px;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 80px 0 50px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 60px 0 30px;
+  }
+
   .global-wrapper {
     position: relative;
     margin: 0 auto;
@@ -15,11 +39,57 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    @media screen and (max-width: 1550px) {
+      width: 88%;
+    }
+
+    @media screen and (max-width: 1300px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+
     .left-part {
       position: relative;
-      height: 480px;
+      height: auto;
       width: 810px;
       z-index: 1;
+
+      @media screen and (max-width: 1800px) {
+        width: 790px;
+      }
+
+      @media screen and (max-width: 1700px) {
+        width: 750px;
+      }
+
+      @media screen and (max-width: 1550px) {
+        width: 620px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        width: 520px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        width: 420px;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 600px;
+        margin: 15px auto 0;
+      }
+
+      @media screen and (max-width: 700px) {
+        width: 450px;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
 
       img {
         position: relative;
@@ -39,16 +109,35 @@
       display: flex;
       flex-direction: column;
 
+      @media screen and (max-width: 1550px) {
+        max-width: 45%;
+      }
+
+      @media screen and (max-width: 1150px) {
+        max-width: 48%;
+      }
+
+      @media screen and (max-width: 992px) {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 700px) {
+        max-width: 100%;
+      }
+
       .title {
-        position: relative;
+        @include title;
         margin-bottom: 16px;
-        font-family: "PP Pangram Sans Rounded bold", sans-serif;
-        font-size: 64px;
-        font-weight: 600;
-        line-height: 73px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $blue;
+
+        @media screen and (max-width: 1550px) {
+          margin-bottom: 14px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          margin-bottom: 12px;
+        }
+
       }
 
       .sub-title {
@@ -57,10 +146,31 @@
         font-family: "PP Pangram Sans Rounded medium", sans-serif;
         font-size: 22px;
         font-weight: 400;
-        line-height: 25px;
+        line-height: 1.1;
         letter-spacing: 0em;
         text-align: left;
         color: $blue;
+
+        @media screen and (max-width: 1800px) {
+          font-size: 21px;
+        }
+
+        @media screen and (max-width: 1700px) {
+          font-size: 20px;
+        }
+
+        @media screen and (max-width: 1550px) {
+          font-size: 18px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          font-size: 16px;
+        }
+
+        @media screen and (max-width: 576px) {
+         max-width: none;
+        }
+
       }
 
       a {
@@ -69,12 +179,20 @@
         text-decoration: none;
         user-select: none;
 
+        @media screen and (max-width: 1550px) {
+          margin-top: 14px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          margin-top: 12px;
+        }
+
         .button {
           position: relative;
           font-family: "PP Pangram Sans Rounded", sans-serif;
           font-size: 18px;
           font-weight: 400;
-          line-height: 21px;
+          line-height: 1;
           letter-spacing: 0em;
           text-align: left;
           color: $pink;
@@ -82,12 +200,21 @@
           text-underline-offset: 6px;
           text-underline-color: $pink;
           transition: text-underline-offset 0.4s $ease-power4-out;
+
+          @media screen and (max-width: 992px) {
+            font-size: 17px;
+          }
+
+          @media screen and (max-width: 700px) {
+            font-size: 16px;
+          }
+
         }
 
         &:hover {
-            .button {
-              text-underline-offset: 3px;
-            }
+          .button {
+            text-underline-offset: 3px;
+          }
         }
 
       }
@@ -105,6 +232,7 @@
     z-index: 0;
     stroke-dasharray: 890;
     stroke-dashoffset: 770;
+    display: none;
   }
 
   .vector-right {
@@ -116,6 +244,7 @@
     z-index: 0;
     stroke-dasharray: 870;
     stroke-dashoffset: 650;
+    display: none;
   }
 
 }

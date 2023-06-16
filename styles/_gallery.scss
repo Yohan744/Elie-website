@@ -125,7 +125,14 @@
 
       @media screen and (max-width: 576px) {
         height: 180px;
+
+        &:nth-child(n+6) {
+          display: none;
+        }
+
       }
+
+
 
     }
 
