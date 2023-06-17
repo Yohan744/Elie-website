@@ -695,6 +695,7 @@ header .right-part .mobile-menu-wrapper {
   letter-spacing: 0;
   text-align: center;
   color: #384864;
+  white-space: nowrap;
 }
 #masthead .phone:hover .wrapper {
   background-color: #b3d4b4;
@@ -746,6 +747,7 @@ header .right-part .mobile-menu-wrapper {
   width: 86%;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 1;
 }
 @media screen and (max-width: 1550px) {
   #demo .global-wrapper {
@@ -985,7 +987,50 @@ header .right-part .mobile-menu-wrapper {
   z-index: 0;
   stroke-dasharray: 890;
   stroke-dashoffset: 770;
-  display: none;
+}
+@media screen and (max-width: 1700px) {
+  #demo .vector-left {
+    height: 500px;
+    bottom: -130px;
+    left: -150px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #demo .vector-left {
+    height: 400px;
+    bottom: -100px;
+    left: -110px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #demo .vector-left {
+    height: 360px;
+    bottom: -110px;
+    left: -130px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo .vector-left {
+    height: 310px;
+    bottom: -105px;
+    left: -90px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #demo .vector-left {
+    height: 265px;
+    bottom: -65px;
+    left: -65px;
+    stroke-dashoffset: 820;
+  }
+}
+@media screen and (max-width: 576px) {
+  #demo .vector-left {
+    height: 250px;
+    bottom: -75px;
+    left: -75px;
+    stroke-dashoffset: 860;
+  }
 }
 #demo .vector-right {
   position: absolute;
@@ -996,7 +1041,54 @@ header .right-part .mobile-menu-wrapper {
   z-index: 0;
   stroke-dasharray: 870;
   stroke-dashoffset: 650;
-  display: none;
+}
+@media screen and (max-width: 1700px) {
+  #demo .vector-right {
+    height: 500px;
+    top: -200px;
+    right: -200px;
+    stroke-dashoffset: 665;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #demo .vector-right {
+    height: 450px;
+    top: -190px;
+    right: -190px;
+    stroke-dashoffset: 650;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #demo .vector-right {
+    height: 430px;
+    top: -220px;
+    right: -190px;
+    stroke-dashoffset: 570;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #demo .vector-right {
+    height: 390px;
+    top: -190px;
+    right: -170px;
+    stroke-dashoffset: 590;
+  }
+}
+@media screen and (max-width: 700px) {
+  #demo .vector-right {
+    height: 340px;
+    top: -180px;
+    right: -160px;
+    stroke-dashoffset: 550;
+  }
+}
+@media screen and (max-width: 576px) {
+  #demo .vector-right {
+    height: 300px;
+    top: -160px;
+    right: -160px;
+    stroke-dashoffset: 540;
+  }
 }
 
 #information {

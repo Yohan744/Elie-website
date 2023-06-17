@@ -10,27 +10,75 @@ function Demo() {
 
     useEffect(() => {
 
-        gsap.to("#demo .vector-left", {
-            scrollTrigger: {
-                trigger: "#demo",
-                start: "center bottom",
-                end: "top top",
-                scrub: true
-            },
-            strokeDashoffset: "1640px",
-            ease: "linear"
-        })
+        if (window.innerWidth > 1550) {
+            gsap.to("#demo .vector-left", {
+                scrollTrigger: {
+                    trigger: "#demo",
+                    start: "center bottom",
+                    end: "top top",
+                    scrub: true
+                },
+                strokeDashoffset: "1640px",
+                ease: "linear"
+            })
+        } else if (window.innerWidth > 700) {
+            gsap.to("#demo .vector-left", {
+                scrollTrigger: {
+                    trigger: "#demo",
+                    start: "center bottom",
+                    end: "top top",
+                    scrub: true
+                },
+                strokeDashoffset: "1700",
+                ease: "linear"
+            })
+        } else {
+            gsap.to("#demo .vector-left", {
+                scrollTrigger: {
+                    trigger: "#demo",
+                    start: "bottom+=50px bottom",
+                    end: "top-100px top",
+                    scrub: true
+                },
+                strokeDashoffset: "1630",
+                ease: "linear"
+            })
+        }
 
-        gsap.to("#demo .vector-right", {
-            scrollTrigger: {
-                trigger: "#demo",
-                start: "top-=300px center+=50px",
-                end: "center bottom",
-                scrub: true
-            },
-            strokeDashoffset: "0px",
-            ease: "linear"
-        })
+        if (window.innerWidth > 700) {
+            gsap.to("#demo .vector-right", {
+                scrollTrigger: {
+                    trigger: "#demo",
+                    start: "top-=300px center+=50px",
+                    end: "center bottom",
+                    scrub: true
+                },
+                strokeDashoffset: "0px",
+                ease: "linear"
+            })
+        } else if (window.innerWidth > 576) {
+            gsap.to("#demo .vector-right", {
+                scrollTrigger: {
+                    trigger: "#demo",
+                    start: "top-=100px center",
+                    end: "bottom-=100px bottom",
+                    scrub: true
+                },
+                strokeDashoffset: "0px",
+                ease: "linear"
+            })
+        } else {
+            gsap.to("#demo .vector-right", {
+                scrollTrigger: {
+                    trigger: "#demo",
+                    start: "top-=100px center",
+                    end: "bottom bottom",
+                    scrub: true
+                },
+                strokeDashoffset: "0px",
+                ease: "linear"
+            })
+        }
 
     }, [])
 
