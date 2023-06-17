@@ -29,6 +29,24 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 1550px) {
+      width: 88%;
+    }
+
+    @media screen and (max-width: 1300px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 992px) {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: initial;
+    }
+
     .top-wrapper {
       position: relative;
       padding: 20px 20px 20px 60px;
@@ -41,16 +59,67 @@
       border-radius: $radius;
       background-color: $green;
 
+      @media screen and (max-width: 1300px) {
+        margin-bottom: 20px;
+        padding: 15px 15px 15px 45px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        padding: 15px 15px 15px 35px;
+      }
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        margin-right: 20px;
+        margin-bottom: 0;
+        min-width: 60%;
+        flex-grow: 1;
+        padding: 30px;
+      }
+
+      @media screen and (max-width: 700px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 576px) {
+        padding: 30px 15px 15px;
+      }
+
       .info {
         position: relative;
         width: fit-content;
         display: flex;
         flex-direction: column;
 
+        @media screen and (max-width: 992px) {
+          margin-bottom: 20px;
+        }
+
         h1 {
           @include title;
           max-width: 600px;
           margin-bottom: 32px;
+
+          @media screen and (max-width: 1300px) {
+            margin-bottom: 25px;
+            max-width: 490px;
+          }
+
+          @media screen and (max-width: 1150px) {
+            margin-bottom: 20px;
+            max-width: 450px;
+          }
+
+          @media screen and (max-width: 992px) {
+            margin-bottom: 15px;
+            max-width: none;
+          }
+
+          @media screen and (max-width: 576px) {
+            margin-bottom: 20px;
+          }
+
         }
 
         .button-wrapper {
@@ -59,6 +128,10 @@
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
+
+          @media screen and (max-width: 576px) {
+            flex-direction: column-reverse;
+          }
 
           a {
             position: relative;
@@ -74,20 +147,64 @@
               border-radius: 10px;
               display: flex;
               flex-direction: row;
+              justify-content: center;
+              align-items: center;
               user-select: none;
               -webkit-user-drag: none;
               transition: background-color 0.35s ease-in-out;
+
+              @media screen and (max-width: 1700px) {
+                padding: 19px 30px;
+              }
+
+              @media screen and (max-width: 1550px) {
+                padding: 17px 23px;
+              }
+
+              @media screen and (max-width: 1300px) {
+                padding: 14px 20px;
+              }
+
+              @media screen and (max-width: 1150px) {
+                padding: 12px 18px;
+              }
+
+              @media screen and (max-width: 576px) {
+                padding: 10px 16px;
+                border-radius: 8px;
+              }
 
               p {
                 position: relative;
                 font-family: "PP Pangram Sans Rounded bold", sans-serif;
                 font-size: 24px;
                 font-weight: 400;
-                line-height: 27px;
+                line-height: 1.2;
                 letter-spacing: 0em;
                 text-align: center;
                 color: $wheat;
                 transition: color 0.35s ease-in-out;
+
+                @media screen and (max-width: 1700px) {
+                  font-size: 23px;
+                }
+
+                @media screen and (max-width: 1550px) {
+                  font-size: 20px;
+                }
+
+                @media screen and (max-width: 1300px) {
+                  font-size: 18px;
+                }
+
+                @media screen and (max-width: 1150px) {
+                  font-size: 16px;
+                }
+
+                @media screen and (max-width: 576px) {
+                  font-size: 14px;
+                }
+
               }
 
               .plus-icon {
@@ -95,6 +212,25 @@
                 margin-left: 20px;
                 height: 26px;
                 width: 26px;
+                object-fit: cover;
+
+                @media screen and (max-width: 1550px) {
+                  height: 22px;
+                  width: 22px;
+                }
+
+                @media screen and (max-width: 1150px) {
+                  height: 20px;
+                  width: 20px;
+                  margin-left: 15px;
+                }
+
+                @media screen and (max-width: 576px) {
+                  height: 16px;
+                  width: 16px;
+                  margin-left: 10px;
+                }
+
               }
 
               &:hover {
@@ -110,6 +246,11 @@
 
             &:nth-child(2) {
               margin-left: 16px;
+
+              @media screen and (max-width: 576px) {
+                margin-left: 0;
+                margin-bottom: 10px;
+              }
 
               .button {
                 background-color: transparent;
@@ -138,6 +279,41 @@
         width: 50.3%;
         border-radius: $radius;
         background-color: $pink;
+
+        @media screen and (max-width: 1800px) {
+          height: 450px;
+        }
+
+        @media screen and (max-width: 1700px) {
+          height: 400px;
+        }
+
+        @media screen and (max-width: 1550px) {
+          height: 350px;
+        }
+
+        @media screen and (max-width: 1400px) {
+          height: 335px;
+        }
+
+        @media screen and (max-width: 1300px) {
+          height: 300px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          height: 270px;
+          width: 48%;
+        }
+
+        @media screen and (max-width: 992px) {
+          height: 230px;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+          height: 160px;
+        }
+
       }
 
     }
@@ -148,6 +324,10 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
 
       .news {
         position: relative;
@@ -161,11 +341,49 @@
         border-radius: $radius;
         background-color: $pink;
 
+        @media screen and (max-width: 1700px) {
+          padding: 50px;
+        }
+
+        @media screen and (max-width: 1400px) {
+          padding: 45px;
+        }
+
+        @media screen and (max-width: 1300px) {
+          padding: 40px;
+          margin-right: 20px;
+        }
+
+        @media screen and (max-width: 1300px) {
+          padding: 35px 40px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          padding: 25px 30px;
+        }
+
+        @media screen and (max-width: 992px) {
+          margin-right: 0;
+          flex-direction: column;
+          padding: 25px;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+          padding: 20px 15px;
+        }
+
+
         .left-part {
           position: relative;
-          max-width: 45%;
+          max-width: 50%;
           display: flex;
           flex-direction: column;
+
+          @media screen and (max-width: 992px) {
+            max-width: none;
+          }
 
           .sub-title {
             position: relative;
@@ -175,12 +393,35 @@
             font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
             font-size: 16px;
             font-weight: 600;
-            line-height: 18px;
+            line-height: 1;
             letter-spacing: 0em;
             text-align: center;
             border-radius: 30px;
             border: 1px solid $wheat;
             color: $wheat;
+
+            @media screen and (max-width: 1700px) {
+              font-size: 15px;
+            }
+
+            @media screen and (max-width: 1550px) {
+              font-size: 14px;
+            }
+
+            @media screen and (max-width: 1400px) {
+              font-size: 13px;
+            }
+
+            @media screen and (max-width: 1300px) {
+              font-size: 12px;
+              padding: 8px 15px;
+            }
+
+            @media screen and (max-width: 576px) {
+              font-size: 11px;
+              padding: 6px 11px;
+            }
+
           }
 
           .title {
@@ -188,10 +429,35 @@
             font-family: "PP Pangram Sans Rounded bold", sans-serif;
             font-size: 32px;
             font-weight: 600;
-            line-height: 36px;
+            line-height: 1.1;
             letter-spacing: 0em;
             text-align: left;
             color: $wheat;
+
+            @media screen and (max-width: 1700px) {
+              font-size: 30px;
+            }
+
+            @media screen and (max-width: 1600px) {
+              font-size: 28px;
+            }
+
+            @media screen and (max-width: 1550px) {
+              font-size: 26px;
+            }
+
+            @media screen and (max-width: 1400px) {
+              font-size: 24px;
+            }
+
+            @media screen and (max-width: 1300px) {
+              font-size: 21px;
+            }
+
+            @media screen and (max-width: 576px) {
+              font-size: 19px;
+            }
+
           }
 
         }
@@ -203,16 +469,63 @@
           display: flex;
           flex-direction: column;
 
+          @media screen and (max-width: 1550px) {
+            padding-top: 53px;
+            max-width: 46%;
+          }
+
+          @media screen and (max-width: 1300px) {
+            padding-top: 46px;
+          }
+
+          @media screen and (max-width: 1150px) {
+            padding-top: 32px;
+          }
+
+          @media screen and (max-width: 992px) {
+            max-width: none;
+            padding-top: 15px;
+          }
+
+          @media screen and (max-width: 576px) {
+            padding-top: 10px;
+          }
+
           p {
             position: relative;
             margin-bottom: 11px;
             font-family: "PP Pangram Sans Rounded medium", sans-serif;
             font-size: 18px;
             font-weight: 400;
-            line-height: 21px;
+            line-height: 1.1;
             letter-spacing: 0em;
             text-align: left;
             color: $wheat;
+
+            @media screen and (max-width: 1700px) {
+              font-size: 17px;
+            }
+
+            @media screen and (max-width: 1550px) {
+              font-size: 16px;
+              margin-bottom: 9px;
+            }
+
+            @media screen and (max-width: 1400px) {
+              font-size: 15px;
+              margin-bottom: 8px;
+            }
+
+            @media screen and (max-width: 1300px) {
+              font-size: 14px;
+              margin-bottom: 7px;
+            }
+
+            @media screen and (max-width: 576px) {
+              font-size: 13px;
+              margin-bottom: 5px;
+            }
+
           }
 
           .know-more {
@@ -232,6 +545,18 @@
             text-underline-color: $wheat;
             transition: text-underline-offset 0.4s $ease-power4-out;
 
+            @media screen and (max-width: 1550px) {
+              font-size: 16px;
+            }
+
+            @media screen and (max-width: 1400px) {
+              font-size: 15px;
+            }
+
+            @media screen and (max-width: 1300px) {
+              font-size: 13px;
+            }
+
             &:hover {
               text-underline-offset: 3px;
             }
@@ -244,10 +569,34 @@
 
       .preview-wrapper {
         position: relative;
+        min-width: 42%;
         width: 100%;
         height: auto;
         border-radius: $radius;
         overflow: clip;
+
+        @media screen and (max-width: 1600px) {
+          min-width: 40%;
+        }
+
+        @media screen and (max-width: 1550px) {
+          min-width: 38%;
+        }
+
+        @media screen and (max-width: 1300px) {
+          max-width: 36%;
+        }
+
+        @media screen and (max-width: 992px) {
+          max-width: none;
+          height: 175px;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+          height: 150px;
+        }
+
 
         .preview {
           position: absolute;
@@ -279,9 +628,23 @@
             user-select: none;
             background-color: $green;
 
+            @media screen and (max-width: 1550px) {
+              padding: 9px 16px;
+            }
+
+            @media screen and (max-width: 1150px) {
+              top: 10px;
+              padding: 6px 14px;
+            }
+
+            @media screen and (max-width: 1150px) {
+              top: 6px;
+              padding: 5px 12px;
+            }
+
             p {
               position: relative;
-              top: 2px;
+              top: 1px;
               font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
               font-size: 16px;
               font-weight: 400;
@@ -289,6 +652,21 @@
               letter-spacing: 0em;
               text-align: center;
               color: $blue;
+              white-space: nowrap;
+
+              @media screen and (max-width: 1550px) {
+                font-size: 14px;
+                top: 0;
+              }
+
+              @media screen and (max-width: 1150px) {
+                font-size: 12px;
+              }
+
+              @media screen and (max-width: 576px) {
+                font-size: 10px;
+              }
+
             }
 
           }
@@ -317,8 +695,23 @@
             border-radius: 30px;
             background-color: rgba(175, 180, 191, 1);
 
+            @media screen and (max-width: 1550px) {
+              height: 14px;
+              width: 14px;
+            }
+
+            @media screen and (max-width: 1150px) {
+              height: 10px;
+              width: 10px;
+            }
+
             &:nth-child(2) {
               margin: 0 8px;
+
+              @media screen and (max-width: 1150px) {
+                margin: 0 6px;
+              }
+
             }
 
           }
@@ -334,6 +727,17 @@
             background-color: $wheat;
             z-index: 3;
             transition: left 0.5s $ease-power4-out;
+
+            @media screen and (max-width: 1550px) {
+              height: 14px;
+              width: 14px;
+            }
+
+            @media screen and (max-width: 1150px) {
+              height: 10px;
+              width: 10px;
+            }
+
           }
 
           &[data-active="0"] {
@@ -345,12 +749,30 @@
           &[data-active="1"] {
             &:before {
               left: Calc(50% - 8px);
+
+              @media screen and (max-width: 1550px) {
+                left: Calc(50% - 6px);
+              }
+
+              @media screen and (max-width: 1150px) {
+                left: Calc(50% - 5px);
+              }
+
             }
           }
 
           &[data-active="2"] {
             &:before {
-             left: Calc(100% - 17px);
+              left: Calc(100% - 17px);
+
+              @media screen and (max-width: 1550px) {
+                left: Calc(100% - 14px);
+              }
+
+              @media screen and (max-width: 1150px) {
+                left: Calc(100% - 10px);
+              }
+
             }
           }
 
@@ -359,7 +781,6 @@
       }
 
     }
-
 
   }
 

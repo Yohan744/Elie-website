@@ -1,4 +1,4 @@
-import PlusIconBlue from "../../asset/svg/plus-icon-blue.svg";
+import PlusIconBlue from "../../public/plus-icon-blue.svg";
 import {useEffect} from "react";
 
 function Masthead() {
@@ -58,7 +58,7 @@ function Masthead() {
                             <a href={"#reservation"} draggable="false">
                                 <div className={"button"}>
                                     <p>Créer mon groupe</p>
-                                    <PlusIconBlue className="plus-icon"/>
+                                    <img src={"plus-icon-blue.svg"} alt="plus icon" className="plus-icon"/>
                                 </div>
                             </a>
 
