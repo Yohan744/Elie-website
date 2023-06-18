@@ -116,6 +116,7 @@ header.hide {
 }
 @media screen and (max-width: 576px) {
   header {
+    width: 92.1%;
     padding: 13px 20px;
   }
 }
@@ -456,7 +457,7 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 64px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
@@ -913,7 +914,7 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
@@ -1063,7 +1064,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview .text {
-    top: 6px;
+    top: 8px;
     padding: 5px 12px;
   }
 }
@@ -1108,6 +1109,11 @@ header .right-part .mobile-menu-wrapper {
   justify-content: center;
   align-items: center;
   z-index: 1;
+}
+@media screen and (max-width: 576px) {
+  #masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots {
+    bottom: 8px;
+  }
 }
 #masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots .dot {
   position: relative;
@@ -1441,7 +1447,7 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 64px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
@@ -1503,7 +1509,7 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
@@ -1848,12 +1854,13 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 800px) {
   #information .global-wrapper .info-wrapper .info {
-    max-width: 300px;
+    max-width: 350px;
+    align-items: center;
   }
 }
 @media screen and (max-width: 576px) {
   #information .global-wrapper .info-wrapper .info {
-    max-width: none;
+    max-width: 90%;
   }
 }
 #information .global-wrapper .info-wrapper .info img {
@@ -1918,6 +1925,12 @@ header .right-part .mobile-menu-wrapper {
   #information .global-wrapper .info-wrapper .info .title {
     font-size: 20px;
     margin: 16px 0 8px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #information .global-wrapper .info-wrapper .info .title {
+    margin: 12px 0 7px;
   }
 }
 #information .global-wrapper .info-wrapper .info p {
@@ -1948,6 +1961,7 @@ header .right-part .mobile-menu-wrapper {
 @media screen and (max-width: 800px) {
   #information .global-wrapper .info-wrapper .info p {
     font-size: 14px;
+    text-align: center;
   }
 }
 #information .global-wrapper .info-wrapper .info:nth-child(2) {
@@ -1976,11 +1990,6 @@ header .right-part .mobile-menu-wrapper {
 @media screen and (max-width: 800px) {
   #information .global-wrapper .info-wrapper .info:nth-child(2) {
     margin: 40px 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  #information .global-wrapper .info-wrapper .info:nth-child(2) {
-    margin: 30px 0;
   }
 }
 #information a {
@@ -2013,6 +2022,11 @@ header .right-part .mobile-menu-wrapper {
 @media screen and (max-width: 992px) {
   #information a {
     margin-top: 35px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #information a {
+    margin-top: 40px;
   }
 }
 #information a .contact-us {
@@ -2633,6 +2647,34 @@ header .right-part .mobile-menu-wrapper {
   border-radius: 15px;
   background-color: #edf8ee;
 }
+@media screen and (max-width: 1800px) {
+  #reservation .global-wrapper {
+    padding: 78px 26px 26px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper {
+    width: 88%;
+    padding: 60px 24px 24px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #reservation .global-wrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper {
+    width: 90%;
+    padding: 50px 24px 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper {
+    width: 92%;
+    padding: 50px 20px 20px;
+  }
+}
 #reservation .global-wrapper .title {
   position: relative;
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
@@ -2671,6 +2713,27 @@ header .right-part .mobile-menu-wrapper {
   flex-direction: row;
   justify-content: center;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .state-wrapper {
+    margin: 70px auto 75px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .state-wrapper {
+    margin: 60px auto 65px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #reservation .global-wrapper .state-wrapper {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .state-wrapper {
+    margin: 15px auto 40px;
+  }
+}
 #reservation .global-wrapper .state-wrapper .state {
   position: relative;
   max-width: 160px;
@@ -2678,6 +2741,16 @@ header .right-part .mobile-menu-wrapper {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .state-wrapper .state {
+    max-width: 140px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .state-wrapper .state {
+    max-width: 120px;
+  }
 }
 #reservation .global-wrapper .state-wrapper .state .state-number {
   position: relative;
@@ -2696,16 +2769,57 @@ header .right-part .mobile-menu-wrapper {
   color: #afb4bf;
   transition: border 0.35s ease-in-out, background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .state-wrapper .state .state-number {
+    margin: 0 auto 14px;
+    padding: 5px 16px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .state-wrapper .state .state-number {
+    margin: 0 auto 14px;
+    padding: 3px 15px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .state-wrapper .state .state-number {
+    margin: 0 auto 12px;
+    padding: 1px 13px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #reservation .global-wrapper .state-wrapper .state .state-number {
+    margin: 0 auto 8px;
+  }
+}
 #reservation .global-wrapper .state-wrapper .state p {
   position: relative;
   font-family: " PP Pangram Sans Rounded medium", sans-serif;
   font-size: 19px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.15;
   letter-spacing: 0em;
   text-align: center;
   color: #afb4bf;
   transition: color 0.35s ease-in-out;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .state-wrapper .state p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .state-wrapper .state p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .state-wrapper .state p {
+    font-size: 14px;
+  }
 }
 #reservation .global-wrapper .state-wrapper .state.is-active .state-number {
   background-color: #d76677;
@@ -2722,6 +2836,41 @@ header .right-part .mobile-menu-wrapper {
   width: 170px;
   background-color: #cdd5e0;
   border-radius: 10px;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .state-wrapper .line {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #reservation .global-wrapper .state-wrapper .line {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .state-wrapper .line {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .state-wrapper .line {
+    width: 90px;
+    margin: 20px -25px 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  #reservation .global-wrapper .state-wrapper .line {
+    height: 20px;
+    width: 2px;
+    margin: 13px auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  #reservation .global-wrapper .state-wrapper .line {
+    height: 18px;
+    width: 1px;
+    margin: 13px auto;
+  }
 }
 #reservation .global-wrapper .container {
   position: relative;
@@ -2747,26 +2896,89 @@ header .right-part .mobile-menu-wrapper {
   z-index: -1;
   transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1800px) {
+  #reservation .global-wrapper .container .sub-wrapper {
+    padding: 65px 100px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper {
+    padding: 50px 80px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper {
+    padding: 20px 15px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
   position: relative;
   margin-bottom: 73px;
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 41px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
+    margin-bottom: 65px;
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
+    margin-bottom: 55px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
+    margin-bottom: 30px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .sub-title {
   position: relative;
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   color: #32405a;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .sub-title {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .sub-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .sub-title {
+    font-size: 18px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper {
   position: relative;
@@ -2776,6 +2988,26 @@ header .right-part .mobile-menu-wrapper {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper {
+    margin: 23px 0 70px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper {
+    margin: 20px 0 60px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper {
+    margin: 15px 0 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper {
+    flex-direction: column;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place {
   position: relative;
   padding: 12px 25px;
@@ -2784,20 +3016,71 @@ header .right-part .mobile-menu-wrapper {
   background-color: #e3e5ea;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place {
+    padding: 12px 23px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place {
+    padding: 11px 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place {
+    padding: 10px 16px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place {
+    padding: 10px 15px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
   position: relative;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   color: #384864;
+  white-space: nowrap;
   user-select: none;
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
+    font-size: 16px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:nth-child(2) {
   margin: 0 15px;
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:nth-child(2) {
+    margin: 0 12px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:nth-child(2) {
+    margin: 10px 0;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place.is-active, #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:hover {
   background-color: #32405a;
@@ -2827,7 +3110,7 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 41px;
+  line-height: 1;
   letter-spacing: 0;
   text-align: center;
   color: #384864;
@@ -2875,6 +3158,7 @@ header .right-part .mobile-menu-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 19%;
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .day {
   position: relative;
@@ -2890,7 +3174,7 @@ header .right-part .mobile-menu-wrapper {
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time {
   position: relative;
   padding: 20px 0;
-  width: 250px;
+  width: 100%;
   border-radius: 10px;
   cursor: pointer;
   background-color: #e3e5ea;
@@ -3286,16 +3570,59 @@ header .right-part .mobile-menu-wrapper {
   user-select: none;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button {
+    width: 215px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button {
+    width: 200px;
+    padding: 14px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button {
+    width: 165px;
+    padding: 13px 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button {
+    width: 100%;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button p {
   position: relative;
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button p {
+    font-size: 18px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button:hover {
   background-color: #32405a;
@@ -3303,6 +3630,16 @@ header .right-part .mobile-menu-wrapper {
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev {
   background-color: transparent;
   margin-right: 30px;
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev {
+    margin-right: 15px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev p {
   color: #384864;
@@ -3440,7 +3777,7 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 64px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;

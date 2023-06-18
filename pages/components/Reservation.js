@@ -30,6 +30,10 @@ function Reservation() {
         const showingSectionId = document.querySelector('.sub-wrapper.is-active').getAttribute("data-id")
         updateStateOfReservation(showingSectionId)
 
+        window.addEventListener('resize', () => {
+            updateSizeOfContainer("is-active")
+        })
+
     }, [])
 
     useEffect(() => {
