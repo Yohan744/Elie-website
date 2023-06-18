@@ -3577,10 +3577,33 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 28px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .sub-title {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .sub-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .sub-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .sub-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
   position: relative;
@@ -3593,25 +3616,77 @@ header .right-part .mobile-menu-wrapper {
   font-family: " PP Pangram Sans Rounded medium", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: center;
   color: #384864;
   caret-color: #384864;
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
+    font-size: 20px;
+    padding: 18px 0;
+    margin: 0 auto 60px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
+    font-size: 18px;
+    padding: 15px 0;
+    margin: 0 auto 50px;
+    width: 230px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
+    font-size: 16px;
+    padding: 13px 0;
+    margin: 0 auto 40px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
+    font-size: 14px;
+    padding: 12px 0;
+    margin: 0 auto 30px;
+    width: 150px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number].error {
   color: #d76677;
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
   position: relative;
-  font-family: " PP Pangram Sans Rounded medium", sans-serif;
+  font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   color: rgba(56, 72, 100, 0.3);
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
+    font-size: 14px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::-webkit-inner-spin-button, #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -3626,6 +3701,26 @@ header .right-part .mobile-menu-wrapper {
   align-items: center;
   user-select: none;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
+    margin-bottom: 30px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit {
   position: relative;
   padding: 23px 40px;
@@ -3634,13 +3729,37 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   color: #384864;
   cursor: pointer;
   background-color: transparent;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1), color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit {
+    font-size: 20px;
+    padding: 20px 35px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit {
+    font-size: 18px;
+    padding: 16px 28px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit {
+    font-size: 16px;
+    padding: 13px 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit {
+    font-size: 14px;
+    padding: 11px 22px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level:hover, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit:hover, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level:hover, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:hover {
   background-color: #e3e5ea;
@@ -3652,14 +3771,74 @@ header .right-part .mobile-menu-wrapper {
 #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
   margin: 0 24px;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
+    margin: 0 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
+    margin: 0 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
+    margin: 0 12px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
   margin-bottom: 102px;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
+    margin-bottom: 65px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
+    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper {
+    margin-bottom: 30px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit {
   text-transform: uppercase;
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
   margin: 0 0 0 24px;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
+    margin: 0 0 0 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
+    margin: 0 0 0 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
+    margin: 0 0 0 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
+    margin: 0 0 0 12px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper {
   position: relative;
@@ -3685,8 +3864,14 @@ header .right-part .mobile-menu-wrapper {
   position: relative;
   margin: 0 auto 14px;
   height: 42px;
-  width: auto;
+  width: 47px;
   object-fit: cover;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .logo {
+    height: 38px;
+    width: 40px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .team-name {
   position: relative;
@@ -3695,15 +3880,25 @@ header .right-part .mobile-menu-wrapper {
   background-color: #abc3ac;
   border-radius: 10px;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .team-name {
+    padding: 6px 0;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .team-name p {
   position: relative;
   font-family: "Patsy Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 33px;
+  line-height: 2;
   letter-spacing: 0.1em;
   text-align: center;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .team-name p {
+    font-size: 16px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper {
   position: relative;
@@ -3725,6 +3920,11 @@ header .right-part .mobile-menu-wrapper {
   letter-spacing: 0;
   text-align: center;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper .team-member {
+    padding: 8px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper .team-member::placeholder {
   color: #384864;
