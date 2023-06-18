@@ -67,15 +67,16 @@ html, body {
   scroll-behavior: auto;
   overscroll-behavior: none;
   overflow-x: hidden;
+
+  img {
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+
 }
 
 body {
   background-color: $wheat;
-}
-
-img {
-  -webkit-user-drag: none;
-  user-select: none;
 }
 
 html.lenis {

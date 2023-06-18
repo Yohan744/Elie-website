@@ -52,6 +52,10 @@
       flex-direction: column-reverse;
     }
 
+    @media screen and (max-width: 576px) {
+      width: 92%;
+    }
+
     .left-part {
       position: relative;
       height: auto;

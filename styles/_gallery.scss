@@ -4,8 +4,6 @@
   width: 100%;
   border-radius: 0 0 25px 25px;
   background-color: $blue;
-  margin-top: -1px;
-  z-index: -1;
 
   @media screen and (max-width: 1550px) {
     padding: 115px 0 60px;
@@ -55,6 +53,7 @@
     @media screen and (max-width: 576px) {
       grid-template-columns: repeat(1, 1fr);
       grid-row-gap: 20px;
+      width: 92%;
     }
 
     h3 {
@@ -104,8 +103,8 @@
       position: relative;
       height: 390px;
       width: 100%;
-      background-color: rgba(227, 229, 234, 1);
       border-radius: 10px;
+      overflow: clip;
 
       @media screen and (max-width: 1750px) {
         height: 360px;
@@ -132,7 +131,21 @@
 
       }
 
+      img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 1.5s $ease-power4-out;
+      }
 
+      &:hover {
+
+        img {
+          transform: scale(1.05);
+        }
+
+      }
 
     }
 

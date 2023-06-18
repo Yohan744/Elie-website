@@ -15,7 +15,7 @@ function Header() {
 
         Observer.create({
             target: window,
-            type: "wheel, touch",
+            type: "wheel",
             onChange(observer) {
 
                 if (observer.deltaY > 25) {
@@ -25,7 +25,9 @@ function Header() {
                 }
 
                 if (observer.deltaY < -20) {
-                    header.classList.remove("hide");
+                    if (header.classList.contains("hide")) {
+                        header.classList.remove("hide");
+                    }
                 }
 
             }
