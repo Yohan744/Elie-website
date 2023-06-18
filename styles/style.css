@@ -2671,8 +2671,8 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #reservation .global-wrapper {
-    width: 92%;
-    padding: 50px 20px 20px;
+    width: 100%;
+    padding: 50px 4% 20px;
   }
 }
 #reservation .global-wrapper .title {
@@ -2947,12 +2947,6 @@ header .right-part .mobile-menu-wrapper {
 @media screen and (max-width: 992px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
     margin-bottom: 40px;
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 750px) {
-  #reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
-    margin-bottom: 30px;
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .sub-title {
@@ -2977,7 +2971,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 992px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-place .sub-title {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper {
@@ -3036,6 +3030,11 @@ header .right-part .mobile-menu-wrapper {
     padding: 10px 15px;
   }
 }
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place {
+    padding: 11px 16px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
   position: relative;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
@@ -3061,12 +3060,12 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 992px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 576px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place p {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:nth-child(2) {
@@ -3079,7 +3078,12 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 750px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:nth-child(2) {
-    margin: 10px 0;
+    margin: 15px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:nth-child(2) {
+    margin: 13px 0;
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place.is-active, #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:hover {

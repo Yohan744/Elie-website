@@ -32,8 +32,8 @@
     }
 
     @media screen and (max-width: 576px) {
-      width: 92%;
-      padding: 50px 20px 20px;
+      width: 100%;
+      padding: 50px 4% 20px;
     }
 
     .title {
@@ -279,11 +279,6 @@
 
             @media screen and (max-width: 992px) {
               margin-bottom: 40px;
-              font-size: 28px;
-            }
-
-            @media screen and (max-width: 750px) {
-              margin-bottom: 30px;
             }
 
           }
@@ -307,7 +302,7 @@
             }
 
             @media screen and (max-width: 992px) {
-              font-size: 18px;
+              font-size: 19px;
             }
 
           }
@@ -360,6 +355,10 @@
                 padding: 10px 15px;
               }
 
+              @media screen and (max-width: 576px) {
+                padding: 11px 16px;
+              }
+
               p {
                 position: relative;
                 font-family: "PP Pangram Sans Rounded medium", sans-serif;
@@ -382,11 +381,11 @@
                 }
 
                 @media screen and (max-width: 992px) {
-                  font-size: 17px;
+                  font-size: 18px;
                 }
 
-                @media screen and (max-width: 750px) {
-                  font-size: 16px;
+                @media screen and (max-width: 576px) {
+                  font-size: 17px;
                 }
 
               }
@@ -399,7 +398,11 @@
                 }
 
                 @media screen and (max-width: 750px) {
-                  margin: 10px 0;
+                  margin: 15px 0;
+                }
+
+                @media screen and (max-width: 576px) {
+                  margin: 13px 0;
                 }
 
               }
