@@ -107,11 +107,11 @@ header.hide {
 @media screen and (max-width: 1300px) {
   header {
     width: 90.1%;
+    top: 27px;
   }
 }
 @media screen and (max-width: 650px) {
   header {
-    width: 96%;
     top: 8px;
   }
 }
@@ -177,7 +177,7 @@ header .right-part .link:hover {
     margin-right: 15px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   header .right-part .link {
     padding: 9px 13px;
     font-size: 15px;
@@ -207,7 +207,7 @@ header .right-part .user {
     padding: 18px 21px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   header .right-part .user {
     padding: 15px 18px;
   }
@@ -235,7 +235,7 @@ header .right-part .user img {
     width: 20px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   header .right-part .user img {
     height: 20px;
     width: 15px;
@@ -266,7 +266,7 @@ header .right-part a .reserve {
   background-color: #c3e0c7;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   header .right-part a .reserve {
     padding: 14px 34px;
   }
@@ -291,7 +291,7 @@ header .right-part a .reserve p {
     font-size: 22px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   header .right-part a .reserve p {
     font-size: 20px;
   }
@@ -329,6 +329,26 @@ header .right-part .mobile-menu-wrapper {
   justify-content: center;
   align-items: center;
   border-radius: 0 0 15px 15px;
+}
+@media screen and (max-width: 1550px) {
+  #masthead {
+    padding: 157px 0 90px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #masthead {
+    padding: 130px 0 70px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #masthead {
+    padding: 120px 0 55px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #masthead {
+    padding: 95px 0 42px;
+  }
 }
 #masthead .background-image {
   position: absolute;
@@ -556,7 +576,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button {
-    padding: 10px 16px;
+    padding: 12px 19px;
     border-radius: 8px;
   }
 }
@@ -593,7 +613,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button .plus-icon {
@@ -618,8 +638,8 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button .plus-icon {
-    height: 16px;
-    width: 16px;
+    height: 19px;
+    width: 19px;
     margin-left: 10px;
   }
 }
@@ -809,8 +829,9 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .bottom-wrapper .news .left-part .sub-title {
-    font-size: 11px;
-    padding: 6px 11px;
+    font-size: 12px;
+    padding: 8px 14px;
+    margin-bottom: 8px;
   }
 }
 #masthead .global-wrapper .bottom-wrapper .news .left-part .title {
@@ -848,11 +869,6 @@ header .right-part .mobile-menu-wrapper {
     font-size: 21px;
   }
 }
-@media screen and (max-width: 576px) {
-  #masthead .global-wrapper .bottom-wrapper .news .left-part .title {
-    font-size: 19px;
-  }
-}
 #masthead .global-wrapper .bottom-wrapper .news .right-part {
   position: relative;
   padding-top: 42px;
@@ -884,7 +900,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .bottom-wrapper .news .right-part {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 }
 #masthead .global-wrapper .bottom-wrapper .news .right-part p {
@@ -923,8 +939,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .bottom-wrapper .news .right-part p {
-    font-size: 13px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
 }
 #masthead .global-wrapper .bottom-wrapper .news .right-part .know-more {
@@ -957,6 +972,11 @@ header .right-part .mobile-menu-wrapper {
 @media screen and (max-width: 1300px) {
   #masthead .global-wrapper .bottom-wrapper .news .right-part .know-more {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #masthead .global-wrapper .bottom-wrapper .news .right-part .know-more {
+    font-size: 14px;
   }
 }
 #masthead .global-wrapper .bottom-wrapper .news .right-part .know-more:hover {
@@ -994,7 +1014,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .bottom-wrapper .preview-wrapper {
-    height: 150px;
+    height: 170px;
   }
 }
 #masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview {
@@ -1037,7 +1057,7 @@ header .right-part .mobile-menu-wrapper {
     padding: 6px 14px;
   }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 576px) {
   #masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview .text {
     top: 6px;
     padding: 5px 12px;
@@ -1068,7 +1088,7 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 576px) {
   #masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview .text p {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 #masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview.show {
@@ -1187,14 +1207,47 @@ header .right-part .mobile-menu-wrapper {
   z-index: 1;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1550px) {
+  #masthead .phone .wrapper {
+    padding: 19px 30px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #masthead .phone .wrapper {
+    padding: 15px 24px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #masthead .phone .wrapper {
+    padding: 12px 22px;
+  }
+}
 #masthead .phone .wrapper img {
   position: relative;
   height: 26px;
   width: 26px;
 }
+@media screen and (max-width: 1550px) {
+  #masthead .phone .wrapper img {
+    height: 24px;
+    width: 24px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #masthead .phone .wrapper img {
+    height: 22px;
+    width: 22px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #masthead .phone .wrapper img {
+    height: 19px;
+    width: 19px;
+  }
+}
 #masthead .phone .wrapper p {
   position: relative;
-  top: 2px;
+  top: 1px;
   margin-left: 19px;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 24px;
@@ -1204,6 +1257,24 @@ header .right-part .mobile-menu-wrapper {
   text-align: center;
   color: #384864;
   white-space: nowrap;
+}
+@media screen and (max-width: 1550px) {
+  #masthead .phone .wrapper p {
+    margin-left: 15px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #masthead .phone .wrapper p {
+    margin-left: 13px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #masthead .phone .wrapper p {
+    margin-left: 10px;
+    font-size: 16px;
+  }
 }
 #masthead .phone:hover .wrapper {
   background-color: #b3d4b4;

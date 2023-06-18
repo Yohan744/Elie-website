@@ -15,7 +15,7 @@ function Header() {
 
         Observer.create({
             target: window,
-            type: "wheel",
+            type: "wheel, touch",
             onChange(observer) {
 
                 if (observer.deltaY > 25) {

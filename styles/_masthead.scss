@@ -8,6 +8,22 @@
   align-items: center;
   border-radius: 0 0 15px 15px;
 
+  @media screen and (max-width: 1550px) {
+    padding: 157px 0 90px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    padding: 130px 0 70px;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 120px 0 55px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 95px 0 42px;
+  }
+
   .background-image {
     position: absolute;
     top: 0;
@@ -170,7 +186,7 @@
               }
 
               @media screen and (max-width: 576px) {
-                padding: 10px 16px;
+                padding: 12px 19px;
                 border-radius: 8px;
               }
 
@@ -202,7 +218,7 @@
                 }
 
                 @media screen and (max-width: 576px) {
-                  font-size: 14px;
+                  font-size: 16px;
                 }
 
               }
@@ -226,8 +242,8 @@
                 }
 
                 @media screen and (max-width: 576px) {
-                  height: 16px;
-                  width: 16px;
+                  height: 19px;
+                  width: 19px;
                   margin-left: 10px;
                 }
 
@@ -418,8 +434,9 @@
             }
 
             @media screen and (max-width: 576px) {
-              font-size: 11px;
-              padding: 6px 11px;
+              font-size: 12px;
+              padding: 8px 14px;
+              margin-bottom: 8px;
             }
 
           }
@@ -454,10 +471,6 @@
               font-size: 21px;
             }
 
-            @media screen and (max-width: 576px) {
-              font-size: 19px;
-            }
-
           }
 
         }
@@ -488,7 +501,7 @@
           }
 
           @media screen and (max-width: 576px) {
-            padding-top: 10px;
+            padding-top: 20px;
           }
 
           p {
@@ -522,8 +535,7 @@
             }
 
             @media screen and (max-width: 576px) {
-              font-size: 13px;
-              margin-bottom: 5px;
+              margin-bottom: 2px;
             }
 
           }
@@ -555,6 +567,10 @@
 
             @media screen and (max-width: 1300px) {
               font-size: 13px;
+            }
+
+            @media screen and (max-width: 576px) {
+              font-size: 14px;
             }
 
             &:hover {
@@ -594,7 +610,7 @@
         }
 
         @media screen and (max-width: 576px) {
-          height: 150px;
+          height: 170px;
         }
 
 
@@ -637,7 +653,7 @@
               padding: 6px 14px;
             }
 
-            @media screen and (max-width: 1150px) {
+            @media screen and (max-width: 576px) {
               top: 6px;
               padding: 5px 12px;
             }
@@ -664,7 +680,7 @@
               }
 
               @media screen and (max-width: 576px) {
-                font-size: 10px;
+                font-size: 11px;
               }
 
             }
@@ -806,15 +822,43 @@
       z-index: 1;
       transition: background-color 0.8s $ease-power4-out;
 
+      @media screen and (max-width: 1550px) {
+        padding: 19px 30px;
+      }
+
+      @media screen and (max-width: 1550px) {
+        padding: 15px 24px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        padding: 12px 22px;
+      }
+
       img {
         position: relative;
         height: 26px;
         width: 26px;
+
+        @media screen and (max-width: 1550px) {
+          height: 24px;
+          width: 24px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          height: 22px;
+          width: 22px;
+        }
+
+        @media screen and (max-width: 576px) {
+          height: 19px;
+          width: 19px;
+        }
+
       }
 
       p {
         position: relative;
-        top: 2px;
+        top: 1px;
         margin-left: 19px;
         font-family: "PP Pangram Sans Rounded medium", sans-serif;
         font-size: 24px;
@@ -824,6 +868,22 @@
         text-align: center;
         color: $blue;
         white-space: nowrap;
+
+        @media screen and (max-width: 1550px) {
+          margin-left: 15px;
+          font-size: 22px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          margin-left: 13px;
+          font-size: 19px;
+        }
+
+        @media screen and (max-width: 576px) {
+          margin-left: 10px;
+          font-size: 16px;
+        }
+
       }
 
     }
