@@ -3099,15 +3099,45 @@ header .right-part .mobile-menu-wrapper {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part {
+    flex-direction: column-reverse;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .localisation {
   position: relative;
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #d76677;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .localisation {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .localisation {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .localisation {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .localisation {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .localisation {
+    font-size: 16px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .title {
   position: relative;
@@ -3119,6 +3149,26 @@ header .right-part .mobile-menu-wrapper {
   text-align: center;
   color: #384864;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .title {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .title {
+    margin-bottom: 8px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper {
   position: relative;
   width: 225px;
@@ -3126,6 +3176,31 @@ header .right-part .mobile-menu-wrapper {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper {
+    display: none;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper img {
   position: relative;
@@ -3142,11 +3217,31 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   user-select: none;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper .month {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper .month {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper .month {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper .month {
+    font-size: 17px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper {
   position: relative;
@@ -3157,6 +3252,28 @@ header .right-part .mobile-menu-wrapper {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper {
+    margin: 55px 0 80px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper {
+    margin: 50px 0 70px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper {
+    margin: 40px 0 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0 35px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date {
   position: relative;
   display: flex;
@@ -3164,16 +3281,46 @@ header .right-part .mobile-menu-wrapper {
   justify-content: center;
   width: 19%;
 }
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date {
+    width: 32%;
+    margin-bottom: 15px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .day {
   position: relative;
   margin-bottom: 20px;
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: center;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .day {
+    font-size: 22px;
+    margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .day {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .day {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .day {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time {
   position: relative;
@@ -3184,9 +3331,28 @@ header .right-part .mobile-menu-wrapper {
   background-color: #e3e5ea;
   transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time {
+    padding: 18px 0;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time {
+    padding: 16px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time {
+    padding: 14px 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time {
+    padding: 12px 0;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time p {
   position: relative;
-  top: 1px;
   font-family: "PP Pangram Sans Rounded", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -3197,8 +3363,34 @@ header .right-part .mobile-menu-wrapper {
   user-select: none;
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time p {
+    top: 0;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time p {
+    font-size: 12px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.margin {
   margin-bottom: 10px;
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.margin {
+    margin-bottom: 7px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.disabled {
   opacity: 0.3;
@@ -3224,10 +3416,30 @@ header .right-part .mobile-menu-wrapper {
   background-color: #32405a;
   transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
-#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up.is-active {
-  opacity: 1;
-  z-index: 5;
-  pointer-events: all;
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up {
+    padding: 40px;
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up {
+    padding: 35px;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up {
+    padding: 30px;
+    max-width: none;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up {
+    padding: 20px;
+    width: 90%;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .cross-icon {
   position: absolute;
@@ -3239,26 +3451,45 @@ header .right-part .mobile-menu-wrapper {
   user-select: none;
   cursor: pointer;
 }
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .cross-icon {
+    height: 22px;
+    width: 22px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .cross-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .normal-text {
   position: relative;
+  width: fit-content;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
   position: relative;
+  width: fit-content;
   margin-bottom: 20px;
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
+    margin-bottom: 15px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions {
   position: relative;
@@ -3266,7 +3497,7 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
@@ -3276,10 +3507,55 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #fefff6;
+}
+#reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up.is-active {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: all;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .normal-text, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .normal-text, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .normal-text, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .normal-text, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions-text {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions-text {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions-text {
+    font-size: 14px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up-background {
   position: absolute;
