@@ -231,11 +231,15 @@ header {
       width: 50px;
       display: none;
       cursor: pointer;
+      padding: 0 9px;
       border-radius: 10px;
-      background-color: $pink;
+      background-color: $blue;
 
       @media screen and (max-width: 1150px) {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       @media screen and (max-width: 576px) {
@@ -243,8 +247,150 @@ header {
         width: 44px;
       }
 
+      span {
+        position: relative;
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: $wheat;
+        transition: background-color 0.8s $ease-power4-out 0.25s;
+
+        &:before, &:after {
+          position: absolute;
+          content: "";
+          height: 3px;
+          width: 100%;
+          border-radius: 10px;
+          background-color: $wheat;
+          transform: rotate(0);
+          transition: transform 0.8s $ease-power4-out;
+        }
+
+        &:before {
+          transform: translateY(-9px);
+        }
+
+        &:after {
+          transform: translateY(9px);
+        }
+
+      }
+
+      &.is-active {
+        span {
+          background-color: transparent;
+          transition: background-color 0.45s $ease-power4-out 0s;
+
+          &:before {
+            transform: translateY(0) rotate(45deg);
+          }
+
+          &:after {
+            transform: translateY(0) rotate(-45deg);
+          }
+
+        }
+
+      }
+
     }
 
+  }
+
+}
+
+.menu {
+  position: fixed;
+  top: 130px;
+  left: 50%;
+  height: 80vh;
+  width: 90.1vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: $radius;
+  transform: translateX(-50%);
+  pointer-events: none;
+  opacity: 0;
+  background-color: rgba(29, 39, 55, 1);
+  transition: opacity 0.8s $ease-power4-out;
+
+  @media screen and (max-width: 650px) {
+   top: 110px;
+    height: 83.8vh;
+  }
+
+  @media screen and (max-width: 576px) {
+    top: 95px;
+    width: 92.1%;
+    height: 86vh;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  &.is-active {
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  .link {
+    position: relative;
+    padding: 10px 16px;
+    margin-bottom: 30px;
+    font-family: "PP Pangram Sans Rounded", sans-serif;
+    font-size: 3.5vw;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    border-radius: 100px;
+    background-color: transparent;
+    transition: background-color 0.8s $ease-power4-out;
+    color: $wheat;
+
+    &:hover {
+
+      @media screen and (min-width: 750px) {
+        background-color: rgba(56, 72, 100, 1);
+      }
+
+    }
+
+    @media screen and (max-width: 750px) {
+      font-size: 5vw;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 10vw;
+      margin-bottom: 30px;
+      text-align: left;
+      padding: 0;
+    }
+
+  }
+
+}
+
+.menu-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: 8;
+  pointer-events: none;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.8s $ease-power4-out;
+
+  &.is-active {
+    pointer-events: all;
+    opacity: 1;
   }
 
 }

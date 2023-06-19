@@ -36,7 +36,7 @@ function Demo() {
             gsap.to("#demo .vector-left", {
                 scrollTrigger: {
                     trigger: "#demo",
-                    start: "bottom+=50px bottom",
+                    start: "bottom bottom",
                     end: "top+=50px top",
                     scrub: true
                 },

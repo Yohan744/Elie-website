@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 import {Observer} from "gsap/dist/Observer";
@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(Observer);
 
 function Header() {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
 
@@ -40,37 +42,92 @@ function Header() {
         header.classList.add("hide");
     }
 
+    function handleClickOnMobileMenu() {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
+    useEffect(() => {
+        const menuButton = document.querySelector(".mobile-menu-wrapper");
+        const menu = document.querySelector(".menu");
+        const menuBackground = document.querySelector(".menu-background");
+
+        if (isMenuOpen) {
+           openMobileMenu()
+        } else {
+           closeMobileMenu()
+        }
+
+    }, [isMenuOpen])
+
+    function openMobileMenu() {
+        const menuButton = document.querySelector(".mobile-menu-wrapper");
+        const menu = document.querySelector(".menu");
+        const menuBackground = document.querySelector(".menu-background");
+
+        menuButton.classList.add("is-active");
+        menu.classList.add("is-active");
+        menuBackground.classList.add("is-active");
+
+    }
+
+    function closeMobileMenu() {
+        const menuButton = document.querySelector(".mobile-menu-wrapper");
+        const menu = document.querySelector(".menu");
+        const menuBackground = document.querySelector(".menu-background");
+
+        menuButton.classList.remove("is-active");
+        menu.classList.remove("is-active");
+        menuBackground.classList.remove("is-active");
+
+    }
+
     return (
-        <header>
+        <>
+            <header>
 
-            <Link href="/">
-                <img src={"logo-green.svg"} alt={"Green logo of Elie"} className={"logo"}/>
-            </Link>
+                <Link href="/">
+                    <img src={"logo-green.svg"} alt={"Green logo of Elie"} className={"logo"}/>
+                </Link>
 
-            <div className={"right-part"}>
+                <div className={"right-part"}>
+
+                    <a href={"#demo"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>L’exposition</a>
+                    <a href={"#information"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Informations pratiques</a>
+                    <a href={"#preparation"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Ressources pédagogiques</a>
+                    <a href={"#advice"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Avis</a>
+
+                    <Link href={"/profil"}>
+                        <div className={"user"}>
+                            <img src={"user.svg"} alt={"User icon"}/>
+                        </div>
+                    </Link>
+
+                    <a href={"#reservation"}>
+                        <div className={"reserve"} draggable="false" onClick={() => handleClickOnHeader()}>
+                            <p>Réserver</p>
+                        </div>
+                    </a>
+
+                    <div className="mobile-menu-wrapper" onClick={() => handleClickOnMobileMenu()}>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div className="menu">
 
                 <a href={"#demo"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>L’exposition</a>
                 <a href={"#information"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Informations pratiques</a>
                 <a href={"#preparation"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Ressources pédagogiques</a>
                 <a href={"#advice"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Avis</a>
 
-                <Link href={"/profil"}>
-                    <div className={"user"}>
-                        <img src={"user.svg"} alt={"User icon"}/>
-                    </div>
-                </Link>
-
-                <a href={"#reservation"}>
-                    <div className={"reserve"} draggable="false" onClick={() => handleClickOnHeader()}>
-                        <p>Réserver</p>
-                    </div>
-                </a>
-
-                <div className="mobile-menu-wrapper"></div>
-
             </div>
 
-        </header>
+            <div className="menu-background" onClick={() => handleClickOnMobileMenu()}></div>
+
+        </>
     )
 
 }
