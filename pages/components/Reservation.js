@@ -490,6 +490,25 @@ function Reservation() {
 
                             <div className="payWall">
 
+                                <h5>Paiement</h5>
+
+                                <div>
+                                    <p>Exposition</p>
+                                    <h6>35 €</h6>
+                                </div>
+
+                                <div>
+                                    <p>Frais de services</p>
+                                    <h6>4.49 €</h6>
+                                </div>
+
+                                <hr/>
+
+                                <div>
+                                    <p>Total</p>
+                                    <h3>39.49 €</h3>
+                                </div>
+
                             </div>
 
                             <div className="button-wrapper">
@@ -499,7 +518,7 @@ function Reservation() {
                                 </div>
                                 <div className="button next"
                                      onClick={(e) => changeProgress(e, "recap", "book-online-place")}>
-                                    <p>Suivant</p>
+                                    <p>Valider</p>
                                 </div>
                             </div>
 

@@ -3849,6 +3849,30 @@ header .right-part .mobile-menu-wrapper {
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 }
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-bottom: 75px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-bottom: 40px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team {
   position: relative;
   width: 100%;
@@ -3869,8 +3893,19 @@ header .right-part .mobile-menu-wrapper {
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .logo {
-    height: 38px;
-    width: 40px;
+    transform: scale(0.9);
+    margin: 0 auto 13px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .logo {
+    transform: scale(0.85);
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .logo {
+    transform: scale(0.8);
+    margin: 0 auto 10px;
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .team-name {
@@ -3900,6 +3935,16 @@ header .right-part .mobile-menu-wrapper {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .team-name p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .team-name p {
+    font-size: 13px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper {
   position: relative;
   margin-top: 14px;
@@ -3924,6 +3969,11 @@ header .right-part .mobile-menu-wrapper {
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper .team-member {
     padding: 8px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper .team-member {
+    padding: 6px;
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper .team-member::placeholder {
@@ -3952,12 +4002,35 @@ header .right-part .mobile-menu-wrapper {
   align-items: flex-start;
   justify-content: space-between;
 }
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.recap .left-part {
   position: relative;
   max-width: 38.5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part {
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part {
+    margin-bottom: 45px;
+    max-width: 55%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part {
+    max-width: none;
+    margin-bottom: 35px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper {
   position: relative;
@@ -3971,10 +4044,26 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 41px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .title {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .sub-title {
   position: relative;
@@ -3982,10 +4071,25 @@ header .right-part .mobile-menu-wrapper {
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
   color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .sub-title {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .sub-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .sub-title {
+    font-size: 18px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .text {
   position: relative;
@@ -4001,8 +4105,33 @@ header .right-part .mobile-menu-wrapper {
 #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .text:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .text {
+    font-size: 16px;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper.padding {
   padding: 72px 0;
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper.padding {
+    padding: 45px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper.padding {
+    padding: 35px 0;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.recap .right-part {
   position: relative;
@@ -4016,13 +4145,186 @@ header .right-part .mobile-menu-wrapper {
   border-radius: 15px;
   border: 1px solid #c3e0c7;
 }
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part {
+    padding: 10px 10px 25px 10px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part {
+    max-width: 45%;
+    padding: 10px 10px 20px 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part {
+    max-width: 55%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part {
+    max-width: none;
+  }
+}
 #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall {
   position: relative;
   margin-bottom: 30px;
-  height: 400px;
+  padding: 20px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 15px;
   background-color: #edf8ee;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall {
+    padding: 10px 15px;
+  }
+}
+#reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall h5 {
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall h5 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall h5 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall h5 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+}
+#reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div {
+  position: relative;
+  margin-bottom: 7px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div {
+    margin-bottom: 5px;
+  }
+}
+#reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div p {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div p {
+    font-size: 12px;
+  }
+}
+#reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h6 {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h6 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h6 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h6 {
+    font-size: 16px;
+  }
+}
+#reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h3 {
+  position: relative;
+  font-family: "PP Pangram Sans Rounded bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #384864;
+}
+@media screen and (max-width: 1550px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h3 {
+    font-size: 24px;
+  }
+}
+#reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall hr {
+  position: relative;
+  margin: 7px 0 15px;
+  height: 1px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #A5ABB5;
+}
+@media screen and (max-width: 576px) {
+  #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall hr {
+    margin: 5px 0 10px;
+  }
 }
 #reservation .global-wrapper .container .sub-wrapper.is-active {
   opacity: 1;
