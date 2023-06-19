@@ -267,7 +267,7 @@ header {
           border-radius: 10px;
           background-color: $wheat;
           transform: rotate(0);
-          transition: transform 0.8s $ease-power4-out;
+          transition: transform 0.6s $ease-power4-out;
 
           @media screen and (max-width: 576px) {
             height: 2px;
@@ -302,10 +302,12 @@ header {
 
           &:before {
             transform: translateY(0) rotate(45deg);
+            transition: transform 0.8s $ease-power4-out;
           }
 
           &:after {
             transform: translateY(0) rotate(-45deg);
+            transition: transform 0.8s $ease-power4-out;
           }
 
         }
@@ -322,7 +324,7 @@ header {
   position: fixed;
   top: 130px;
   left: 50%;
-  height: 80dvh;
+  height: 60dvh;
   width: 90.1dvw;
   z-index: 10;
   display: flex;
@@ -334,17 +336,15 @@ header {
   pointer-events: none;
   opacity: 0;
   background-color: rgba(29, 39, 55, 1);
-  transition: opacity 0.8s $ease-power4-out;
+  transition: opacity 0.6s $ease-power4-out;
 
   @media screen and (max-width: 650px) {
-   top: 110px;
-    height: 83.8vh;
+    top: 110px;
   }
 
   @media screen and (max-width: 576px) {
     top: 95px;
     width: 92.1%;
-    height: 86vh;
     align-items: flex-start;
     padding: 20px;
   }
@@ -352,43 +352,70 @@ header {
   &.is-active {
     pointer-events: all;
     opacity: 1;
+    transition: opacity 0.8s $ease-power4-out;
   }
 
-  .link {
+  div {
     position: relative;
-    padding: 10px 16px;
+    overflow: hidden;
     margin-bottom: 30px;
-    font-family: "PP Pangram Sans Rounded", sans-serif;
-    font-size: 3.5vw;
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: 0em;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    border-radius: 100px;
-    background-color: transparent;
-    transition: background-color 0.8s $ease-power4-out;
-    color: $wheat;
 
-    &:hover {
+    p {
+      position: relative;
 
-      @media screen and (min-width: 750px) {
-        background-color: rgba(56, 72, 100, 1);
+      .link {
+        position: relative;
+        padding: 10px 16px;
+        font-family: "PP Pangram Sans Rounded", sans-serif;
+        font-size: 3.5vw;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: 0em;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        border-radius: 100px;
+        background-color: transparent;
+        transition: background-color 0.8s $ease-power4-out;
+        color: $wheat;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+
+          @media screen and (min-width: 750px) {
+            background-color: rgba(56, 72, 100, 1);
+          }
+
+        }
+
+        @media screen and (max-width: 750px) {
+          font-size: 5vw;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 9vw;
+          margin-bottom: 30px;
+          text-align: left;
+          padding: 0;
+        }
+
       }
 
     }
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     @media screen and (max-width: 750px) {
-      font-size: 5vw;
       margin-bottom: 20px;
     }
 
     @media screen and (max-width: 576px) {
-      font-size: 10vw;
       margin-bottom: 30px;
-      text-align: left;
-      padding: 0;
     }
 
   }
@@ -404,12 +431,13 @@ header {
   z-index: 8;
   pointer-events: none;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 0.8s $ease-power4-out;
+  background-color: rgba(195, 224, 199, 0.3);;
+  transition: opacity 0.6s $ease-power4-out;
 
   &.is-active {
     pointer-events: all;
     opacity: 1;
+    transition: opacity 0.8s $ease-power4-out;
   }
 
 }

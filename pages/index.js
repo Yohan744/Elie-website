@@ -19,11 +19,11 @@ export default function Home() {
         const lenis = new Lenis({
             duration: 1.25,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-            direction: 'vertical', // vertical, horizontal
-            gestureDirection: 'vertical', // vertical, horizontal, both
-            smooth: true,
-            mouseMultiplier: 1,
-            smoothTouch: false,
+            orientation: 'vertical', // vertical, horizontal
+            gestureOrientation: 'vertical', // vertical, horizontal, both
+            smoothWheel: true,
+            wheelMultiplier: 1,
+            smoothTouch: true,
             touchMultiplier: 1.75,
             infinite: false,
         })

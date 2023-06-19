@@ -40,6 +40,9 @@ function Header() {
     function handleClickOnHeader() {
         const header = document.querySelector("header");
         header.classList.add("hide");
+        if (isMenuOpen) {
+            setIsMenuOpen(false)
+        }
     }
 
     function handleClickOnMobileMenu() {
@@ -47,16 +50,11 @@ function Header() {
     }
 
     useEffect(() => {
-        const menuButton = document.querySelector(".mobile-menu-wrapper");
-        const menu = document.querySelector(".menu");
-        const menuBackground = document.querySelector(".menu-background");
-
         if (isMenuOpen) {
-           openMobileMenu()
+            openMobileMenu()
         } else {
-           closeMobileMenu()
+            closeMobileMenu()
         }
-
     }, [isMenuOpen])
 
     function openMobileMenu() {
@@ -68,6 +66,16 @@ function Header() {
         menu.classList.add("is-active");
         menuBackground.classList.add("is-active");
 
+        gsap.to(".menu div p", {
+            y: 0,
+            skewY: 0,
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.2,
+            delay: 0.2,
+            ease: "Power4.Out",
+        })
+
     }
 
     function closeMobileMenu() {
@@ -75,9 +83,20 @@ function Header() {
         const menu = document.querySelector(".menu");
         const menuBackground = document.querySelector(".menu-background");
 
-        menuButton.classList.remove("is-active");
-        menu.classList.remove("is-active");
-        menuBackground.classList.remove("is-active");
+        gsap.to(".menu div p", {
+            y: 100,
+            skewY: 10,
+            opacity: 0,
+            duration: 0.35,
+            stagger: 0.15,
+            ease: "Power4.Out",
+        })
+
+        setTimeout(() => {
+            menuButton.classList.remove("is-active");
+            menu.classList.remove("is-active");
+            menuBackground.classList.remove("is-active");
+        }, 400)
 
     }
 
@@ -91,10 +110,14 @@ function Header() {
 
                 <div className={"right-part"}>
 
-                    <a href={"#demo"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>L’exposition</a>
-                    <a href={"#information"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Informations pratiques</a>
-                    <a href={"#preparation"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Ressources pédagogiques</a>
-                    <a href={"#advice"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Avis</a>
+                    <a href={"#demo"} className="link" draggable="false"
+                       onClick={() => handleClickOnHeader()}>L’exposition</a>
+                    <a href={"#information"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Informations
+                        pratiques</a>
+                    <a href={"#preparation"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Ressources
+                        pédagogiques</a>
+                    <a href={"#advice"} className="link" draggable="false"
+                       onClick={() => handleClickOnHeader()}>Avis</a>
 
                     <Link href={"/profil"}>
                         <div className={"user"}>
@@ -118,10 +141,33 @@ function Header() {
 
             <div className="menu">
 
-                <a href={"#demo"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>L’exposition</a>
-                <a href={"#information"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Informations pratiques</a>
-                <a href={"#preparation"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Ressources pédagogiques</a>
-                <a href={"#advice"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>Avis</a>
+                <div>
+                    <p>
+                        <a href={"#demo"} className="link" draggable="false"
+                           onClick={() => handleClickOnHeader()}>L’exposition</a>
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <a href={"#information"} className="link" draggable="false"
+                           onClick={() => handleClickOnHeader()}>Informations pratiques</a>
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <a href={"#preparation"} className="link" draggable="false"
+                           onClick={() => handleClickOnHeader()}>Ressources pédagogiques</a>
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <a href={"#advice"} className="link" draggable="false"
+                           onClick={() => handleClickOnHeader()}>Avis</a>
+                    </p>
+                </div>
 
             </div>
 

@@ -344,7 +344,7 @@ header .right-part .mobile-menu-wrapper span:before, header .right-part .mobile-
   border-radius: 10px;
   background-color: #fefff6;
   transform: rotate(0);
-  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 576px) {
   header .right-part .mobile-menu-wrapper span:before, header .right-part .mobile-menu-wrapper span:after {
@@ -373,16 +373,18 @@ header .right-part .mobile-menu-wrapper.is-active span {
 }
 header .right-part .mobile-menu-wrapper.is-active span:before {
   transform: translateY(0) rotate(45deg);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 header .right-part .mobile-menu-wrapper.is-active span:after {
   transform: translateY(0) rotate(-45deg);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .menu {
   position: fixed;
   top: 130px;
   left: 50%;
-  height: 80dvh;
+  height: 60dvh;
   width: 90.1dvw;
   z-index: 10;
   display: flex;
@@ -394,19 +396,17 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   pointer-events: none;
   opacity: 0;
   background-color: #1d2737;
-  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 650px) {
   .menu {
     top: 110px;
-    height: 83.8vh;
   }
 }
 @media screen and (max-width: 576px) {
   .menu {
     top: 95px;
     width: 92.1%;
-    height: 86vh;
     align-items: flex-start;
     padding: 20px;
   }
@@ -414,11 +414,19 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
 .menu.is-active {
   pointer-events: all;
   opacity: 1;
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.menu .link {
+.menu div {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.menu div p {
+  position: relative;
+}
+.menu div p .link {
   position: relative;
   padding: 10px 16px;
-  margin-bottom: 30px;
   font-family: "PP Pangram Sans Rounded", sans-serif;
   font-size: 3.5vw;
   font-weight: 600;
@@ -432,23 +440,38 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   color: #fefff6;
 }
+.menu div p .link:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 750px) {
-  .menu .link:hover {
+  .menu div p .link:hover {
     background-color: #384864;
   }
 }
 @media screen and (max-width: 750px) {
-  .menu .link {
+  .menu div p .link {
     font-size: 5vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu div p .link {
+    font-size: 9vw;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 0;
+  }
+}
+.menu div:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 750px) {
+  .menu div {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 576px) {
-  .menu .link {
-    font-size: 10vw;
+  .menu div {
     margin-bottom: 30px;
-    text-align: left;
-    padding: 0;
   }
 }
 
@@ -461,12 +484,13 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   z-index: 8;
   pointer-events: none;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  background-color: rgba(195, 224, 199, 0.3);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .menu-background.is-active {
   pointer-events: all;
   opacity: 1;
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 #masthead {
