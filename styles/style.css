@@ -678,6 +678,7 @@ header .right-part .mobile-menu-wrapper {
   width: 50.3%;
   border-radius: 15px;
   background-color: #d76677;
+  overflow: clip;
 }
 @media screen and (max-width: 1800px) {
   #masthead .global-wrapper .top-wrapper .video {
@@ -720,6 +721,12 @@ header .right-part .mobile-menu-wrapper {
   #masthead .global-wrapper .top-wrapper .video {
     height: 160px;
   }
+}
+#masthead .global-wrapper .top-wrapper .video img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 #masthead .global-wrapper .bottom-wrapper {
   position: relative;

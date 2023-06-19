@@ -37,7 +37,7 @@ function Demo() {
                 scrollTrigger: {
                     trigger: "#demo",
                     start: "bottom+=50px bottom",
-                    end: "top top",
+                    end: "top+=50px top",
                     scrub: true
                 },
                 strokeDashoffset: "1630",

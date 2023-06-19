@@ -66,7 +66,9 @@ function Masthead() {
 
                     </div>
 
-                    <div className={"video"}></div>
+                    <div className={"video"}>
+                        <img src={"video-preview.png"} alt="video preview"/>
+                    </div>
 
                 </div>
 
