@@ -34,6 +34,19 @@ function Masthead() {
 
     }, [])
 
+    function test() {
+        if (document.documentElement.requestFullscreen) {
+            // Mettre en plein écran dès l'arrivée sur le site
+            document.documentElement.requestFullscreen();
+        } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+            document.documentElement.mozRequestFullScreen();
+        } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+            document.documentElement.webkitRequestFullscreen();
+        } else if (document.documentElement.msRequestFullscreen) { // Internet Explorer and Edge
+            document.documentElement.msRequestFullscreen();
+        }
+    }
+
     return (
         <section id={"masthead"}>
 
@@ -66,7 +79,7 @@ function Masthead() {
 
                     </div>
 
-                    <div className={"video"}></div>
+                    <div className={"video"} onClick={() => test()}></div>
 
                 </div>
 

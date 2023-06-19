@@ -27,15 +27,17 @@ export default function Home() {
             touchMultiplier: 1.75,
             infinite: false,
         })
+
         function raf(time) {
             lenis.raf(time)
             requestAnimationFrame(raf)
         }
+
         requestAnimationFrame(raf)
 
         lenis.on('scroll', ScrollTrigger.update)
 
-        gsap.ticker.add((time)=>{
+        gsap.ticker.add((time) => {
             lenis.raf(time * 1000)
         })
 
