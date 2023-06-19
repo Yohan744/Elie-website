@@ -255,6 +255,10 @@ header {
         background-color: $wheat;
         transition: background-color 0.8s $ease-power4-out 0.25s;
 
+        @media screen and (max-width: 576px) {
+          height: 2px;
+        }
+
         &:before, &:after {
           position: absolute;
           content: "";
@@ -264,14 +268,29 @@ header {
           background-color: $wheat;
           transform: rotate(0);
           transition: transform 0.8s $ease-power4-out;
+
+          @media screen and (max-width: 576px) {
+            height: 2px;
+          }
+
         }
 
         &:before {
           transform: translateY(-9px);
+
+          @media screen and (max-width: 576px) {
+            transform: translateY(-8px);
+          }
+
         }
 
         &:after {
           transform: translateY(9px);
+
+          @media screen and (max-width: 576px) {
+            transform: translateY(8px);
+          }
+
         }
 
       }
@@ -303,8 +322,8 @@ header {
   position: fixed;
   top: 130px;
   left: 50%;
-  height: 80vh;
-  width: 90.1vw;
+  height: 80dvh;
+  width: 90.1dvw;
   z-index: 10;
   display: flex;
   flex-direction: column;

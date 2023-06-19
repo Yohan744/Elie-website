@@ -331,6 +331,11 @@ header .right-part .mobile-menu-wrapper span {
   background-color: #fefff6;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;
 }
+@media screen and (max-width: 576px) {
+  header .right-part .mobile-menu-wrapper span {
+    height: 2px;
+  }
+}
 header .right-part .mobile-menu-wrapper span:before, header .right-part .mobile-menu-wrapper span:after {
   position: absolute;
   content: "";
@@ -341,11 +346,26 @@ header .right-part .mobile-menu-wrapper span:before, header .right-part .mobile-
   transform: rotate(0);
   transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+@media screen and (max-width: 576px) {
+  header .right-part .mobile-menu-wrapper span:before, header .right-part .mobile-menu-wrapper span:after {
+    height: 2px;
+  }
+}
 header .right-part .mobile-menu-wrapper span:before {
   transform: translateY(-9px);
 }
+@media screen and (max-width: 576px) {
+  header .right-part .mobile-menu-wrapper span:before {
+    transform: translateY(-8px);
+  }
+}
 header .right-part .mobile-menu-wrapper span:after {
   transform: translateY(9px);
+}
+@media screen and (max-width: 576px) {
+  header .right-part .mobile-menu-wrapper span:after {
+    transform: translateY(8px);
+  }
 }
 header .right-part .mobile-menu-wrapper.is-active span {
   background-color: transparent;
@@ -362,8 +382,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   position: fixed;
   top: 130px;
   left: 50%;
-  height: 80vh;
-  width: 90.1vw;
+  height: 80dvh;
+  width: 90.1dvw;
   z-index: 10;
   display: flex;
   flex-direction: column;
