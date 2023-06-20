@@ -23,7 +23,7 @@ export default function Home() {
             gestureOrientation: 'vertical', // vertical, horizontal, both
             smoothWheel: true,
             wheelMultiplier: 1,
-            smoothTouch: true,
+            smoothTouch: false,
             touchMultiplier: 1,
             infinite: false,
         })
