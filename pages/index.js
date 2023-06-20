@@ -24,7 +24,7 @@ export default function Home() {
             smoothWheel: true,
             wheelMultiplier: 1,
             smoothTouch: true,
-            touchMultiplier: 1.75,
+            touchMultiplier: 1,
             infinite: false,
         })
 

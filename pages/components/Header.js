@@ -39,9 +39,10 @@ function Header() {
 
     function handleClickOnHeader() {
         const header = document.querySelector("header");
-        header.classList.add("hide");
         if (isMenuOpen) {
             setIsMenuOpen(false)
+        } else {
+            header.classList.add("hide");
         }
     }
 
