@@ -41,7 +41,7 @@ function Advice() {
 
                             <h5 className="name">Sarah</h5>
 
-                            <p className="quote">“J’ai ressentis un réel intérêt de la part des élèves  lors du retour en classe.”</p>
+                            <p className="quote">“J’ai ressenti un réel intérêt de la part des élèves lors du retour en classe.”</p>
 
                             <div className="type prof">
                                 <p>Professeur(e)</p>
