@@ -1,95 +1,63 @@
+import { useTranslation } from 'react-i18next';
+
 function Advice() {
+    const { t } = useTranslation();
 
     return (
         <section id="advice">
-
             <div className="global-wrapper">
-
                 <div className="info">
-
-                    <h3 className="title">Les avis de nos participants</h3>
-
-                    <p className="paragraph">Merci pour tous vos retours qui nous aident à améliorer l’expérience ELIE.</p>
-
+                    <h3 className="title">{t('advice.title')}</h3>
+                    <p className="paragraph">{t('advice.paragraph')}</p>
                     <a href="#" className="give-advice" draggable="false">
-                        <p>Donner un avis</p>
+                        <p>{t('advice.giveAdvice')}</p>
                     </a>
-
                 </div>
 
                 <div className="advice-wrapper">
-
                     <div className="advice-left">
-
                         <div className="advice">
-
                             <img src={"animal-fox.png"} alt="Fox icon" />
-
                             <h5 className="name">Tristan</h5>
-
-                            <p className="quote">“J’ai adoré jouer avec mes amis, j’ai trouvé le bruit de la biche super drôle en plus!”</p>
-
+                            <p className="quote">{t('advice.tristanQuote')}</p>
                             <div className="type">
-                                <p>Élève</p>
+                                <p>{t('advice.student')}</p>
                             </div>
-
                         </div>
 
                         <div className="advice">
-
                             <img src={"animal-crow-green.svg"} alt="Crow icon" />
-
                             <h5 className="name">Sarah</h5>
-
-                            <p className="quote">“J’ai ressenti un réel intérêt de la part des élèves lors du retour en classe.”</p>
-
+                            <p className="quote">{t('advice.sarahQuote')}</p>
                             <div className="type prof">
-                                <p>Professeur(e)</p>
+                                <p>{t('advice.teacher')}</p>
                             </div>
-
                         </div>
-
                     </div>
 
                     <div className="advice-right">
-
                         <div className="advice">
-
                             <img src={"animal-flamingo-green.svg"} alt="Flamingo icon" />
-
                             <h5 className="name">Éric</h5>
-
-                            <p className="quote">“Très utile, j’ai gagné du temps lors de mes explications.”</p>
-
+                            <p className="quote">{t('advice.ericQuote')}</p>
                             <div className="type prof">
-                                <p>Professeur(e)</p>
+                                <p>{t('advice.teacher')}</p>
                             </div>
-
                         </div>
 
                         <div className="advice">
-
                             <img src={"animal-jellyFish-green.svg"} alt="Jelly fish icon" />
-
                             <h5 className="name">Clara</h5>
-
-                            <p className="quote">“Avec Elliot on a découvert la rémora, c’était trop bien de voir le requin aussi.”</p>
-
+                            <p className="quote">{t('advice.claraQuote')}</p>
                             <div className="type">
-                                <p>Élève</p>
+                                <p>{t('advice.student')}</p>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
     )
-
 }
 
-export default Advice
+export default Advice;

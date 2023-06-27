@@ -1,44 +1,39 @@
+import { useTranslation } from 'react-i18next';
+
 function Gallery() {
+    const { t } = useTranslation();
 
     return (
         <section id="gallery">
-
             <div className="global-wrapper">
-
                 <div>
-
-                    <h3>L'experience en image</h3>
-
-                    <p>Elie existe grâce à vous depuis 2023 et votre enthousiasme ne cesse de nous surprendre.</p>
-
+                    <h3>{t('gallery.title')}</h3>
+                    <p>{t('gallery.description')}</p>
                 </div>
                 <div className="picture">
-                    <img src={"gallery-general.png"} alt="Image of the experience"/>
+                    <img src={"gallery-general.png"} alt={t('gallery.altText')} />
                 </div>
                 <div className="picture">
-                    <img src={"gallery-kids.png"} alt="Image of the experience"/>
+                    <img src={"gallery-kids.png"} alt={t('gallery.altText')} />
                 </div>
                 <div className="picture">
-                    <img src={"gallery-fish.png"} alt="Image of the experience"/>
+                    <img src={"gallery-fish.png"} alt={t('gallery.altText')} />
                 </div>
                 <div className="picture">
-                    <img src={"gallery-poster.png"} alt="Image of the experience"/>
+                    <img src={"gallery-poster.png"} alt={t('gallery.altText')} />
                 </div>
                 <div className="picture">
-                    <img src={"gallery-room.png"} alt="Image of the experience"/>
+                    <img src={"gallery-room.png"} alt={t('gallery.altText')} />
                 </div>
                 <div className="picture">
-                    <img src={"gallery-eat.png"} alt="Image of the experience"/>
+                    <img src={"gallery-eat.png"} alt={t('gallery.altText')} />
                 </div>
                 <div className="picture">
-                    <img src={"gallery-night.png"} alt="Image of the experience"/>
+                    <img src={"gallery-night.png"} alt={t('gallery.altText')} />
                 </div>
-
             </div>
-
         </section>
-    )
-
+    );
 }
 
-export default Gallery
+export default Gallery;
