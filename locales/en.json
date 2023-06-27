@@ -1,0 +1,176 @@
+{
+  "information": {
+    "title": "Practical Information",
+    "icons": {
+      "animalAltText": "Animal icon",
+      "linkWithCurriculum": {
+        "title": "Direct Link with the School Curriculum",
+        "description": "Free educational resources available for comprehensive support before and after the experience."
+      },
+      "gradeLevel": {
+        "title": "Suitable for CM1 & CM2 Students",
+        "description": "The experience has been designed and tested to match the students' level."
+      },
+      "duration": {
+        "title": "2-3 Hour Duration",
+        "description": "Immerse yourself in an immersive setting for half a day to explore various themes about Nature."
+      }
+    },
+    "contactUs": "Contact Us"
+  },
+  "masthead": {
+    "backgroundAltText": "Background image of the experience",
+    "exhibitionTitle": "Playful exhibition on species interactions.",
+    "reserveButtonText": "Book Now",
+    "learnMoreButtonText": "Learn More",
+    "plusIconAltText": "plus icon",
+    "videoPreviewAltText": "Video Preview",
+    "newsSubtitle": "News",
+    "newsTitle": "Our exhibition will be available in Annecy from June to December 2023.",
+    "newsDescription": "Located near the city center of Annecy, 'La Turbine' is a warm and immersive space ideal for a collaborative experience.",
+    "newsLinkText": "Stay Informed",
+    "preview0AltText": "Game Preview - Forest",
+    "preview0Text": "Game Interface - Forest",
+    "preview1AltText": "Game Preview - Plain",
+    "preview1Text": "Game Interface - Plain",
+    "preview2AltText": "Game Preview - Ocean",
+    "preview2Text": "Game Interface - Ocean",
+    "phoneIconAltText": "Phone Icon",
+    "phoneNumber": "06 44 62 94 41"
+  },
+  "demo": {
+    "title": "Elie, an educational tool to discover life",
+    "subtitle1": "The exhibition follows a guided path, based on a fun team game.",
+    "subtitle2": "The game leads students to collaborate in identifying species from clues and discovering their interactions. It engages students' senses and analytical thinking.",
+    "prepareVisit": "Prepare your visit"
+  },
+  "header": {
+    "links": {
+      "exhibition": "Exhibition",
+      "information": "Practical Information",
+      "resources": "Educational Resources",
+      "reviews": "Reviews",
+      "reserve": "Reserve"
+    }
+  },
+  "advice": {
+    "title": "Reviews from our participants",
+    "paragraph": "Thank you for all your feedback that helps us improve the ELIE experience.",
+    "giveAdvice": "Give a review",
+    "tristanQuote": "“I loved playing with my friends, and the sound of the deer was super funny too!”",
+    "sarahQuote": "“I felt a real interest from the students during the classroom session.”",
+    "ericQuote": "“Very useful, I saved time during my explanations.”",
+    "claraQuote": "“With Elliot, we discovered the remora, it was awesome to see the shark too.”",
+    "student": "Student",
+    "teacher": "Teacher"
+  },
+  "footer": {
+    "exhibition": "Exhibition",
+    "booking": "Booking",
+    "educationalSheets": "Educational Sheets",
+    "reviews": "Reviews",
+    "privacyPolicy": "Privacy Policy",
+    "legalMentions": "Legal Mentions"
+  },
+  "gallery": {
+    "title": "Experience in Images",
+    "description": "Elie has been made possible by you since 2023, and your enthusiasm continues to surprise us.",
+    "altText": "Image of the experience"
+  },
+  "preparation": {
+    "title": "Preparing for your visit",
+    "downloadResourcesSubtitle": "Download our",
+    "downloadResourcesSpan": "educational resources",
+    "confirmAttendanceSpan": "Confirm your attendance",
+    "confirmAttendanceSubtitle": "with the teaching staff",
+    "prepareGroupsSubtitle": "In the classroom, prepare",
+    "prepareGroupsSpan": "groups of 3 students with a team name."
+  },
+  "reservation": {
+    "reservation.title": "Visiting Elie Exhibition in 4 Steps",
+    "reservation.step1": "Book your time slot",
+    "reservation.step2": "Provide your group profile",
+    "reservation.step3": "Create student groups",
+    "reservation.step4": "Summary of your reservation",
+    "reservation.bookOnline": "Book Online",
+    "reservation.chooseLocation": "Choose the exhibition location",
+    "reservation.annecy": "Annecy - La Turbine",
+    "reservation.lyon": "Lyon - Palexpo",
+    "reservation.grenoble": "Grenoble - Exhibition",
+    "reservation.previous": "Previous",
+    "reservation.next": "Next",
+    "reservation.selectTimeSlot": "Select a time slot",
+    "reservation.selectedSlot": "Selected Slot",
+    "reservation.location": "Location",
+    "reservation.conditions": "Conditions",
+    "reservation.conditionText": "You have a 15-minute session that can be renewed to complete your reservation on the website. In case of payment, it will be permanently blocked. You can cancel a reservation and get a refund up to 5 working days prior to the time slot date. For any cancellation request, please contact us by email at contact@elie.fr.",
+    "reservation.studentNumber": "How many students do you have?",
+    "reservation.groupLevel": "What is the group level?",
+    "reservation.cm1": "CM1",
+    "reservation.cm2": "CM2",
+    "reservation.other": "Other",
+    "reservation.visitedBefore": "Have you ever been to",
+    "reservation.numberOfStudentsPlaceholder": "Number of students",
+    "reservation.yes": "Yes",
+    "reservation.no": "No",
+    "reservation.recapTitle": "Summary of your reservation",
+    "reservation.timeSlot": "Time Slot",
+    "reservation.from": "from",
+    "reservation.to": "to",
+    "reservation.at": "at",
+    "reservation.place": "Place",
+    "reservation.group": "Group",
+    "reservation.oneClass" : "1 class",
+    "reservation.students": "students",
+    "reservation.resources": "Resources",
+    "reservation.questions": "Any questions?",
+    "reservation.phone": "Phone",
+    "reservation.email": "Email",
+    "reservation.payment": "Payment",
+    "reservation.exhibition": "Exhibition",
+    "reservation.serviceFee": "Service Fee",
+    "reservation.total": "Total",
+    "reservation.validate": "Validate"
+  },
+  "ressources": {
+    "mapTitle": "Venue Map",
+    "pedagogicalSheetTitle": "Pedagogical Sheet",
+    "rulesTitle": "Internal Rules",
+    "downloadIconAltText": "Download Icon"
+  },
+  "team": {
+    "teamName": "Team "
+  },
+  "profil": {
+    "modifyProfileTitle": "Modify your profile",
+    "firstNameLabel": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastNameLabel": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "validateButton": "Validate",
+    "giveAdviceTitle": "Give an advice",
+    "profileLabel": "Profile",
+    "teacherType": "Teacher",
+    "studentType": "Student*",
+    "adviceInfo": "*You can provide the advice of a student, it will be recorded under your email address.",
+    "adviceLabel": "Advice",
+    "advicePlaceholder": "Enter the advice (150 characters max)...",
+    "currentReservationTitle": "Your current reservations",
+    "slotLabel": "Slot",
+    "slotDate": "Tuesday 07/06 at 9:00 AM",
+    "locationLabel": "Location",
+    "location": "Annecy - La Turbine",
+    "groupLabel": "Group",
+    "groupInfo": "1 class, 20 students, CM1",
+    "downloadTicket": "Download my ticket",
+    "modify": "Modify",
+    "resourcesTitle": "Resources",
+    "questionsTitle": "Questions?",
+    "phone": "Phone",
+    "email": "Email"
+  }
+}

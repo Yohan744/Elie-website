@@ -1,8 +1,9 @@
 import {useEffect, useState} from "react";
 import TeamMaker from "./TeamMaker";
 import Ressources from "./Ressources";
-
+import { useTranslation, Trans } from 'react-i18next';
 function Reservation() {
+    const { t } = useTranslation();
 
     const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
     const placeNameArray = ["La Turbine", "Palexpo", "Exposition"]
@@ -202,40 +203,39 @@ function Reservation() {
         setGroupPattern(groupPattern)
 
     }
-
     return (
         <section id="reservation">
 
             <div className="global-wrapper">
 
-                <h3 className="title">Venir à l'exposition Elie en <span>4 étapes</span></h3>
+                <h3 className="title">{t('reservation.reservation.title')}</h3>
 
                 <div className="state-wrapper">
 
                     <div className="state is-active" id="0">
                         <div className="state-number">1</div>
-                        <p>Réserver votre créneau</p>
+                        <p>{t('reservation.reservation.step1')}</p>
                     </div>
 
                     <div className="line"></div>
 
                     <div className="state" id="1">
                         <div className="state-number">2</div>
-                        <p>Renseigner votre profil de groupe</p>
+                        <p>{t('reservation.reservation.step2')}</p>
                     </div>
 
                     <div className="line"></div>
 
                     <div className="state" id="2">
                         <div className="state-number">3</div>
-                        <p>Créer les groupes d'élèves</p>
+                        <p>{t('reservation.reservation.step3')}</p>
                     </div>
 
                     <div className="line"></div>
 
                     <div className="state" id="3">
                         <div className="state-number">4</div>
-                        <p>Récapitulatif de votre réservation</p>
+                        <p>{t('reservation.reservation.step4')}</p>
                     </div>
 
                 </div>
@@ -244,31 +244,30 @@ function Reservation() {
 
                     <div className="book-online-place sub-wrapper is-active" data-id="0">
 
-                        <h5 className="title">Réserver en ligne</h5>
+                        <h5 className="title">{t('reservation.reservation.bookOnline')}</h5>
 
-                        <h6 className="sub-title">Choisir le lieu d'exposition</h6>
+                        <h6 className="sub-title">{t('reservation.reservation.chooseLocation')}</h6>
 
                         <div className="place-wrapper">
 
                             <div className="place" id="0" onClick={(e) => handleClickOnBookOnlinePlace(e)}>
-                                <p>Annecy - La Turbine</p>
+                                <p>{t('reservation.reservation.annecy')}</p>
                             </div>
                             <div className="place" id="1" onClick={(e) => handleClickOnBookOnlinePlace(e)}>
-                                <p>Lyon - Palexpo</p>
+                                <p>{t('reservation.reservation.lyon')}</p>
                             </div>
                             <div className="place" id="2" onClick={(e) => handleClickOnBookOnlinePlace(e)}>
-                                <p>Grenoble - Exposition</p>
+                                <p>{t('reservation.reservation.grenoble')}</p>
                             </div>
 
                         </div>
 
                         <div className="button-wrapper">
                             <div className="button prev disabled">
-                                <p>Précédent</p>
+                                <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled"
-                                 onClick={(e) => changeProgress(e, "book-online-place", "book-online-planning")}>
-                                <p>Suivant</p>
+                            <div className="button next disabled" onClick={(e) => changeProgress(e, "book-online-place", "book-online-planning")}>
+                                <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
 
@@ -280,14 +279,12 @@ function Reservation() {
 
                             <p className="localisation">{place}</p>
 
-                            <h5 className="title">Réserver en ligne</h5>
+                            <h5 className="title">{t('reservation.reservation.bookOnline')}</h5>
 
                             <div className="month-wrapper">
-                                <img src={"month-icon.svg"} alt="Arrow icon for the month selector"
-                                     onClick={() => handleMonthChange("back")}/>
+                                <img src={"month-icon.svg"} alt="Arrow icon for the month selector" onClick={() => handleMonthChange("back")} />
                                 <p className="month">{monthSelected}</p>
-                                <img src={"month-icon.svg"} alt="Arrow icon for the month selector" className="next"
-                                     onClick={() => handleMonthChange("next")}/>
+                                <img src={"month-icon.svg"} alt="Arrow icon for the month selector" className="next" onClick={() => handleMonthChange("next")} />
                             </div>
 
                         </div>
@@ -364,34 +361,27 @@ function Reservation() {
 
                         <div className="pop-up">
 
-                            <img src={"cross-icon.svg"} alt="Cross icon to cancel popup" className="cross-icon"
-                                 onClick={() => closePopUp()}/>
+                            <img src={"cross-icon.svg"} alt="Cross icon to cancel popup" className="cross-icon" onClick={() => closePopUp()} />
 
-                            <p className="normal-text">Créneau selectionné</p>
-                            <p className="bold-text">{dayReserved} à {timeReserved}.</p>
+                            <p className="normal-text">{t('reservation.reservation.selectedSlot')}</p>
+                            <p className="bold-text">{dayReserved} {t('reservation.reservation.at')} {timeReserved}.</p>
 
-                            <p className="normal-text">Lieu</p>
+                            <p className="normal-text">{t('reservation.reservation.location')}</p>
                             <p className="bold-text">{place}.</p>
 
-                            <p className="conditions">Conditions</p>
-                            <p className="conditions-text">Vous avez une session de 15 minutes renouvelable
-                                pour complété votre réservation sur le site. En cas de paiement il sera définitivement
-                                bloqué. Vous pouvez annuler une réservation, et être remboursé, jusqu’à 5 jours
-                                ouvrables précédant la date du créneau. Pour toute demande d’annulation, veuillez nous
-                                contacter par mail à contact@elie.fr.</p>
+                            <p className="conditions">{t('reservation.reservation.conditions')}</p>
+                            <p className="conditions-text">{t('reservation.reservation.conditionText')}</p>
 
                         </div>
 
                         <div className="pop-up-background" onClick={() => closePopUp()}></div>
 
                         <div className="button-wrapper">
-                            <div className="button prev"
-                                 onClick={(e) => changeProgress(e, "book-online-planning", "book-online-place")}>
-                                <p>Précédent</p>
+                            <div className="button prev" onClick={(e) => changeProgress(e, "book-online-planning", "book-online-place")}>
+                                <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled"
-                                 onClick={(e) => changeProgress(e, "book-online-planning", "group-profile")}>
-                                <p>Suivant</p>
+                            <div className="button next disabled" onClick={(e) => changeProgress(e, "book-online-planning", "group-profile")}>
+                                <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
 
@@ -399,31 +389,28 @@ function Reservation() {
 
                     <div className="group-profile sub-wrapper" data-id="1">
 
-                        <h5 className="sub-title">Combien d'élèves avez-vous ?</h5>
-                        <input type="number" step="1" min="0" max="30" placeholder="Nombre d'élèves" maxLength="2"
-                               onInput={(e) => handleInputNumberOfStudent(e)}/>
+                        <h5 className="sub-title">{t('reservation.reservation.studentNumber')}</h5>
+                        <input type="number" step="1" min="0" max="30" placeholder={t('reservation.reservation.numberOfStudentsPlaceholder')} maxLength="2" onInput={(e) => handleInputNumberOfStudent(e)} />
 
-                        <h5 className="sub-title">Quel est le niveau du groupe ?</h5>
+                        <h5 className="sub-title">{t('reservation.reservation.groupLevel')}</h5>
                         <div className="level-wrapper">
                             <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>CM1</div>
                             <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>CM2</div>
-                            <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>Autre</div>
+                            <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>{t('reservation.reservation.other')}</div>
                         </div>
 
-                        <h5 className="sub-title">Êtes-vous déjà venu à {placeName} ?</h5>
+                        <h5 className="sub-title">{t('reservation.reservation.visitedBefore')} {placeName} ?</h5>
                         <div className="visit-wrapper">
-                            <div className="visit" onClick={(e) => handleClickOnGroupProfile(e, "visit")}>oui</div>
-                            <div className="visit" onClick={(e) => handleClickOnGroupProfile(e, "visit")}>non</div>
+                            <div className="visit" onClick={(e) => handleClickOnGroupProfile(e, "visit")}>{t('reservation.reservation.yes')}</div>
+                            <div className="visit" onClick={(e) => handleClickOnGroupProfile(e, "visit")}>{t('reservation.reservation.no')}</div>
                         </div>
 
                         <div className="button-wrapper">
-                            <div className="button prev"
-                                 onClick={(e) => changeProgress(e, "group-profile", "book-online-planning")}>
-                                <p>Précédent</p>
+                            <div className="button prev" onClick={(e) => changeProgress(e, "group-profile", "book-online-planning")}>
+                                <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled"
-                                 onClick={(e) => changeProgress(e, "group-profile", "student-group")}>
-                                <p>Suivant</p>
+                            <div className="button next disabled" onClick={(e) => changeProgress(e, "group-profile", "student-group")}>
+                                <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
 
@@ -431,16 +418,14 @@ function Reservation() {
 
                     <div className="student-group sub-wrapper" data-id="2">
 
-                        <TeamMaker numberOfStudent={numberOfStudent} numberOfGroup={numberOfGroup} groupPattern={groupPattern}/>
+                        <TeamMaker numberOfStudent={numberOfStudent} numberOfGroup={numberOfGroup} groupPattern={groupPattern} />
 
                         <div className="button-wrapper">
-                            <div className="button prev"
-                                 onClick={(e) => changeProgress(e, "student-group", "group-profile")}>
-                                <p>Précédent</p>
+                            <div className="button prev" onClick={(e) => changeProgress(e, "student-group", "group-profile")}>
+                                <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled"
-                                 onClick={(e) => changeProgress(e, "student-group", "recap")}>
-                                <p>Suivant</p>
+                            <div className="button next disabled" onClick={(e) => changeProgress(e, "student-group", "recap")}>
+                                <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
 
@@ -452,35 +437,35 @@ function Reservation() {
 
                             <div className="wrapper">
 
-                                <h3 className="title">Récapitulatif de votre réservation</h3>
+                                <h3 className="title">{t('reservation.reservation.recapTitle')}</h3>
 
-                                <h6 className="sub-title">Créneau</h6>
-                                <p className="text">{dayReserved} de {timeReserved} à {endTimeReserved}</p>
+                                <h6 className="sub-title">{t('reservation.reservation.timeSlot')}</h6>
+                                <p className="text">{dayReserved} {t('reservation.reservation.from')} {timeReserved} {t('reservation.reservation.to')} {endTimeReserved}</p>
 
-                                <h6 className="sub-title">Lieu</h6>
+                                <h6 className="sub-title">{t('reservation.reservation.place')}</h6>
                                 <p className="text">{place}</p>
 
-                                <h6 className="sub-title">Groupe</h6>
-                                <p className="text">1 classe, {numberOfStudent} élèves, {studentClass}</p>
+                                <h6 className="sub-title">{t('reservation.reservation.group')}</h6>
+                                <p className="text">{t('reservation.reservation.oneClass')}, {numberOfStudent} {t('reservation.reservation.students')}, {studentClass}</p>
 
                             </div>
 
                             <div className="wrapper padding">
 
-                                <h3 className="title">Ressources</h3>
+                                <h3 className="title">{t('reservation.reservation.resources')}</h3>
 
-                                <Ressources margin={false}/>
+                                <Ressources margin={false} />
 
                             </div>
 
                             <div className="wrapper">
 
-                                <h3 className="title">Des questions ?</h3>
-                                <h6 className="sub-title">Téléphone</h6>
+                                <h3 className="title">{t('reservation.reservation.questions')}</h3>
+                                <h6 className="sub-title">{t('reservation.reservation.phone')}</h6>
                                 <p className="text">06 44 62 94 41</p>
 
-                                <h6 className="sub-title">Mail</h6>
-                                <p className="text">Contact@elie.fr</p>
+                                <h6 className="sub-title">{t('reservation.reservation.email')}</h6>
+                                <p className="text">contact@elie.fr</p>
 
                             </div>
 
@@ -490,23 +475,21 @@ function Reservation() {
 
                             <div className="payWall">
 
-                                <h5>Paiement</h5>
+                                <h5>{t('reservation.reservation.payment')}</h5>
 
                                 <div>
-                                    <p>Exposition</p>
+                                    <p>{t('reservation.reservation.exhibition')}</p>
                                     <h6>35 €</h6>
                                 </div>
 
                                 <div>
-                                    <p>Frais de services</p>
-                                    <h6>4.49 €</h6>
+                                    <p>{t('reservation.reservation.serviceFee')}</p>
+                                    <h6>3 €</h6>
                                 </div>
 
-                                <hr/>
-
                                 <div>
-                                    <p>Total</p>
-                                    <h3>39.49 €</h3>
+                                    <p>{t('reservation.reservation.total')}</p>
+                                    <h6>38 €</h6>
                                 </div>
 
                             </div>
@@ -514,11 +497,11 @@ function Reservation() {
                             <div className="button-wrapper">
                                 <div className="button prev"
                                      onClick={(e) => changeProgress(e, "recap", "student-group")}>
-                                    <p>Précédent</p>
+                                    <p>{t('reservation.reservation.previous')}</p>
                                 </div>
                                 <div className="button next"
                                      onClick={(e) => changeProgress(e, "recap", "book-online-place")}>
-                                    <p>Valider</p>
+                                    <p>{t('reservation.reservation.validate')}</p>
                                 </div>
                             </div>
 
@@ -529,7 +512,6 @@ function Reservation() {
                 </div>
 
             </div>
-
 
         </section>
     )

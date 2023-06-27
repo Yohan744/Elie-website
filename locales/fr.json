@@ -1,0 +1,176 @@
+{
+  "information": {
+    "title": "Informations pratiques",
+    "icons": {
+      "animalAltText": "Icône d'animal",
+      "linkWithCurriculum": {
+        "title": "Un lien direct avec le programme scolaire",
+        "description": "Des ressources pédagogiques disponibles gratuitement pour un accompagnement complet en amont et en aval de l’expérience."
+      },
+      "gradeLevel": {
+        "title": "Adaptée aux élèves de CM1 & CM2",
+        "description": "L’expérience a été construite et testée pour correspondre au niveau des élèves."
+      },
+      "duration": {
+        "title": "Durée de 2-3h",
+        "description": "Venez vous plonger dans un cadre immersif le temps d’une demi-journée pour découvrir des thèmes variés sur la Nature."
+      }
+    },
+    "contactUs": "Nous contacter"
+  },
+  "masthead": {
+    "backgroundAltText": "Image d'arrière-plan de l'expérience",
+    "exhibitionTitle": "Exposition ludique sur les interactions entre espèces.",
+    "reserveButtonText": "Réservez",
+    "learnMoreButtonText": "En savoir plus",
+    "plusIconAltText": "icône plus",
+    "videoPreviewAltText": "Aperçu vidéo",
+    "newsSubtitle": "Nouveautés",
+    "newsTitle": "Notre exposition sera disponible à Annecy de juin à décembre 2023.",
+    "newsDescription": "Proche du centre ville d’Annecy, “La Turbine” est un espace chaleureux idéal pour une expérience immersive et collaborative.",
+    "newsLinkText": "Restez informé",
+    "preview0AltText": "Aperçu du jeu - Forêt",
+    "preview0Text": "L'interface du jeu - Forêt",
+    "preview1AltText": "Aperçu du jeu - Plaine",
+    "preview1Text": "L'interface du jeu - Plaine",
+    "preview2AltText": "Aperçu du jeu - Océan",
+    "preview2Text": "L'interface du jeu - Océan",
+    "phoneIconAltText": "Icône de téléphone",
+    "phoneNumber": "06 44 62 94 41"
+  },
+  "demo": {
+    "title": "Elie, un outil pédagogique pour découvrir le vivant",
+    "subTitle1": "L’exposition suit un parcours guidé, qui repose sur un jeu d’équipe ludique.",
+    "subTitle2": "Le jeu amène les élèves à collaborer pour identifier des espèces à partir d’indices, puis découvrir leurs interactions. Il mobilise les sens et l’esprit d’analyse des élèves.",
+    "prepareVisit": "Préparez votre séjour"
+  },
+  "header": {
+    "links": {
+      "exhibition": "L'exposition",
+      "information": "Informations pratiques",
+      "resources": "Ressources pédagogiques",
+      "reviews": "Avis",
+      "reserve": "Réservez"
+    }
+  },
+  "advice": {
+    "title": "Les avis de nos participants",
+    "paragraph": "Merci pour tous vos retours qui nous aident à améliorer l’expérience ELIE.",
+    "giveAdvice": "Donnez un avis",
+    "tristanQuote": "“J’ai adoré jouer avec mes amis, j’ai trouvé le bruit de la biche super drôle en plus!”",
+    "sarahQuote": "“J’ai ressenti un réel intérêt de la part des élèves lors du retour en classe.”",
+    "ericQuote": "“Très utile, j’ai gagné du temps lors de mes explications.”",
+    "claraQuote": "“Avec Elliot on a découvert la rémora, c’était trop bien de voir le requin aussi.”",
+    "student": "Élève",
+    "teacher": "Professeur(e)"
+  },
+  "footer": {
+    "exhibition": "L’exposition",
+    "booking": "Réservation",
+    "educationalSheets": "Fiches pédagogiques",
+    "reviews": "Avis",
+    "privacyPolicy": "Politique de confidentialité",
+    "legalMentions": "Mentions légales"
+  },
+  "gallery": {
+    "title": "L'expérience en image",
+    "description": "Elie existe grâce à vous depuis 2023 et votre enthousiasme ne cesse de nous surprendre.",
+    "altText": "Image de l'expérience"
+  },
+  "preparation": {
+    "title": "Préparer sa venue",
+    "downloadResourcesSubtitle": "Téléchargez nos",
+    "downloadResourcesSpan": "ressources pédagogiques",
+    "confirmAttendanceSpan": "Confirmez votre venue",
+    "confirmAttendanceSubtitle": "auprès du corps enseignant",
+    "prepareGroupsSubtitle": "En classe, préparez des",
+    "prepareGroupsSpan": "groupes de 3 élèves avec un nom d'équipe."
+  },
+  "reservation": {
+  "reservation.title": "Venir à l'exposition Elie en 4 étapes",
+  "reservation.step1": "Réservez votre créneau",
+  "reservation.step2": "Renseignez votre profil de groupe",
+  "reservation.step3": "Créez les groupes d'élèves",
+  "reservation.step4": "Récapitulatif de votre réservation",
+  "reservation.bookOnline": "Réservez en ligne",
+  "reservation.chooseLocation": "Choisir le lieu d'exposition",
+  "reservation.annecy": "Annecy - La Turbine",
+  "reservation.lyon": "Lyon - Palexpo",
+  "reservation.grenoble": "Grenoble - Exposition",
+  "reservation.previous": "Précédent",
+  "reservation.next": "Suivant",
+  "reservation.selectTimeSlot": "Sélectionnez un créneau horaire",
+  "reservation.selectedSlot": "Créneau sélectionné",
+  "reservation.location": "Lieu",
+  "reservation.conditions": "Conditions",
+  "reservation.conditionText": "Vous avez une session de 15 minutes renouvelable pour compléter votre réservation sur le site. En cas de paiement, il sera définitivement bloqué. Vous pouvez annuler une réservation et être remboursé jusqu'à 5 jours ouvrables précédant la date du créneau. Pour toute demande d'annulation, veuillez nous contacter par mail à contact@elie.fr.",
+  "reservation.studentNumber": "Combien d'élèves avez-vous ?",
+  "reservation.groupLevel": "Quel est le niveau du groupe ?",
+  "reservation.cm1": "CM1",
+  "reservation.cm2": "CM2",
+  "reservation.other": "Autre",
+  "reservation.visitedBefore": "Êtes-vous déjà venu à",
+   "reservation.numberOfStudentsPlaceholder" : "Nombre d'élèves",
+  "reservation.yes": "oui",
+  "reservation.no": "non",
+  "reservation.recapTitle": "Récapitulatif de votre réservation",
+  "reservation.timeSlot": "Créneau",
+  "reservation.from": "de",
+  "reservation.to": "à",
+  "reservation.at": "à",
+  "reservation.place": "Lieu",
+  "reservation.group": "Groupe",
+  "reservation.oneClass" : "1 classe",
+   "reservation.students": "élèves",
+  "reservation.resources": "Ressources",
+  "reservation.questions": "Des questions ?",
+  "reservation.phone": "Téléphone",
+  "reservation.email": "Mail",
+  "reservation.payment": "Paiement",
+  "reservation.exhibition": "Exposition",
+  "reservation.serviceFee": "Frais de services",
+  "reservation.total": "Total",
+  "reservation.validate": "Valider"
+  },
+  "ressources": {
+    "mapTitle": "Plan du lieu",
+    "pedagogicalSheetTitle": "Fiche pédagogique",
+    "rulesTitle": "Règlement intérieur",
+    "downloadIconAltText": "Icône de téléchargement"
+  },
+  "team": {
+    "teamName": "Équipe "
+  },
+  "profil": {
+    "modifyProfileTitle": "Modifier votre profil",
+    "firstNameLabel": "Prénom",
+    "firstNamePlaceholder": "Renseigner le prénom",
+    "lastNameLabel": "Nom",
+    "lastNamePlaceholder": "Renseigner le nom",
+    "emailLabel": "Mail",
+    "emailPlaceholder": "Renseigner l'email",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Renseigner le mot de passe",
+    "validateButton": "Valider",
+    "giveAdviceTitle": "Donner un avis",
+    "profileLabel": "Profil",
+    "teacherType": "Professeur",
+    "studentType": "Élève*",
+    "adviceInfo": "*Vous pouvez fournir l’avis d’un élève, il sera renseigné sous votre adresse mail.",
+    "adviceLabel": "Avis",
+    "advicePlaceholder": "Renseigner l'avis (150 caractères max)...",
+    "currentReservationTitle": "Votre réservation en cours",
+    "slotLabel": "Créneau",
+    "slotDate": "Mardi 07/06 à 9h00.",
+    "locationLabel": "Lieu",
+    "location": "Annecy - La Turbine.",
+    "groupLabel": "Groupe",
+    "groupInfo": "1 classe, 20 élèves, CM1.",
+    "downloadTicket": "Télécharger mon billet",
+    "modify": "Modifier",
+    "resourcesTitle": "Ressources",
+    "questionsTitle": "Des questions ?",
+    "phone": "Téléphone",
+    "email": "Mail"
+  }
+}

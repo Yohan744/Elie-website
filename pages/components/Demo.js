@@ -1,12 +1,15 @@
-import VectorLeft from "../../asset/svg/demo-vector-left-pink.svg";
-import VectorRight from "../../asset/svg/demo-vector-right-pink.svg";
-import {useEffect} from "react";
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
+import VectorLeft from '../../asset/svg/demo-vector-left-pink.svg';
+import VectorRight from '../../asset/svg/demo-vector-right-pink.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Demo() {
+    const { t } = useTranslation();
 
     useEffect(() => {
 
@@ -84,38 +87,22 @@ function Demo() {
 
     return (
         <section id="demo">
-
             <div className="global-wrapper">
-
                 <div className="left-part">
-
-                    <img src={"plate-360.gif"} alt="Video of the game rotating"/>
-
+                    <img src={"plate-360.gif"} alt="Video of the game rotating" />
                 </div>
-
                 <div className="right-part">
-
-                    <h2 className="title">Elie, un outil pédagogique pour découvrir le vivant</h2>
-
-                    <p className="sub-title">L’exposition suit un parcours guidé, qui repose sur un jeu d’équipe ludique.</p>
-
-                    <p className="sub-title">Le jeu amène les élèves à collaborer pour identifier des espèces à partir d’indices, puis découvrir leurs interactions. Il mobilise les sens et l’esprit d’analyse des élèves.</p>
-
+                    <h2 className="title">{t('demo.title')}</h2>
+                    <p className="sub-title">{t('demo.subTitle1')}</p>
+                    <p className="sub-title">{t('demo.subTitle2')}</p>
                     <a href={"#preparation"} draggable="false">
-                        <p className="button">Préparer votre séjour</p>
+                        <p className="button">{t('demo.prepareVisit')}</p>
                     </a>
-
                 </div>
-
             </div>
-
-            <VectorLeft className="vector-left"/>
-
-            <VectorRight className="vector-right"/>
-
+            <VectorLeft className="vector-left" />
+            <VectorRight className="vector-right" />
         </section>
     )
-
 }
-
 export default Demo
