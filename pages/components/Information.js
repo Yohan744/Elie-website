@@ -15,27 +15,27 @@ function Information() {
 
                         <h5 className="title">Un lien direct avec le programme scolaire</h5>
 
-                        <p>Des fiches pédagogiques disponibles pour un accompagnement complet en amont et en aval de l’expérience.</p>
+                        <p>Des ressources pédagogiques disponibles gratuitement pour un accompagnement complet en amont et en aval de l’expérience.</p>
 
                     </div>
 
                     <div className="info">
 
-                        <img src={"animal-deer.svg"} alt={"Animal icon"}/>
+                        <img src={"animal-fox-pink.svg"} alt={"Animal icon"}/>
 
                         <h5 className="title">Adapté aux CM1 & CM2</h5>
 
-                        <p>Fusce neque. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Fusce pharetra convallis urna.</p>
+                        <p>L’expérience a été construite et testée pour correspondre au niveau des élèves.</p>
 
                     </div>
 
                     <div className="info">
 
-                        <img src={"animal-deer.svg"} alt={"Animal icon"}/>
+                        <img src={"animal-wolf-pink.svg"} alt={"Animal icon"}/>
 
                         <h5 className="title">Durée de 2-3h</h5>
 
-                        <p>Fusce neque. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Fusce pharetra convallis urna.</p>
+                        <p>Venez vous plonger dans un cadre immersif le temps d’une demi-journée pour découvrir des thèmes variés sur la Nature.</p>
 
                     </div>
 
