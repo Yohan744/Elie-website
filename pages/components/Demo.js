@@ -97,9 +97,9 @@ function Demo() {
 
                     <h2 className="title">Elie, un outil pédagogique pour découvrir le vivant</h2>
 
-                    <p className="sub-title">Plongez-vous dans des ambiances, éveillez vos sens, identifier des espèces
-                        et découvrez leurs interactions. Faites du jeu un outils immersif pour stimuler la curiosité des
-                        enfants sur le monde du vivant !</p>
+                    <p className="sub-title">L’exposition suit un parcours guidé, qui repose sur un jeu d’équipe ludique.</p>
+
+                    <p className="sub-title">Le jeu amène les élèves à collaborer pour identifier des espèces à partir d’indices, puis découvrir leurs interactions. Il mobilise les sens et l’esprit d’analyse des élèves.</p>
 
                     <a href={"#preparation"} draggable="false">
                         <p className="button">Préparer votre séjour</p>

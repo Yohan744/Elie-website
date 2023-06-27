@@ -37,7 +37,7 @@ function Advice() {
 
                         <div className="advice">
 
-                            <img src={"animal-fox.png"} alt="Fox icon" />
+                            <img src={"animal-crow-green.svg"} alt="Crow icon" />
 
                             <h5 className="name">Sarah</h5>
 
@@ -55,7 +55,7 @@ function Advice() {
 
                         <div className="advice">
 
-                            <img src={"animal-fox.png"} alt="Fox icon" />
+                            <img src={"animal-flamingo-green.svg"} alt="Flamingo icon" />
 
                             <h5 className="name">Éric</h5>
 
@@ -69,7 +69,7 @@ function Advice() {
 
                         <div className="advice">
 
-                            <img src={"animal-fox.png"} alt="Fox icon" />
+                            <img src={"animal-jellyFish-green.svg"} alt="Jelly fish icon" />
 
                             <h5 className="name">Clara</h5>
 

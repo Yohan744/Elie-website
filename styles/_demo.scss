@@ -147,6 +147,7 @@
 
       .sub-title {
         position: relative;
+        margin-bottom: 16px;
         max-width: 80%;
         font-family: "PP Pangram Sans Rounded medium", sans-serif;
         font-size: 22px;
@@ -166,10 +167,12 @@
 
         @media screen and (max-width: 1550px) {
           font-size: 18px;
+          margin-bottom: 14px;
         }
 
         @media screen and (max-width: 1150px) {
           font-size: 16px;
+          margin-bottom: 12px;
         }
 
         @media screen and (max-width: 576px) {
@@ -180,17 +183,8 @@
 
       a {
         position: relative;
-        margin-top: 16px;
         text-decoration: none;
         user-select: none;
-
-        @media screen and (max-width: 1550px) {
-          margin-top: 14px;
-        }
-
-        @media screen and (max-width: 1150px) {
-          margin-top: 12px;
-        }
 
         .button {
           position: relative;

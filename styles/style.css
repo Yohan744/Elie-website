@@ -1685,6 +1685,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
 }
 #demo .global-wrapper .right-part .sub-title {
   position: relative;
+  margin-bottom: 16px;
   max-width: 80%;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 22px;
@@ -1707,11 +1708,13 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
 @media screen and (max-width: 1550px) {
   #demo .global-wrapper .right-part .sub-title {
     font-size: 18px;
+    margin-bottom: 14px;
   }
 }
 @media screen and (max-width: 1150px) {
   #demo .global-wrapper .right-part .sub-title {
     font-size: 16px;
+    margin-bottom: 12px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1721,19 +1724,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
 }
 #demo .global-wrapper .right-part a {
   position: relative;
-  margin-top: 16px;
   text-decoration: none;
   user-select: none;
-}
-@media screen and (max-width: 1550px) {
-  #demo .global-wrapper .right-part a {
-    margin-top: 14px;
-  }
-}
-@media screen and (max-width: 1150px) {
-  #demo .global-wrapper .right-part a {
-    margin-top: 12px;
-  }
 }
 #demo .global-wrapper .right-part a .button {
   position: relative;

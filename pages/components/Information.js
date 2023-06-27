@@ -23,7 +23,7 @@ function Information() {
 
                         <img src={"animal-fox-pink.svg"} alt={"Animal icon"}/>
 
-                        <h5 className="title">Adapté aux CM1 & CM2</h5>
+                        <h5 className="title">Adapté aux élèves de CM1 & CM2</h5>
 
                         <p>L’expérience a été construite et testée pour correspondre au niveau des élèves.</p>
 

@@ -9,7 +9,7 @@ function Gallery() {
 
                     <h3>L'experience en image</h3>
 
-                    <p>Des fiches pédagogiques disponibles pour un accompagnement complet en amont et en aval de l’expérience.</p>
+                    <p>Elie existe grâce à vous depuis 2023 et votre enthousiasme ne cesse de nous surprendre.</p>
 
                 </div>
                 <div className="picture">

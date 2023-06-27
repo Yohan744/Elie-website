@@ -55,9 +55,9 @@ function Masthead() {
                                 </div>
                             </a>
 
-                            <a href={"#reservation"} draggable="false">
+                            <a href={"#demo"} draggable="false">
                                 <div className={"button"}>
-                                    <p>Créer mon groupe</p>
+                                    <p>En savoir plus</p>
                                     <img src={"plus-icon-blue.svg"} alt="plus icon" className="plus-icon"/>
                                 </div>
                             </a>
@@ -86,9 +86,9 @@ function Masthead() {
 
                         <div className={"right-part"}>
 
-                            <p>Nous sommes ravis de vous proposer ce nouveau lieu d’exposition et espérons vous voir nombreux !</p>
+                            <p>Proche du centre ville d’Annecy, “La Turbine” est un espace chaleureux idéal pour une expérience immersive et collaborative.</p>
 
-                            <a href={"#demo"} className={"know-more"} draggable="false">En savoir plus</a>
+                            <a href={"#demo"} className={"know-more"} draggable="false">Rester informé</a>
 
                         </div>
 
@@ -111,7 +111,7 @@ function Masthead() {
                         </div>
 
                         <div className="preview" id="2">
-                            <img src={"masthead-background.png"} alt="Preview of the game"/>
+                            <img src={"preview-2.png"} alt="Preview of the game"/>
                             <div className="text">
                                 <p>L'interface du jeu - Ocean</p>
                             </div>
