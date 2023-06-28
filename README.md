@@ -2,7 +2,9 @@
 
 ![Elie Logo](https://github.com/LucieEditionsTissot/elie-project/blob/64144bc87c667bd00ae311f309a0397349108986/public/images/elie.jpeg)
 
-Ce README présente le site vitrine du projet "Elie". Ce site a été conçu pour promouvoir l'exposition et offrir des fonctionnalités supplémentaires, telles que la traduction, la réservation pour l'exposition, la création d'équipes de jeu, la consultation des détails de réservation, le téléchargement de fiches pédagogiques, d'un plan du lieu et d'un règlement intérieur.
+Ce README présente le site vitrine du projet "Elie". 
+
+Ce site a été conçu pour promouvoir l'exposition et offrir des fonctionnalités supplémentaires, telles que la traduction, la réservation pour l'exposition, la création d'équipes de jeu, la consultation des détails de réservation, le téléchargement de fiches pédagogiques, d'un plan du lieu et d'un règlement intérieur.
 
 ### Il est disponible en ligne à l'adresse suivante :
 
@@ -19,21 +21,28 @@ Ce README présente le site vitrine du projet "Elie". Ce site a été conçu pou
 #### Téléchargement du règlement intérieur : Un règlement intérieur de l'exposition est également disponible en téléchargement au format PDF. Les visiteurs peuvent consulter les règles et les consignes à respecter lors de leur visite.
 
 Installez elie-website depuis github
+
 Assurez-vous d'avoir Node.js installé sur votre machine.
+
 Clonez ce dépôt en utilisant la commande suivante :
+
 ```bash
   git clone https://github.com/Yohan744/Elie-website.git
   ```
-\
+
 Pour installer les dépendances et librairie essentielles au lancement du projet:
+
 ```bash
   cd Elie-website
   npm install 
   ````
+
 Pour finir lancez la commande
+
 ```bash
   npm run dev
   ````
+
 Et rendez-vous sur les pages :
 
 **[Website local](http://localhost:3000)**
