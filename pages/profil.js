@@ -253,7 +253,7 @@ export default function Profil() {
                     <h5 className="sub-title margin">{t('profil.questionsTitle')}</h5>
 
                     <h6 className="text-medium">{t('profil.phone')}</h6>
-                    <p className="text">06 44 62 94 41</p>
+                    <p className="text">04 50 33 72 18</p>
 
                     <h6 className="text-medium">{t('profil.email')}</h6>
                     <p className="text">Contact@elie.fr</p>

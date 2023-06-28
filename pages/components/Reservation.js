@@ -462,7 +462,7 @@ function Reservation() {
 
                                 <h3 className="title">{t('reservation.reservation.questions')}</h3>
                                 <h6 className="sub-title">{t('reservation.reservation.phone')}</h6>
-                                <p className="text">06 44 62 94 41</p>
+                                <p className="text">04 50 33 72 18</p>
 
                                 <h6 className="sub-title">{t('reservation.reservation.email')}</h6>
                                 <p className="text">contact@elie.fr</p>
