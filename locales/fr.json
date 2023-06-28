@@ -128,6 +128,7 @@
   "reservation.email": "Mail",
   "reservation.payment": "Paiement",
   "reservation.exhibition": "Exposition",
+  "reservation.emailPlaceholder": "Email",
   "reservation.serviceFee": "Frais de services",
   "reservation.total": "Total",
   "reservation.validate": "Valider"

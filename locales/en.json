@@ -40,8 +40,8 @@
   },
   "demo": {
     "title": "Elie, an educational tool to discover life",
-    "subtitle1": "The exhibition follows a guided path, based on a fun team game.",
-    "subtitle2": "The game leads students to collaborate in identifying species from clues and discovering their interactions. It engages students' senses and analytical thinking.",
+    "subTitle1": "The exhibition follows a guided path, based on a fun team game.",
+    "subTitle2": "The game leads students to collaborate in identifying species from clues and discovering their interactions. It engages students' senses and analytical thinking.",
     "prepareVisit": "Prepare your visit"
   },
   "header": {

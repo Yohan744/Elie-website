@@ -903,7 +903,6 @@
           }
 
         }
-
         &.group-profile {
 
           .sub-title {
@@ -955,6 +954,24 @@
             color: $blue;
             caret-color: $blue;
             transition: color 0.8s $ease-power4-out;
+          }
+            input[type=email] {
+              position: relative;
+              margin: 0 auto 72px;
+              padding: 23px 0;
+              border: 1px solid $blue;
+              border-radius: 10px;
+              background-color: transparent;
+              font-family: " PP Pangram Sans Rounded medium", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 1.1;
+              letter-spacing: 0em;
+              text-align: center;
+              color: $blue;
+              caret-color: $blue;
+              transition: color 0.8s $ease-power4-out;
+
 
             @media screen and (max-width: 1550px) {
               font-size: 20px;
@@ -1167,7 +1184,37 @@
           }
 
         }
+        &.connexion{
+          h6 {
+            position: relative;
+            margin-bottom: 3px;
+            font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $blue;
+          }
+          input[type=password] {
+            position: relative;
+            margin: 0 auto 72px;
+            padding: 23px 0;
 
+            border: 1px solid $blue;
+            border-radius: 10px;
+            background-color: transparent;
+            font-family: " PP Pangram Sans Rounded medium", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $blue;
+            caret-color: $blue;
+            transition: color 0.8s $ease-power4-out;
+          }
+        }
         &.student-group {
 
           .team-wrapper {

@@ -416,7 +416,7 @@ function Reservation() {
 
                     </div>
 
-                    <div className="student-group sub-wrapper" data-id="2">
+                    <div className="student-group sub-wrapper wrapper" data-id="2">
 
                         <TeamMaker numberOfStudent={numberOfStudent} numberOfGroup={numberOfGroup} groupPattern={groupPattern} />
 
@@ -424,7 +424,41 @@ function Reservation() {
                             <div className="button prev" onClick={(e) => changeProgress(e, "student-group", "group-profile")}>
                                 <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled" onClick={(e) => changeProgress(e, "student-group", "recap")}>
+                            <div className="button next disabled" onClick={(e) => changeProgress(e, "student-group", "connexion")}>
+                                <p>{t('reservation.reservation.next')}</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="connexion sub-wrapper wrapper group-profile" data-id="2" >
+                        <h5 className="sub-title">Veuillez vous connecter pour continuer</h5>
+                    <h6>{t('reservation.reservation.emailPlaceholder')}</h6>
+                    <div className="wrapper">
+                        <input
+                            type="email"
+                            placeholder={t('reservation.reservation.email')}
+                            maxLength="30"
+                            autoComplete="false"
+                            onInput={(e) => setMail(e.target.value)}
+                        />
+
+
+                    <h6>{t('profil.passwordLabel')}</h6>
+                        <input
+                            type="password"
+                            placeholder={t('profil.passwordPlaceholder')}
+                            autoComplete="false"
+                            maxLength="30"
+                            onInput={(e) => setPassword(e.target.value)}
+                        />
+                    </div>
+
+                        <div className="button-wrapper">
+                            <div className="button prev" onClick={(e) => changeProgress(e, "connexion", "student-group")}>
+                                <p>{t('reservation.reservation.previous')}</p>
+                            </div>
+                            <div className="button next disabled" onClick={(e) => changeProgress(e, "connexion", "recap")}>
                                 <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
