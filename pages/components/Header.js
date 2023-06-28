@@ -110,8 +110,9 @@ function Header() {
                 <Link href="/">
                     <img src={"logo-green.svg"} alt={"Green logo of Elie"} className={"logo"} />
                 </Link>
-                <LanguageSelector setLanguage={setLanguage} />
+
                 <div className={"right-part"}>
+                    <LanguageSelector setLanguage={setLanguage} />
                     <a href={"#demo"} className="link" draggable="false" onClick={() => handleClickOnHeader()}>
                         {t('header.links.exhibition')}
                     </a>
