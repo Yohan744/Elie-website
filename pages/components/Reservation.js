@@ -446,7 +446,7 @@ function Reservation() {
                     </div>
 
                     <div className="connexion sub-wrapper wrapper group-profile" data-id="2" >
-                        <h5 className="sub-title">Veuillez vous connecter pour continuer</h5>
+                        <h5 className="sub-title">{t('reservation.reservation.haveToLog')}</h5>
 
 
                     <div className="wrapper">

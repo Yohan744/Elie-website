@@ -127,6 +127,8 @@
     "reservation.phone": "Phone",
     "reservation.email": "Email",
     "reservation.payment": "Payment",
+    "reservation.login": "Login",
+    "reservation.haveToLog" : "Please log in to continue",
     "reservation.exhibition": "Exhibition",
     "reservation.serviceFee": "Service Fee",
     "reservation.total": "Total",
