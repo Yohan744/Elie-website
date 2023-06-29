@@ -1,9 +1,10 @@
 import {useEffect, useState} from "react";
 import TeamMaker from "./TeamMaker";
 import Ressources from "./Ressources";
-import { useTranslation, Trans } from 'react-i18next';
+import {useTranslation, Trans} from 'react-i18next';
+
 function Reservation() {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
     const placeNameArray = ["La Turbine", "Palexpo", "Exposition"]
@@ -33,6 +34,7 @@ function Reservation() {
             });
         }
     }
+
     useEffect(() => {
 
         updateSizeOfContainer("is-active")
@@ -54,6 +56,10 @@ function Reservation() {
     useEffect(() => {
         verifyInfoGroupProfile()
     }, [numberOfStudent, studentClass, alreadyVisit])
+
+    useEffect(() => {
+        verifyConnexion()
+    }, [mail, password])
 
     function updateStateOfReservation(stateId) {
         const allState = document.querySelectorAll('.state-wrapper .state')
@@ -189,6 +195,15 @@ function Reservation() {
         }
     }
 
+    function verifyConnexion() {
+        const buttonNext = document.querySelector('.connexion .button.next')
+        if (mail !== "" && password !== "") {
+            buttonNext.classList.remove('disabled')
+        } else {
+            buttonNext.classList.add('disabled')
+        }
+    }
+
     function calculateNumberOfGroup() {
         let numberOfStudentsRemaining = numberOfStudent
         let numberOfGroup = 0
@@ -217,6 +232,7 @@ function Reservation() {
         setGroupPattern(groupPattern)
 
     }
+
     return (
         <section id="reservation">
 
@@ -280,7 +296,8 @@ function Reservation() {
                             <div className="button prev disabled">
                                 <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled" onClick={(e) => changeProgress(e, "book-online-place", "book-online-planning")}>
+                            <div className="button next disabled"
+                                 onClick={(e) => changeProgress(e, "book-online-place", "book-online-planning")}>
                                 <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
@@ -296,9 +313,11 @@ function Reservation() {
                             <h5 className="title">{t('reservation.reservation.bookOnline')}</h5>
 
                             <div className="month-wrapper">
-                                <img src={"month-icon.svg"} alt="Arrow icon for the month selector" onClick={() => handleMonthChange("back")} />
+                                <img src={"month-icon.svg"} alt="Arrow icon for the month selector"
+                                     onClick={() => handleMonthChange("back")}/>
                                 <p className="month">{monthSelected}</p>
-                                <img src={"month-icon.svg"} alt="Arrow icon for the month selector" className="next" onClick={() => handleMonthChange("next")} />
+                                <img src={"month-icon.svg"} alt="Arrow icon for the month selector" className="next"
+                                     onClick={() => handleMonthChange("next")}/>
                             </div>
 
                         </div>
@@ -323,7 +342,8 @@ function Reservation() {
 
                                 <div className="day" data-day={"Mardi 27/06"}>Mar. 27</div>
 
-                                <div className="time margin" data-end={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time margin" data-end={"12h00"}
+                                     onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>09h00</p>
                                 </div>
 
@@ -347,7 +367,8 @@ function Reservation() {
 
                                 <div className="day" data-day={"Jeudi 29/06"}>Jeu. 29</div>
 
-                                <div className="time margin" data-end={"12h00"} onClick={(e) => handleClickOnTimePlanning(e)}>
+                                <div className="time margin" data-end={"12h00"}
+                                     onClick={(e) => handleClickOnTimePlanning(e)}>
                                     <p>09h00</p>
                                 </div>
 
@@ -375,7 +396,8 @@ function Reservation() {
 
                         <div className="pop-up">
 
-                            <img src={"cross-icon.svg"} alt="Cross icon to cancel popup" className="cross-icon" onClick={() => closePopUp()} />
+                            <img src={"cross-icon.svg"} alt="Cross icon to cancel popup" className="cross-icon"
+                                 onClick={() => closePopUp()}/>
 
                             <p className="normal-text">{t('reservation.reservation.selectedSlot')}</p>
                             <p className="bold-text">{dayReserved} {t('reservation.reservation.at')} {timeReserved}.</p>
@@ -391,10 +413,12 @@ function Reservation() {
                         <div className="pop-up-background" onClick={() => closePopUp()}></div>
 
                         <div className="button-wrapper">
-                            <div className="button prev" onClick={(e) => changeProgress(e, "book-online-planning", "book-online-place")}>
+                            <div className="button prev"
+                                 onClick={(e) => changeProgress(e, "book-online-planning", "book-online-place")}>
                                 <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled" onClick={(e) => changeProgress(e, "book-online-planning", "group-profile")}>
+                            <div className="button next disabled"
+                                 onClick={(e) => changeProgress(e, "book-online-planning", "group-profile")}>
                                 <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
@@ -404,26 +428,33 @@ function Reservation() {
                     <div className="group-profile sub-wrapper" data-id="1">
 
                         <h5 className="sub-title">{t('reservation.reservation.studentNumber')}</h5>
-                        <input type="number" step="1" min="0" max="30" placeholder={t('reservation.reservation.numberOfStudentsPlaceholder')} maxLength="2" onInput={(e) => handleInputNumberOfStudent(e)} />
+                        <input type="number" step="1" min="0" max="30"
+                               placeholder={t('reservation.reservation.numberOfStudentsPlaceholder')} maxLength="2"
+                               onInput={(e) => handleInputNumberOfStudent(e)}/>
 
                         <h5 className="sub-title">{t('reservation.reservation.groupLevel')}</h5>
                         <div className="level-wrapper">
                             <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>CM1</div>
                             <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>CM2</div>
-                            <div className="level" onClick={(e) => handleClickOnGroupProfile(e, "level")}>{t('reservation.reservation.other')}</div>
+                            <div className="level"
+                                 onClick={(e) => handleClickOnGroupProfile(e, "level")}>{t('reservation.reservation.other')}</div>
                         </div>
 
                         <h5 className="sub-title">{t('reservation.reservation.visitedBefore')} {placeName} ?</h5>
                         <div className="visit-wrapper">
-                            <div className="visit" onClick={(e) => handleClickOnGroupProfile(e, "visit")}>{t('reservation.reservation.yes')}</div>
-                            <div className="visit" onClick={(e) => handleClickOnGroupProfile(e, "visit")}>{t('reservation.reservation.no')}</div>
+                            <div className="visit"
+                                 onClick={(e) => handleClickOnGroupProfile(e, "visit")}>{t('reservation.reservation.yes')}</div>
+                            <div className="visit"
+                                 onClick={(e) => handleClickOnGroupProfile(e, "visit")}>{t('reservation.reservation.no')}</div>
                         </div>
 
                         <div className="button-wrapper">
-                            <div className="button prev" onClick={(e) => changeProgress(e, "group-profile", "book-online-planning")}>
+                            <div className="button prev"
+                                 onClick={(e) => changeProgress(e, "group-profile", "book-online-planning")}>
                                 <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled" onClick={(e) => changeProgress(e, "group-profile", "student-group")}>
+                            <div className="button next disabled"
+                                 onClick={(e) => changeProgress(e, "group-profile", "student-group")}>
                                 <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
@@ -432,52 +463,43 @@ function Reservation() {
 
                     <div className="student-group sub-wrapper wrapper" data-id="2">
 
-                        <TeamMaker numberOfStudent={numberOfStudent} numberOfGroup={numberOfGroup} groupPattern={groupPattern} />
+                        <TeamMaker numberOfStudent={numberOfStudent} numberOfGroup={numberOfGroup}
+                                   groupPattern={groupPattern}/>
 
                         <div className="button-wrapper">
-                            <div className="button prev" onClick={(e) => changeProgress(e, "student-group", "group-profile")}>
+                            <div className="button prev"
+                                 onClick={(e) => changeProgress(e, "student-group", "group-profile")}>
                                 <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next disabled" onClick={(e) => changeProgress(e, "student-group", "connexion")}>
+                            <div className="button next disabled"
+                                 onClick={(e) => changeProgress(e, "student-group", "connexion")}>
                                 <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
 
                     </div>
 
-                    <div className="connexion sub-wrapper wrapper group-profile" data-id="2" >
-                        <h5 className="sub-title">{t('reservation.reservation.haveToLog')}</h5>
+                    <div className="connexion sub-wrapper wrapper group-profile" data-id="2">
 
+                        <h5>{t('reservation.reservation.haveToLog')}</h5>
 
-                    <div className="wrapper">
-                        <div className="centered">
-                        <h6>{t('reservation.reservation.emailPlaceholder')}</h6>
-                        <input
-                            type="email"
-                            placeholder={t('reservation.reservation.email')}
-                            maxLength="30"
-                            autoComplete="false"
-                            onInput={(e) => setMail(e.target.value)}
-                        />
+                        <div className="wrapper">
 
-                    </div>
-                        <div className="centered">
-                    <h6>{t('profil.passwordLabel')}</h6>
-                        <input
-                            type="password"
-                            placeholder={t('profil.passwordPlaceholder')}
-                            autoComplete="false"
-                            maxLength="30"
-                            onInput={(e) => setPassword(e.target.value)}
-                        />
-                        </div>
+                            <h6>{t('reservation.reservation.emailPlaceholder')}</h6>
+                            <input type="email" placeholder={t('reservation.reservation.email')} maxLength="30"
+                                   autoComplete="false" onInput={(e) => setMail(e.target.value)}/>
+
+                            <h6>{t('profil.passwordLabel')}</h6>
+                            <input type="password" placeholder={t('profil.passwordPlaceholder')} autoComplete="false"
+                                   maxLength="30" onInput={(e) => setPassword(e.target.value)}/>
                         </div>
 
                         <div className="button-wrapper">
-                            <div className="button prev" onClick={(e) => changeProgress(e, "connexion", "student-group")}>
+                            <div className="button prev"
+                                 onClick={(e) => changeProgress(e, "connexion", "student-group")}>
                                 <p>{t('reservation.reservation.previous')}</p>
                             </div>
-                            <div className="button next" onClick={(e) => changeProgress(e, "connexion", "recap")}>
+                            <div className="button next disabled" onClick={(e) => changeProgress(e, "connexion", "recap")}>
                                 <p>{t('reservation.reservation.next')}</p>
                             </div>
                         </div>
@@ -507,7 +529,7 @@ function Reservation() {
 
                                 <h3 className="title">{t('reservation.reservation.resources')}</h3>
 
-                                <Ressources margin={false} />
+                                <Ressources margin={false}/>
 
                             </div>
 
@@ -537,12 +559,12 @@ function Reservation() {
 
                                 <div>
                                     <p>{t('reservation.reservation.serviceFee')}</p>
-                                    <h6>3 €</h6>
+                                    <h6>4.49 €</h6>
                                 </div>
 
                                 <div>
                                     <p>{t('reservation.reservation.total')}</p>
-                                    <h6>38 €</h6>
+                                    <h6>39.49 €</h6>
                                 </div>
 
                             </div>

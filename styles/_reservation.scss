@@ -903,6 +903,7 @@
           }
 
         }
+
         &.group-profile {
 
           .sub-title {
@@ -1168,57 +1169,93 @@
           }
 
         }
-        &.connexion{
-          h6 {
+
+        &.connexion {
+
+          h5 {
             position: relative;
-            margin-bottom: 3px;
-            font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 25px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: $blue;
-          }
-          input[type=password] {
-            position: relative;
-            margin: 0 auto 71px;
-            padding: 24px 40px;
-            border: 1px solid $blue;
-            border-radius: 10px;
-            background-color: transparent;
-            font-family: " PP Pangram Sans Rounded medium", sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 1.1;
-            letter-spacing: 0em;
+            margin-bottom: 30px ;
+            font-family: "PP Pangram Sans Rounded bold", sans-serif ;
             text-align: center;
-            color: $blue;
-            caret-color: $blue;
-            transition: color 0.8s $ease-power4-out;
-          }
-          input[type=email] {
-            position: relative;
-            margin: 0 auto 72px;
-            padding: 24px 40px;
-            border: 1px solid $blue;
-            border-radius: 10px;
-            background-color: transparent;
-            font-family: " PP Pangram Sans Rounded medium", sans-serif;
-            font-size: 24px;
+            font-size: 28px;
+            font-style: normal;
             font-weight: 400;
-            line-height: 1.1;
-            letter-spacing: 0em;
-            text-align: center;
+            line-height: normal;
             color: $blue;
-            caret-color: $blue;
-            transition: color 0.8s $ease-power4-out;
-          }
-          .centered {
-              display: block;
+
+            @media screen and (max-width: 576px) {
+              margin-bottom: 20px;
+              font-size: 20px;
+            }
 
           }
+
+          .wrapper {
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+
+            @media screen and (max-width: 576px) {
+              width: 100%;
+            }
+
+            h6 {
+              position: relative;
+              width: 100%;
+              margin-bottom: 11px;
+              font-size: 24px;
+              font-family: "PP Pangram Sans Rounded medium", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-align: left;
+              color: $blue;
+
+              @media screen and (max-width: 576px) {
+                font-size: 18px;
+              }
+
+            }
+
+            input {
+              position: relative;
+              margin-bottom: 33px;
+              width: 100%;
+              padding: 20px 30px;
+              font-size: 24px;
+              font-family: "PP Pangram Sans Rounded medium", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              color: $blue;
+              outline: none;
+              border: 1px solid $blue;
+              background-color: transparent;
+              border-radius: 10px;
+
+              &::placeholder {
+                color: gray;
+              }
+
+              &:last-child {
+                margin-bottom: 50px;
+              }
+
+              @media screen and (max-width: 576px) {
+                padding: 14px 20px;
+                font-size: 16px;
+              }
+
+            }
+
+          }
+
         }
+
         &.student-group {
 
           .team-wrapper {

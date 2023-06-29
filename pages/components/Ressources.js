@@ -5,8 +5,8 @@ function Ressources(props) {
     return (
         <div className={`download-wrapper ${props.margin ? "" : "no-margin"}`}>
             <a
-                href={"masthead-background.png"}
-                download="plan_2023.pdf"
+                href={"fiche_officielle_2023.pdf"}
+                download="fiche_officielle_2023.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
                 draggable="false"
@@ -20,7 +20,7 @@ function Ressources(props) {
                 </div>
             </a>
             <a
-                href={"masthead-background.png"}
+                href={"fiche_officielle_2023.pdf"}
                 download="fiche_officielle_2023.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -35,8 +35,8 @@ function Ressources(props) {
                 </div>
             </a>
             <a
-                href={"masthead-background.png"}
-                download="reglement_elie_2023.pdf"
+                href={"fiche_officielle_2023.pdf"}
+                download="fiche_officielle_2023.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
                 draggable="false"
