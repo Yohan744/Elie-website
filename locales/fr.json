@@ -125,7 +125,7 @@
   "reservation.resources": "Ressources",
   "reservation.questions": "Des questions ?",
   "reservation.phone": "Téléphone",
-  "reservation.email": "Adresse email *",
+  "reservation.email": "Adresse email",
   "reservation.payment": "Paiement",
   "reservation.exhibition": "Exposition",
   "reservation.emailPlaceholder": "Email",
