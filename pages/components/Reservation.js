@@ -549,7 +549,7 @@ function Reservation() {
 
                             <div className="button-wrapper">
                                 <div className="button prev"
-                                     onClick={(e) => changeProgress(e, "recap", "student-group")}>
+                                     onClick={(e) => changeProgress(e, "recap", "connexion")}>
                                     <p>{t('reservation.reservation.previous')}</p>
                                 </div>
                                 <div className="button next"
