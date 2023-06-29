@@ -37,8 +37,8 @@
   -webkit-tap-highlight-color: transparent;
 }
 *::selection {
-  background-color: #d76677;
-  color: #fefff6;
+  background-color: rgb(215, 102, 119);
+  color: rgb(254, 255, 246);
 }
 
 html, body {
@@ -52,7 +52,7 @@ html img, body img {
 }
 
 body {
-  background-color: #fefff6;
+  background-color: rgb(254, 255, 246);
 }
 
 html.lenis {
@@ -84,7 +84,7 @@ header {
   transform: translateX(-50%);
   border-radius: 15px;
   z-index: 10;
-  background-color: #1d2737;
+  background-color: rgb(29, 39, 55);
   transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 header.hide {
@@ -160,10 +160,10 @@ header .right-part .link {
   border-radius: 100px;
   background-color: transparent;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 header .right-part .link:hover {
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   header .right-part .link {
@@ -200,7 +200,7 @@ header .right-part .user {
   cursor: pointer;
   user-select: none;
   -webkit-user-drag: none;
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   header .right-part .user {
@@ -263,7 +263,7 @@ header .right-part a .reserve {
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
-  background-color: #c3e0c7;
+  background-color: rgb(195, 224, 199);
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 1300px) {
@@ -284,7 +284,7 @@ header .right-part a .reserve p {
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   header .right-part a .reserve p {
@@ -297,7 +297,7 @@ header .right-part a .reserve p {
   }
 }
 header .right-part a:hover .reserve {
-  background-color: #b3d4b4;
+  background-color: rgb(179, 212, 180);
 }
 header .right-part .mobile-menu-wrapper {
   position: relative;
@@ -307,7 +307,7 @@ header .right-part .mobile-menu-wrapper {
   cursor: pointer;
   padding: 0 9px;
   border-radius: 10px;
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1150px) {
   header .right-part .mobile-menu-wrapper {
@@ -328,7 +328,7 @@ header .right-part .mobile-menu-wrapper span {
   height: 3px;
   width: 100%;
   border-radius: 10px;
-  background-color: #fefff6;
+  background-color: rgb(254, 255, 246);
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;
 }
 @media screen and (max-width: 576px) {
@@ -342,7 +342,7 @@ header .right-part .mobile-menu-wrapper span:before, header .right-part .mobile-
   height: 3px;
   width: 100%;
   border-radius: 10px;
-  background-color: #fefff6;
+  background-color: rgb(254, 255, 246);
   transform: rotate(0);
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -395,7 +395,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   transform: translateX(-50%);
   pointer-events: none;
   opacity: 0;
-  background-color: #1d2737;
+  background-color: rgb(29, 39, 55);
   transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 650px) {
@@ -438,14 +438,14 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   border-radius: 100px;
   background-color: transparent;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 .menu div p .link:last-child {
   margin-bottom: 0;
 }
 @media screen and (min-width: 750px) {
   .menu div p .link:hover {
-    background-color: #384864;
+    background-color: rgb(56, 72, 100);
   }
 }
 @media screen and (max-width: 750px) {
@@ -580,7 +580,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   align-items: center;
   justify-content: space-between;
   border-radius: 15px;
-  background-color: #c3e0c7;
+  background-color: rgb(195, 224, 199);
 }
 @media screen and (max-width: 1300px) {
   #masthead .global-wrapper .top-wrapper {
@@ -633,7 +633,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
   max-width: 600px;
   margin-bottom: 32px;
 }
@@ -721,8 +721,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button {
   position: relative;
   padding: 21px 44px;
-  background-color: #384864;
-  border: 1px solid #384864;
+  background-color: rgb(56, 72, 100);
+  border: 1px solid rgb(56, 72, 100);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -766,7 +766,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.2;
   letter-spacing: 0em;
   text-align: center;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
   transition: color 0.35s ease-in-out;
 }
 @media screen and (max-width: 1700px) {
@@ -822,10 +822,10 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button:hover {
-  background-color: #32405a;
+  background-color: rgb(50, 64, 90);
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a .button:hover p {
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a:nth-child(2) {
   margin-left: 16px;
@@ -840,17 +840,17 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   background-color: transparent;
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a:nth-child(2) .button p {
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 #masthead .global-wrapper .top-wrapper .info .button-wrapper a:nth-child(2) .button:hover {
-  background-color: #b3d4b4;
+  background-color: rgb(179, 212, 180);
 }
 #masthead .global-wrapper .top-wrapper .video {
   position: relative;
   height: 493px;
   width: 50.3%;
   border-radius: 15px;
-  background-color: #d76677;
+  background-color: rgb(215, 102, 119);
   overflow: clip;
 }
 @media screen and (max-width: 1800px) {
@@ -923,7 +923,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  background-color: #d76677;
+  background-color: rgb(215, 102, 119);
 }
 @media screen and (max-width: 1700px) {
   #masthead .global-wrapper .bottom-wrapper .news {
@@ -988,8 +988,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   letter-spacing: 0em;
   text-align: center;
   border-radius: 30px;
-  border: 1px solid #fefff6;
-  color: #fefff6;
+  border: 1px solid rgb(254, 255, 246);
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1700px) {
   #masthead .global-wrapper .bottom-wrapper .news .left-part .sub-title {
@@ -1027,7 +1027,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1700px) {
   #masthead .global-wrapper .bottom-wrapper .news .left-part .title {
@@ -1097,7 +1097,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1700px) {
   #masthead .global-wrapper .bottom-wrapper .news .right-part p {
@@ -1135,13 +1135,13 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
   cursor: pointer;
   user-select: none;
   -webkit-user-drag: none;
   text-decoration: underline;
   text-underline-offset: 6px;
-  text-underline-color: #fefff6;
+  text-underline-color: rgb(254, 255, 246);
   transition: text-underline-offset 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 1550px) {
@@ -1229,7 +1229,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   transform: translateX(-50%);
   z-index: 1;
   user-select: none;
-  background-color: #c3e0c7;
+  background-color: rgb(195, 224, 199);
 }
 @media screen and (max-width: 1550px) {
   #masthead .global-wrapper .bottom-wrapper .preview-wrapper .preview .text {
@@ -1257,7 +1257,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
   white-space: nowrap;
 }
 @media screen and (max-width: 1550px) {
@@ -1300,7 +1300,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   height: 17px;
   width: 17px;
   border-radius: 30px;
-  background-color: #afb4bf;
+  background-color: rgb(175, 180, 191);
 }
 @media screen and (max-width: 1550px) {
   #masthead .global-wrapper .bottom-wrapper .preview-wrapper .dots .dot {
@@ -1330,7 +1330,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   height: 17px;
   width: 17px;
   border-radius: 30px;
-  background-color: #fefff6;
+  background-color: rgb(254, 255, 246);
   z-index: 3;
   transition: left 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -1393,7 +1393,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  background-color: #c3e0c7;
+  background-color: rgb(195, 224, 199);
   z-index: 1;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -1445,7 +1445,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
   white-space: nowrap;
 }
 @media screen and (max-width: 1550px) {
@@ -1467,12 +1467,12 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #masthead .phone:hover .wrapper {
-  background-color: #b3d4b4;
+  background-color: rgb(179, 212, 180);
 }
 
 #demo {
   position: relative;
-  background-color: #fefff6;
+  background-color: rgb(254, 255, 246);
   width: 100%;
   padding: 190px 0 210px;
   overflow: clip;
@@ -1630,7 +1630,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
   margin-bottom: 16px;
 }
 @media screen and (max-width: 1800px) {
@@ -1693,7 +1693,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   #demo .global-wrapper .right-part .sub-title {
@@ -1735,10 +1735,10 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #d76677;
+  color: rgb(215, 102, 119);
   text-decoration: underline;
   text-underline-offset: 6px;
-  text-underline-color: #d76677;
+  text-underline-color: rgb(215, 102, 119);
   transition: text-underline-offset 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 992px) {
@@ -1871,7 +1871,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   position: relative;
   width: 100%;
   padding: 172px 7% 0;
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
   border-radius: 20px 20px 0 0;
 }
 @media screen and (max-width: 1800px) {
@@ -1929,8 +1929,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
-  color: #fefff6;
+  color: rgb(56, 72, 100);
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1550px) {
   #information .global-wrapper h3 {
@@ -2074,7 +2074,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1800px) {
   #information .global-wrapper .info-wrapper .info .title {
@@ -2113,7 +2113,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1800px) {
   #information .global-wrapper .info-wrapper .info p {
@@ -2172,7 +2172,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   margin-top: 80px;
   width: fit-content;
   text-decoration: none;
-  border: 1px solid #fefff6;
+  border: 1px solid rgb(254, 255, 246);
   border-radius: 10px;
   user-select: none;
 }
@@ -2205,7 +2205,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   position: relative;
   width: fit-content;
   padding: 23px 33px;
-  background-color: #747e91;
+  background-color: rgb(116, 126, 145);
   border-radius: 10px;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -2242,7 +2242,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1800px) {
   #information a .contact-us p {
@@ -2270,7 +2270,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #information a:hover .contact-us {
-  background-color: #5f6979;
+  background-color: rgb(95, 105, 121);
 }
 
 #gallery {
@@ -2278,7 +2278,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   padding: 177px 0 119px;
   width: 100%;
   border-radius: 0 0 25px 25px;
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #gallery {
@@ -2349,10 +2349,10 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
   max-width: 315px;
   margin-bottom: 36px;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1550px) {
   #gallery .global-wrapper h3 {
@@ -2390,7 +2390,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.3;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1550px) {
   #gallery .global-wrapper p {
@@ -2535,7 +2535,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -2607,10 +2607,10 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.3;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 #preparation .global-wrapper .sub-title span {
-  color: #d76677;
+  color: rgb(215, 102, 119);
 }
 @media screen and (max-width: 1550px) {
   #preparation .global-wrapper .sub-title {
@@ -2680,8 +2680,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #c3e0c7;
-  background-color: #edf8ee;
+  border: 1px solid rgb(195, 224, 199);
+  background-color: rgb(237, 248, 238);
   border-radius: 10px;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -2715,7 +2715,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   .download-wrapper a .download .info h6 {
@@ -2746,7 +2746,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   .download-wrapper a .download .info p {
@@ -2817,7 +2817,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   flex-direction: column;
   justify-content: center;
   border-radius: 15px;
-  background-color: #edf8ee;
+  background-color: rgb(237, 248, 238);
 }
 @media screen and (max-width: 1800px) {
   #reservation .global-wrapper {
@@ -2855,9 +2855,9 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .title {
@@ -2876,7 +2876,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #reservation .global-wrapper .title span {
-  color: #d76677;
+  color: rgb(215, 102, 119);
 }
 #reservation .global-wrapper .state-wrapper {
   position: relative;
@@ -2930,7 +2930,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   width: fit-content;
   padding: 7px 18px;
   border-radius: 100px;
-  border: 2px solid #afb4bf;
+  border: 2px solid rgb(175, 180, 191);
   background-color: transparent;
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 22px;
@@ -2938,7 +2938,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 33px;
   letter-spacing: 0em;
   text-align: center;
-  color: #afb4bf;
+  color: rgb(175, 180, 191);
   transition: border 0.35s ease-in-out, background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 }
 @media screen and (max-width: 1550px) {
@@ -2975,7 +2975,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.15;
   letter-spacing: 0em;
   text-align: center;
-  color: #afb4bf;
+  color: rgb(175, 180, 191);
   transition: color 0.35s ease-in-out;
 }
 @media screen and (max-width: 1550px) {
@@ -2994,19 +2994,19 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #reservation .global-wrapper .state-wrapper .state.is-active .state-number {
-  background-color: #d76677;
-  border: 2px solid #d76677;
-  color: #fefff6;
+  background-color: rgb(215, 102, 119);
+  border: 2px solid rgb(215, 102, 119);
+  color: rgb(254, 255, 246);
 }
 #reservation .global-wrapper .state-wrapper .state.is-active p {
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 #reservation .global-wrapper .state-wrapper .line {
   position: relative;
   margin: 25px -20px 0;
   height: 1.5px;
   width: 170px;
-  background-color: #cdd5e0;
+  background-color: rgb(205, 213, 224);
   border-radius: 10px;
 }
 @media screen and (max-width: 1550px) {
@@ -3049,8 +3049,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   height: 500px;
   overflow: hidden;
   border-radius: 15px;
-  border: 1px solid #c3e0c7;
-  background-color: #fefff6;
+  border: 1px solid rgb(195, 224, 199);
+  background-color: rgb(254, 255, 246);
   transition: height 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #reservation .global-wrapper .container .sub-wrapper {
@@ -3102,7 +3102,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-place .title {
@@ -3129,7 +3129,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #32405a;
+  color: rgb(50, 64, 90);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-place .sub-title {
@@ -3179,7 +3179,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   padding: 12px 25px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #e3e5ea;
+  background-color: rgb(227, 229, 234);
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 1550px) {
@@ -3215,7 +3215,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
   white-space: nowrap;
   user-select: none;
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
@@ -3259,10 +3259,10 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place.is-active, #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:hover {
-  background-color: #32405a;
+  background-color: rgb(50, 64, 90);
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place.is-active p, #reservation .global-wrapper .container .sub-wrapper.book-online-place .place-wrapper .place:hover p {
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part {
   position: relative;
@@ -3284,7 +3284,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #d76677;
+  color: rgb(215, 102, 119);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .localisation {
@@ -3319,7 +3319,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .title {
@@ -3393,7 +3393,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   letter-spacing: 0em;
   text-align: center;
   user-select: none;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-planning .top-part .month-wrapper .month {
@@ -3468,7 +3468,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .day {
@@ -3500,7 +3500,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #e3e5ea;
+  background-color: rgb(227, 229, 234);
   transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 1550px) {
@@ -3531,7 +3531,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
   user-select: none;
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -3569,10 +3569,10 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   cursor: default;
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time:hover:not(.disabled), #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.is-active {
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time:hover:not(.disabled) p, #reservation .global-wrapper .container .sub-wrapper.book-online-planning .calendar-wrapper .date .time.is-active p {
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up {
   position: absolute;
@@ -3585,7 +3585,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   pointer-events: none;
   transform: translate(-50%, -50%);
   border-radius: 15px;
-  background-color: #32405a;
+  background-color: rgb(50, 64, 90);
   transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 1550px) {
@@ -3644,7 +3644,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
   position: relative;
@@ -3656,7 +3656,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1150px) {
   #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .bold-text {
@@ -3672,7 +3672,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up .conditions-text {
   position: relative;
@@ -3682,7 +3682,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 #reservation .global-wrapper .container .sub-wrapper.book-online-planning .pop-up.is-active {
   opacity: 1;
@@ -3752,7 +3752,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.group-profile .sub-title {
@@ -3782,7 +3782,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   margin: 0 auto 72px;
   padding: 23px 0;
   width: 270px;
-  border: 1px solid #384864;
+  border: 1px solid rgb(56, 72, 100);
   border-radius: 10px;
   background-color: transparent;
   font-family: " PP Pangram Sans Rounded medium", sans-serif;
@@ -3791,8 +3791,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
-  caret-color: #384864;
+  color: rgb(56, 72, 100);
+  caret-color: rgb(56, 72, 100);
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 1550px) {
@@ -3828,7 +3828,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number].error {
-  color: #d76677;
+  color: rgb(215, 102, 119);
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
   position: relative;
@@ -3896,7 +3896,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
 #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit {
   position: relative;
   padding: 23px 40px;
-  border: 1px solid #384864;
+  border: 1px solid rgb(56, 72, 100);
   border-radius: 10px;
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 24px;
@@ -3904,7 +3904,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
   cursor: pointer;
   background-color: transparent;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1), color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
@@ -3934,11 +3934,11 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level:hover, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit:hover, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level:hover, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:hover {
-  background-color: #e3e5ea;
+  background-color: rgb(227, 229, 234);
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level.is-active, #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit.is-active, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level.is-active, #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit.is-active {
-  background-color: #384864;
-  color: #fefff6;
+  background-color: rgb(56, 72, 100);
+  color: rgb(254, 255, 246);
 }
 #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .level-wrapper .visit:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .level:nth-child(2), #reservation .global-wrapper .container .sub-wrapper.group-profile .visit-wrapper .visit:nth-child(2) {
   margin: 0 24px;
@@ -4012,6 +4012,54 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
     margin: 0 0 0 12px;
   }
 }
+#reservation .global-wrapper .container .sub-wrapper.connexion h6 {
+  position: relative;
+  margin-bottom: 3px;
+  font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(56, 72, 100);
+}
+#reservation .global-wrapper .container .sub-wrapper.connexion input[type=password] {
+  position: relative;
+  margin: 0 auto 71px;
+  padding: 24px 40px;
+  border: 1px solid rgb(56, 72, 100);
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: " PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(56, 72, 100);
+  caret-color: rgb(56, 72, 100);
+  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.connexion input[type=email] {
+  position: relative;
+  margin: 0 auto 72px;
+  padding: 24px 40px;
+  border: 1px solid rgb(56, 72, 100);
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: " PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(56, 72, 100);
+  caret-color: rgb(56, 72, 100);
+  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.connexion .centered {
+  display: block;
+}
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper {
   position: relative;
   margin-bottom: 82px;
@@ -4054,7 +4102,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  background-color: #c3e0c7;
+  background-color: rgb(195, 224, 199);
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .logo {
   position: relative;
@@ -4084,7 +4132,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   position: relative;
   padding: 7px 0;
   width: 100%;
-  background-color: #abc3ac;
+  background-color: rgb(171, 195, 172);
   border-radius: 10px;
 }
 @media screen and (max-width: 1550px) {
@@ -4100,7 +4148,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 2;
   letter-spacing: 0.1em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .team-name p {
@@ -4129,14 +4177,14 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   border-radius: 10px;
   outline: none;
   border: none;
-  background-color: #fefff6;
+  background-color: rgb(254, 255, 246);
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
   font-size: 23px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper .team-member {
@@ -4149,7 +4197,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper .team-member::placeholder {
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper .team .member-wrapper .cross {
   position: absolute;
@@ -4219,7 +4267,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .title {
@@ -4246,7 +4294,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .sub-title {
@@ -4272,7 +4320,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 #reservation .global-wrapper .container .sub-wrapper.recap .left-part .wrapper .text:last-child {
   margin-bottom: 0;
@@ -4315,7 +4363,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   flex-direction: column;
   justify-content: center;
   border-radius: 15px;
-  border: 1px solid #c3e0c7;
+  border: 1px solid rgb(195, 224, 199);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.recap .right-part {
@@ -4347,7 +4395,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   flex-direction: column;
   justify-content: center;
   border-radius: 15px;
-  background-color: #edf8ee;
+  background-color: rgb(237, 248, 238);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall {
@@ -4373,7 +4421,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall h5 {
@@ -4417,7 +4465,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div p {
@@ -4442,7 +4490,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h6 {
@@ -4467,7 +4515,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #reservation .global-wrapper .container .sub-wrapper.recap .right-part .payWall div h3 {
@@ -4514,13 +4562,13 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   position: relative;
   padding: 15px 0;
   width: 237px;
-  border: 1px solid #384864;
+  border: 1px solid rgb(56, 72, 100);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
   user-select: none;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -4560,7 +4608,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 1550px) {
@@ -4579,7 +4627,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button:hover {
-  background-color: #32405a;
+  background-color: rgb(50, 64, 90);
 }
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev {
   background-color: transparent;
@@ -4596,10 +4644,10 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev p {
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.prev:hover {
-  background-color: #edf8ee;
+  background-color: rgb(237, 248, 238);
 }
 #reservation .global-wrapper .container .sub-wrapper .button-wrapper .button.disabled {
   cursor: default;
@@ -4610,7 +4658,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   position: relative;
   padding: 188px 0 205px;
   width: 100%;
-  background-color: #fefff6;
+  background-color: rgb(254, 255, 246);
   scroll-margin-top: -75px;
 }
 @media screen and (max-width: 1800px) {
@@ -4652,7 +4700,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  background-color: #edf8ee;
+  background-color: rgb(237, 248, 238);
 }
 @media screen and (max-width: 1550px) {
   #advice .global-wrapper {
@@ -4734,7 +4782,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   #advice .global-wrapper .info .title {
@@ -4791,7 +4839,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   #advice .global-wrapper .info .paragraph {
@@ -4839,7 +4887,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   display: flex;
   padding: 23px 33px;
   text-decoration: none;
-  border: 1px solid #384864;
+  border: 1px solid rgb(56, 72, 100);
   border-radius: 10px;
   background-color: transparent;
   user-select: none;
@@ -4878,7 +4926,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   #advice .global-wrapper .info .give-advice p {
@@ -4968,8 +5016,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   flex-direction: column;
   justify-content: center;
   border-radius: 15px;
-  border: 1px solid #c3e0c7;
-  background-color: #fefff6;
+  border: 1px solid rgb(195, 224, 199);
+  background-color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1700px) {
   #advice .global-wrapper .advice-wrapper .advice-left .advice, #advice .global-wrapper .advice-wrapper .advice-right .advice {
@@ -5042,7 +5090,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   #advice .global-wrapper .advice-wrapper .advice-left .advice .name, #advice .global-wrapper .advice-wrapper .advice-right .advice .name {
@@ -5082,7 +5130,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 1.2;
   letter-spacing: 0em;
   text-align: center;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1800px) {
   #advice .global-wrapper .advice-wrapper .advice-left .advice .quote, #advice .global-wrapper .advice-wrapper .advice-right .advice .quote {
@@ -5121,7 +5169,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   padding: 10px 18px;
   border-radius: 50px;
   transform: translateY(50%);
-  background-color: #839fdc;
+  background-color: rgb(131, 159, 220);
 }
 #advice .global-wrapper .advice-wrapper .advice-left .advice .type p, #advice .global-wrapper .advice-wrapper .advice-right .advice .type p {
   position: relative;
@@ -5131,10 +5179,10 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: center;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 #advice .global-wrapper .advice-wrapper .advice-left .advice .type.prof, #advice .global-wrapper .advice-wrapper .advice-right .advice .type.prof {
-  background-color: #d76677;
+  background-color: rgb(215, 102, 119);
 }
 #advice .global-wrapper .advice-wrapper .advice-left .advice:nth-child(1), #advice .global-wrapper .advice-wrapper .advice-right .advice:nth-child(1) {
   margin-bottom: 49px;
@@ -5214,7 +5262,7 @@ footer {
   padding: 50px 50px 0;
   width: 100%;
   border-radius: 25px 25px 0 0;
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   footer {
@@ -5246,7 +5294,7 @@ footer .global-wrapper {
   justify-content: center;
   align-items: center;
   border-radius: 20px 20px 0 0;
-  background-color: #d76677;
+  background-color: rgb(215, 102, 119);
   overflow: clip;
 }
 @media screen and (max-width: 1550px) {
@@ -5312,7 +5360,7 @@ footer .global-wrapper .link-wrapper .link {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
   border-radius: 100px;
   background-color: transparent;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
@@ -5373,7 +5421,7 @@ footer .global-wrapper .sub-link-wrapper .sub-link {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
 }
 footer .global-wrapper .sub-link-wrapper .sub-link.margin {
   margin: 0 5px;
@@ -5492,7 +5540,7 @@ footer .global-wrapper .vector-right {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #fefff6;
+  background-color: rgb(254, 255, 246);
 }
 @media screen and (max-width: 1800px) {
   #profil {
@@ -5628,7 +5676,7 @@ footer .global-wrapper .vector-right {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #profil .left-part .title {
@@ -5656,7 +5704,7 @@ footer .global-wrapper .vector-right {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #profil .left-part .modify h6 {
@@ -5695,19 +5743,19 @@ footer .global-wrapper .vector-right {
   border-radius: 10px;
   border: none;
   outline: none;
-  background-color: #edf8ee;
+  background-color: rgb(237, 248, 238);
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
-  caret-color: #384864;
+  color: rgb(56, 72, 100);
+  caret-color: rgb(56, 72, 100);
 }
 #profil .left-part .modify .wrapper input::placeholder {
-  color: #92a0a9;
-  caret-color: #92a0a9;
+  color: rgb(146, 160, 169);
+  caret-color: rgb(146, 160, 169);
 }
 @media screen and (max-width: 1550px) {
   #profil .left-part .modify .wrapper input {
@@ -5755,7 +5803,7 @@ footer .global-wrapper .vector-right {
   margin: 96px 0;
   height: 1px;
   width: 100%;
-  border-bottom: 2px dashed #c3e0c7;
+  border-bottom: 2px dashed rgb(195, 224, 199);
 }
 @media screen and (max-width: 1550px) {
   #profil .left-part .dot-line {
@@ -5781,7 +5829,7 @@ footer .global-wrapper .vector-right {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #profil .left-part .give-advice h6 {
@@ -5816,7 +5864,7 @@ footer .global-wrapper .vector-right {
   align-items: center;
   flex-grow: 1;
   border-radius: 10px;
-  border: 1px solid #384864;
+  border: 1px solid rgb(56, 72, 100);
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -5824,14 +5872,14 @@ footer .global-wrapper .vector-right {
   letter-spacing: 0em;
   text-align: center;
   cursor: pointer;
-  color: #384864;
+  color: rgb(56, 72, 100);
   user-select: none;
   background-color: transparent;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1), color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #profil .left-part .give-advice .type-wrapper .type.is-active {
-  background-color: #384864;
-  color: #fefff6;
+  background-color: rgb(56, 72, 100);
+  color: rgb(254, 255, 246);
 }
 #profil .left-part .give-advice .type-wrapper .type:last-child {
   margin-left: 16px;
@@ -5873,7 +5921,7 @@ footer .global-wrapper .vector-right {
   line-height: 1.2;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 992px) {
   #profil .left-part .give-advice .info {
@@ -5908,19 +5956,19 @@ footer .global-wrapper .vector-right {
   border-radius: 10px;
   border: none;
   outline: none;
-  background-color: #edf8ee;
+  background-color: rgb(237, 248, 238);
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
-  caret-color: #384864;
+  color: rgb(56, 72, 100);
+  caret-color: rgb(56, 72, 100);
 }
 #profil .left-part .give-advice .wrapper input::placeholder, #profil .left-part .give-advice .wrapper textarea::placeholder {
-  color: #92a0a9;
-  caret-color: #92a0a9;
+  color: rgb(146, 160, 169);
+  caret-color: rgb(146, 160, 169);
 }
 @media screen and (max-width: 1550px) {
   #profil .left-part .give-advice .wrapper input, #profil .left-part .give-advice .wrapper textarea {
@@ -5987,21 +6035,21 @@ footer .global-wrapper .vector-right {
   width: fit-content;
   padding: 18px 26px;
   border-radius: 10px;
-  background-color: #67787f;
+  background-color: rgb(103, 120, 127);
   font-family: "PP Pangram Sans Rounded bold", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
   cursor: pointer;
   user-select: none;
   transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 #profil .left-part .validate-button.is-active {
   cursor: pointer;
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #profil .left-part .validate-button {
@@ -6029,8 +6077,8 @@ footer .global-wrapper .vector-right {
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 10px;
-  background-color: #edf8ee;
-  border: 1px solid #c3e0c7;
+  background-color: rgb(237, 248, 238);
+  border: 1px solid rgb(195, 224, 199);
 }
 @media screen and (max-width: 992px) {
   #profil .right-part .reservation .reservation-wrapper {
@@ -6053,7 +6101,7 @@ footer .global-wrapper .vector-right {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 992px) {
   #profil .right-part .reservation .reservation-wrapper h5 {
@@ -6074,7 +6122,7 @@ footer .global-wrapper .vector-right {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 992px) {
   #profil .right-part .reservation .reservation-wrapper h6 {
@@ -6126,7 +6174,7 @@ footer .global-wrapper .vector-right {
   line-height: 27px;
   letter-spacing: 0em;
   text-align: left;
-  color: #fefff6;
+  color: rgb(254, 255, 246);
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media screen and (max-width: 1550px) {
@@ -6165,7 +6213,7 @@ footer .global-wrapper .vector-right {
 #profil .right-part .reservation .info-wrapper a.download {
   padding: 18px 26px;
   border-radius: 10px;
-  background-color: #67787f;
+  background-color: rgb(103, 120, 127);
 }
 @media screen and (max-width: 1550px) {
   #profil .right-part .reservation .info-wrapper a.download {
@@ -6184,10 +6232,10 @@ footer .global-wrapper .vector-right {
   }
 }
 #profil .right-part .reservation .info-wrapper a.download:hover {
-  background-color: #384864;
+  background-color: rgb(56, 72, 100);
 }
 #profil .right-part .reservation .info-wrapper a.modify p {
-  color: #67787f;
+  color: rgb(103, 120, 127);
 }
 #profil .right-part .reservation .info-wrapper a.modify img {
   height: 16px;
@@ -6200,7 +6248,7 @@ footer .global-wrapper .vector-right {
   }
 }
 #profil .right-part .reservation .info-wrapper a.modify:hover p {
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 #profil .right-part .questions .text-medium {
   position: relative;
@@ -6211,7 +6259,7 @@ footer .global-wrapper .vector-right {
   line-height: 27px;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #profil .right-part .questions .text-medium {
@@ -6238,7 +6286,7 @@ footer .global-wrapper .vector-right {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #profil .right-part .questions .text {
@@ -6268,7 +6316,7 @@ footer .global-wrapper .vector-right {
   line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  color: #384864;
+  color: rgb(56, 72, 100);
 }
 @media screen and (max-width: 1550px) {
   #profil .sub-title {
