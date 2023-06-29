@@ -3795,25 +3795,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   caret-color: rgb(56, 72, 100);
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
-#reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email] {
-  position: relative;
-  margin: 0 auto 72px;
-  padding: 23px 0;
-  border: 1px solid rgb(56, 72, 100);
-  border-radius: 10px;
-  background-color: transparent;
-  font-family: " PP Pangram Sans Rounded medium", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: 0em;
-  text-align: center;
-  color: rgb(56, 72, 100);
-  caret-color: rgb(56, 72, 100);
-  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-}
 @media screen and (max-width: 1550px) {
-  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email] {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
     font-size: 20px;
     padding: 18px 0;
     margin: 0 auto 60px;
@@ -3821,7 +3804,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 @media screen and (max-width: 1150px) {
-  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email] {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
     font-size: 18px;
     padding: 15px 0;
     margin: 0 auto 50px;
@@ -3829,7 +3812,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 @media screen and (max-width: 992px) {
-  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email] {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
     font-size: 16px;
     padding: 13px 0;
     margin: 0 auto 40px;
@@ -3837,17 +3820,17 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   }
 }
 @media screen and (max-width: 576px) {
-  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email] {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number] {
     font-size: 14px;
     padding: 12px 0;
     margin: 0 auto 30px;
     width: 150px;
   }
 }
-#reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email].error {
+#reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number].error {
   color: rgb(215, 102, 119);
 }
-#reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email]::placeholder {
+#reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
   position: relative;
   font-family: "PP Pangram Sans Rounded medium", sans-serif;
   font-size: 24px;
@@ -3858,26 +3841,26 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   color: rgba(56, 72, 100, 0.3);
 }
 @media screen and (max-width: 1550px) {
-  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email]::placeholder {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1150px) {
-  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email]::placeholder {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 992px) {
-  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email]::placeholder {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 576px) {
-  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email]::placeholder {
+  #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::placeholder {
     font-size: 14px;
   }
 }
-#reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email]::-webkit-inner-spin-button, #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=email]::-webkit-outer-spin-button {
+#reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::-webkit-inner-spin-button, #reservation .global-wrapper .container .sub-wrapper.group-profile input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -4033,7 +4016,7 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   position: relative;
   margin-bottom: 3px;
   font-family: "PP Pangram Sans Rounded semi-bold", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0em;
@@ -4042,8 +4025,8 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
 }
 #reservation .global-wrapper .container .sub-wrapper.connexion input[type=password] {
   position: relative;
-  margin: 0 auto 72px;
-  padding: 23px 0;
+  margin: 0 auto 71px;
+  padding: 24px 40px;
   border: 1px solid rgb(56, 72, 100);
   border-radius: 10px;
   background-color: transparent;
@@ -4056,6 +4039,26 @@ header .right-part .mobile-menu-wrapper.is-active span:after {
   color: rgb(56, 72, 100);
   caret-color: rgb(56, 72, 100);
   transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.connexion input[type=email] {
+  position: relative;
+  margin: 0 auto 72px;
+  padding: 24px 40px;
+  border: 1px solid rgb(56, 72, 100);
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: " PP Pangram Sans Rounded medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(56, 72, 100);
+  caret-color: rgb(56, 72, 100);
+  transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#reservation .global-wrapper .container .sub-wrapper.connexion .centered {
+  display: block;
 }
 #reservation .global-wrapper .container .sub-wrapper.student-group .team-wrapper {
   position: relative;

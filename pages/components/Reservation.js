@@ -18,7 +18,21 @@ function Reservation() {
     const [alreadyVisit, setAlreadyVisit] = useState("")
     const [numberOfGroup, setNumberOfGroup] = useState(0)
     const [groupPattern, setGroupPattern] = useState([])
+    const [mail, setMail] = useState("");
+    const [password, setPassword] = useState("");
 
+
+    function handleCLickOnValidateProfil() {
+        const validateButton = document.querySelector(".modify .validate-button");
+        const inputModify = document.querySelectorAll(".modify input");
+        if (validateButton.classList.contains("is-active")) {
+            setMail("");
+            setPassword("");
+            inputModify.forEach((input) => {
+                input.value = "";
+            });
+        }
+    }
     useEffect(() => {
 
         updateSizeOfContainer("is-active")
@@ -433,8 +447,11 @@ function Reservation() {
 
                     <div className="connexion sub-wrapper wrapper group-profile" data-id="2" >
                         <h5 className="sub-title">Veuillez vous connecter pour continuer</h5>
-                    <h6>{t('reservation.reservation.emailPlaceholder')}</h6>
+
+
                     <div className="wrapper">
+                        <div className="centered">
+                        <h6>{t('reservation.reservation.emailPlaceholder')}</h6>
                         <input
                             type="email"
                             placeholder={t('reservation.reservation.email')}
@@ -443,7 +460,8 @@ function Reservation() {
                             onInput={(e) => setMail(e.target.value)}
                         />
 
-
+                    </div>
+                        <div className="centered">
                     <h6>{t('profil.passwordLabel')}</h6>
                         <input
                             type="password"
@@ -452,7 +470,8 @@ function Reservation() {
                             maxLength="30"
                             onInput={(e) => setPassword(e.target.value)}
                         />
-                    </div>
+                        </div>
+                        </div>
 
                         <div className="button-wrapper">
                             <div className="button prev" onClick={(e) => changeProgress(e, "connexion", "student-group")}>
