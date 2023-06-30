@@ -1215,6 +1215,14 @@
               text-align: left;
               color: $blue;
 
+              @media screen and (max-width: 1550px) {
+                font-size: 20px;
+              }
+
+              @media screen and (max-width: 1150px) {
+                font-size: 18px;
+              }
+
               @media screen and (max-width: 576px) {
                 font-size: 18px;
               }
@@ -1243,6 +1251,16 @@
 
               &:last-child {
                 margin-bottom: 50px;
+              }
+
+              @media screen and (max-width: 1550px) {
+                padding: 18px 25px;
+                font-size: 20px;
+              }
+
+              @media screen and (max-width: 1150px) {
+                padding: 16px 25px;
+                font-size: 18px;
               }
 
               @media screen and (max-width: 576px) {

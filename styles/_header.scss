@@ -82,6 +82,7 @@ header {
       text-decoration: none;
       user-select: none;
       border-radius: 100px;
+      cursor: pointer;
       background-color: transparent;
       transition: background-color 0.8s $ease-power4-out;
       color: $wheat;
@@ -124,6 +125,11 @@ header {
       user-select: none;
       -webkit-user-drag: none;
       background-color: $blue;
+      transition: background-color 0.8s $ease-power4-out;
+
+      &:hover {
+        background-color: #2e3d57;
+      }
 
       @media screen and (max-width: 1800px) {
         padding: 18px 21px;
@@ -375,6 +381,7 @@ header {
         text-decoration: none;
         user-select: none;
         border-radius: 100px;
+        cursor: pointer;
         background-color: transparent;
         transition: background-color 0.8s $ease-power4-out;
         color: $wheat;

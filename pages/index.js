@@ -16,8 +16,6 @@ export default function Home() {
 
     useEffect(() => {
 
-        /*
-
         const lenis = new Lenis({
             duration: 1.25,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
@@ -41,8 +39,6 @@ export default function Home() {
         gsap.ticker.add((time) => {
             lenis.raf(time * 1000)
         })
-
-         */
 
     }, [])
 

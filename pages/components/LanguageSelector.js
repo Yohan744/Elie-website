@@ -10,7 +10,6 @@ function LanguageSelector({ setLanguage }) {
     return (
         <div className="link">
             <a onClick={() => handleLanguageChange('fr')}>{t('FR')} | </a>
-
             <a onClick={() => handleLanguageChange('en')}>{t('EN')}</a>
         </div>
     );

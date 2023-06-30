@@ -36,11 +36,7 @@ function Masthead() {
 
     return (
         <section id={"masthead"}>
-            <img
-                src={"masthead-background.png"}
-                alt={t('masthead.backgroundAltText')}
-                className={"background-image"}
-            />
+            <img src={"masthead-background.png"} alt={t('masthead.backgroundAltText')} className={"background-image"} rel={"preload"}/>
             <div className={"global-wrapper"}>
                 <div className={"top-wrapper"}>
                     <div className={"info"}>
