@@ -170,7 +170,7 @@ export default function Profil() {
 
                 <div className="dot-line"></div>
 
-                <div className="give-advice wrapper">
+                <div className="give-advice wrapper" id={"advice"}>
                     <h5 className="sub-title">{t('profil.giveAdviceTitle')}</h5>
 
                     <h6>{t('profil.profileLabel')}</h6>

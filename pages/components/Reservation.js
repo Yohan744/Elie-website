@@ -72,7 +72,9 @@ function Reservation() {
     function updateSizeOfContainer(section) {
         const container = document.querySelector('#reservation .container')
         const showingSection = document.querySelector('#reservation .container .sub-wrapper.' + section)
-        container.style.height = showingSection.getBoundingClientRect().height + "px"
+        if (container) {
+            container.style.height = showingSection.getBoundingClientRect().height + "px"
+        }
     }
 
     function changeProgress(event, hideSection, showSection) {

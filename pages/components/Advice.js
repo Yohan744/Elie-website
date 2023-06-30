@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Link from "next/link";
 
 function Advice() {
     const { t } = useTranslation();
@@ -9,9 +10,9 @@ function Advice() {
                 <div className="info">
                     <h3 className="title">{t('advice.title')}</h3>
                     <p className="paragraph">{t('advice.paragraph')}</p>
-                    <a href="#" className="give-advice" draggable="false">
+                    <Link href={"/profil#advice"} className="give-advice" draggable="false">
                         <p>{t('advice.giveAdvice')}</p>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="advice-wrapper">
